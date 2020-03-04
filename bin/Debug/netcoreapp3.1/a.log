@@ -1,0 +1,659 @@
+(Ln: 1, Col: 1): Entering CompStmt
+(Ln: 1, Col: 1): Entering Stmt
+(Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering if
+(Ln: 1, Col: 4): Entering expr
+(Ln: 1, Col: 4): Entering if
+(Ln: 1, Col: 4): Leaving if (Error)
+(Ln: 1, Col: 4): Entering while
+(Ln: 1, Col: 4): Leaving while (Error)
+(Ln: 1, Col: 4): Entering class
+(Ln: 1, Col: 4): Leaving class (Error)
+(Ln: 1, Col: 4): Entering module
+(Ln: 1, Col: 4): Leaving module (Error)
+(Ln: 1, Col: 15): Leaving expr (Ok)
+(Ln: 2, Col: 1): Entering CompStmt
+(Ln: 2, Col: 1): Entering Stmt
+(Ln: 2, Col: 1): Entering expr
+(Ln: 2, Col: 4): Leaving expr (Ok)
+(Ln: 2, Col: 4): Leaving Stmt (Ok)
+(Ln: 3, Col: 3): Entering if end
+(Ln: 3, Col: 8): Leaving if end (Ok)
+(Ln: 3, Col: 3): Leaving CompStmt (Ok)
+(Ln: 3, Col: 3): Entering elsif
+(Ln: 3, Col: 9): Entering expr
+(Ln: 3, Col: 9): Entering if
+(Ln: 3, Col: 9): Leaving if (Error)
+(Ln: 3, Col: 9): Entering while
+(Ln: 3, Col: 9): Leaving while (Error)
+(Ln: 3, Col: 9): Entering class
+(Ln: 3, Col: 9): Leaving class (Error)
+(Ln: 3, Col: 9): Entering module
+(Ln: 3, Col: 9): Leaving module (Error)
+(Ln: 3, Col: 15): Leaving expr (Ok)
+(Ln: 4, Col: 1): Entering CompStmt
+(Ln: 4, Col: 1): Entering Stmt
+(Ln: 4, Col: 1): Entering expr
+(Ln: 4, Col: 3): Entering if
+(Ln: 4, Col: 3): Leaving if (Error)
+(Ln: 4, Col: 3): Entering while
+(Ln: 4, Col: 3): Leaving while (Error)
+(Ln: 4, Col: 3): Entering class
+(Ln: 4, Col: 3): Leaving class (Error)
+(Ln: 4, Col: 3): Entering module
+(Ln: 4, Col: 3): Leaving module (Error)
+(Ln: 4, Col: 14): Leaving expr (Ok)
+(Ln: 4, Col: 14): Leaving Stmt (Ok)
+(Ln: 5, Col: 3): Entering if end
+(Ln: 5, Col: 3): Leaving if end (Error)
+(Ln: 5, Col: 1): Entering Stmt
+(Ln: 5, Col: 1): Entering expr
+(Ln: 5, Col: 3): Entering if
+(Ln: 5, Col: 3): Leaving if (Error)
+(Ln: 5, Col: 3): Entering while
+(Ln: 5, Col: 3): Leaving while (Error)
+(Ln: 5, Col: 3): Entering class
+(Ln: 5, Col: 3): Leaving class (Error)
+(Ln: 5, Col: 3): Entering module
+(Ln: 5, Col: 3): Leaving module (Error)
+(Ln: 5, Col: 8): Leaving expr (Ok)
+(Ln: 5, Col: 8): Leaving Stmt (Ok)
+(Ln: 6, Col: 3): Entering if end
+(Ln: 6, Col: 3): Leaving if end (Error)
+(Ln: 6, Col: 1): Entering Stmt
+(Ln: 6, Col: 1): Entering expr
+(Ln: 6, Col: 3): Entering if
+(Ln: 6, Col: 6): Entering expr
+(Ln: 6, Col: 6): Entering if
+(Ln: 6, Col: 6): Leaving if (Error)
+(Ln: 6, Col: 6): Entering while
+(Ln: 6, Col: 6): Leaving while (Error)
+(Ln: 6, Col: 6): Entering class
+(Ln: 6, Col: 6): Leaving class (Error)
+(Ln: 6, Col: 6): Entering module
+(Ln: 6, Col: 6): Leaving module (Error)
+(Ln: 6, Col: 12): Leaving expr (Ok)
+(Ln: 6, Col: 13): Entering CompStmt
+(Ln: 6, Col: 13): Entering Stmt
+(Ln: 6, Col: 13): Entering expr
+(Ln: 6, Col: 14): Entering if
+(Ln: 6, Col: 14): Leaving if (Error)
+(Ln: 6, Col: 14): Entering while
+(Ln: 6, Col: 14): Leaving while (Error)
+(Ln: 6, Col: 14): Entering class
+(Ln: 6, Col: 14): Leaving class (Error)
+(Ln: 6, Col: 14): Entering module
+(Ln: 6, Col: 14): Leaving module (Error)
+(Ln: 6, Col: 16): Leaving expr (Ok)
+(Ln: 6, Col: 16): Leaving Stmt (Ok)
+(Ln: 6, Col: 16): Entering if end
+(Ln: 6, Col: 19): Leaving if end (Ok)
+(Ln: 6, Col: 16): Leaving CompStmt (Ok)
+(Ln: 6, Col: 16): Entering elsif
+(Ln: 6, Col: 16): Leaving elsif (Error)
+(Ln: 6, Col: 19): Leaving if (Ok)
+(Ln: 6, Col: 19): Leaving expr (Ok)
+(Ln: 6, Col: 19): Leaving Stmt (Ok)
+(Ln: 7, Col: 1): Entering if end
+(Ln: 7, Col: 5): Leaving if end (Ok)
+(Ln: 7, Col: 1): Leaving CompStmt (Ok)
+(Ln: 7, Col: 1): Leaving elsif (Ok)
+(Ln: 7, Col: 1): Entering elsif
+(Ln: 7, Col: 1): Leaving elsif (Error)
+(Ln: 8, Col: 3): Entering CompStmt
+(Ln: 8, Col: 3): Entering Stmt
+(Ln: 8, Col: 3): Entering expr
+(Ln: 8, Col: 3): Entering if
+(Ln: 8, Col: 3): Leaving if (Error)
+(Ln: 8, Col: 3): Entering while
+(Ln: 8, Col: 3): Leaving while (Error)
+(Ln: 8, Col: 3): Entering class
+(Ln: 8, Col: 3): Leaving class (Error)
+(Ln: 8, Col: 3): Entering module
+(Ln: 8, Col: 3): Leaving module (Error)
+(Ln: 8, Col: 8): Leaving expr (Ok)
+(Ln: 8, Col: 8): Leaving Stmt (Ok)
+(Ln: 9, Col: 1): Leaving CompStmt (Ok)
+(Ln: 9, Col: 4): Leaving if (Ok)
+(Ln: 9, Col: 4): Leaving expr (Ok)
+(Ln: 9, Col: 4): Leaving Stmt (Ok)
+(Ln: 10, Col: 1): Entering Stmt
+(Ln: 10, Col: 1): Entering expr
+(Ln: 10, Col: 2): Entering if
+(Ln: 10, Col: 5): Entering expr
+(Ln: 10, Col: 5): Entering if
+(Ln: 10, Col: 5): Leaving if (Error)
+(Ln: 10, Col: 5): Entering while
+(Ln: 10, Col: 5): Leaving while (Error)
+(Ln: 10, Col: 5): Entering class
+(Ln: 10, Col: 5): Leaving class (Error)
+(Ln: 10, Col: 5): Entering module
+(Ln: 10, Col: 5): Leaving module (Error)
+(Ln: 10, Col: 11): Leaving expr (Ok)
+(Ln: 10, Col: 12): Entering CompStmt
+(Ln: 10, Col: 12): Entering Stmt
+(Ln: 10, Col: 12): Entering expr
+(Ln: 10, Col: 13): Entering if
+(Ln: 10, Col: 13): Leaving if (Error)
+(Ln: 10, Col: 13): Entering while
+(Ln: 10, Col: 13): Leaving while (Error)
+(Ln: 10, Col: 13): Entering class
+(Ln: 10, Col: 13): Leaving class (Error)
+(Ln: 10, Col: 13): Entering module
+(Ln: 10, Col: 13): Leaving module (Error)
+(Ln: 10, Col: 15): Leaving expr (Ok)
+(Ln: 10, Col: 15): Leaving Stmt (Ok)
+(Ln: 10, Col: 15): Entering if end
+(Ln: 10, Col: 18): Leaving if end (Ok)
+(Ln: 10, Col: 15): Leaving CompStmt (Ok)
+(Ln: 10, Col: 15): Entering elsif
+(Ln: 10, Col: 15): Leaving elsif (Error)
+(Ln: 10, Col: 18): Leaving if (Ok)
+(Ln: 10, Col: 24): Leaving expr (Ok)
+(Ln: 10, Col: 24): Leaving Stmt (Ok)
+(Ln: 12, Col: 1): Entering Stmt
+(Ln: 12, Col: 1): Entering expr
+(Ln: 12, Col: 1): Entering if
+(Ln: 12, Col: 4): Entering expr
+(Ln: 12, Col: 5): Entering if
+(Ln: 12, Col: 8): Entering expr
+(Ln: 12, Col: 8): Entering if
+(Ln: 12, Col: 8): Leaving if (Error)
+(Ln: 12, Col: 8): Entering while
+(Ln: 12, Col: 8): Leaving while (Error)
+(Ln: 12, Col: 8): Entering class
+(Ln: 12, Col: 8): Leaving class (Error)
+(Ln: 12, Col: 8): Entering module
+(Ln: 12, Col: 8): Leaving module (Error)
+(Ln: 12, Col: 15): Leaving expr (Ok)
+(Ln: 12, Col: 19): Entering CompStmt
+(Ln: 12, Col: 19): Entering Stmt
+(Ln: 12, Col: 19): Entering expr
+(Ln: 12, Col: 20): Entering if
+(Ln: 12, Col: 20): Leaving if (Error)
+(Ln: 12, Col: 20): Entering while
+(Ln: 12, Col: 20): Leaving while (Error)
+(Ln: 12, Col: 20): Entering class
+(Ln: 12, Col: 20): Leaving class (Error)
+(Ln: 12, Col: 20): Entering module
+(Ln: 12, Col: 20): Leaving module (Error)
+(Ln: 12, Col: 22): Leaving expr (Ok)
+(Ln: 12, Col: 22): Leaving Stmt (Ok)
+(Ln: 12, Col: 22): Entering if end
+(Ln: 12, Col: 25): Leaving if end (Ok)
+(Ln: 12, Col: 22): Leaving CompStmt (Ok)
+(Ln: 12, Col: 22): Entering elsif
+(Ln: 12, Col: 22): Leaving elsif (Error)
+(Ln: 12, Col: 25): Leaving if (Ok)
+(Ln: 12, Col: 36): Leaving expr (Ok)
+(Ln: 12, Col: 37): Entering CompStmt
+(Ln: 12, Col: 37): Entering Stmt
+(Ln: 12, Col: 37): Entering expr
+(Ln: 12, Col: 40): Leaving expr (Ok)
+(Ln: 12, Col: 40): Leaving Stmt (Ok)
+(Ln: 13, Col: 1): Entering if end
+(Ln: 13, Col: 4): Leaving if end (Ok)
+(Ln: 13, Col: 1): Leaving CompStmt (Ok)
+(Ln: 13, Col: 1): Entering elsif
+(Ln: 13, Col: 1): Leaving elsif (Error)
+(Ln: 13, Col: 4): Leaving if (Ok)
+(Ln: 13, Col: 4): Leaving expr (Ok)
+(Ln: 13, Col: 4): Leaving Stmt (Ok)
+(Ln: 15, Col: 1): Entering Stmt
+(Ln: 15, Col: 1): Entering expr
+(Ln: 15, Col: 1): Entering if
+(Ln: 15, Col: 4): Entering expr
+(Ln: 15, Col: 4): Entering if
+(Ln: 15, Col: 4): Leaving if (Error)
+(Ln: 15, Col: 4): Entering while
+(Ln: 15, Col: 4): Leaving while (Error)
+(Ln: 15, Col: 4): Entering class
+(Ln: 15, Col: 4): Leaving class (Error)
+(Ln: 15, Col: 4): Entering module
+(Ln: 15, Col: 4): Leaving module (Error)
+(Ln: 15, Col: 11): Leaving expr (Ok)
+(Ln: 16, Col: 1): Entering CompStmt
+(Ln: 16, Col: 1): Entering Stmt
+(Ln: 16, Col: 1): Entering expr
+(Ln: 16, Col: 3): Entering if
+(Ln: 16, Col: 3): Leaving if (Error)
+(Ln: 16, Col: 3): Entering while
+(Ln: 16, Col: 3): Leaving while (Error)
+(Ln: 16, Col: 3): Entering class
+(Ln: 16, Col: 3): Leaving class (Error)
+(Ln: 16, Col: 3): Entering module
+(Ln: 16, Col: 3): Leaving module (Error)
+(Ln: 16, Col: 4): Leaving expr (Ok)
+(Ln: 16, Col: 4): Leaving Stmt (Ok)
+(Ln: 17, Col: 1): Entering if end
+(Ln: 17, Col: 4): Leaving if end (Ok)
+(Ln: 17, Col: 1): Leaving CompStmt (Ok)
+(Ln: 17, Col: 1): Entering elsif
+(Ln: 17, Col: 1): Leaving elsif (Error)
+(Ln: 17, Col: 4): Leaving if (Ok)
+(Ln: 17, Col: 7): Entering if
+(Ln: 17, Col: 7): Leaving if (Error)
+(Ln: 17, Col: 7): Entering while
+(Ln: 17, Col: 7): Leaving while (Error)
+(Ln: 17, Col: 7): Entering class
+(Ln: 17, Col: 7): Leaving class (Error)
+(Ln: 17, Col: 7): Entering module
+(Ln: 17, Col: 7): Leaving module (Error)
+(Ln: 17, Col: 8): Leaving expr (Ok)
+(Ln: 17, Col: 8): Leaving Stmt (Ok)
+(Ln: 17, Col: 8): Leaving CompStmt (Ok)
+FRCompstmt:<null>
+  FRPrimary:If
+    if
+    FRArg:Infix
+      ==
+      FRArg:Infix
+        *
+        i
+        20
+      0
+    FRCompstmt:<null>
+      1
+    elsif
+    FRArg:Infix
+      !=
+      i
+      0
+    FRCompstmt:<null>
+      FRArg:Infix
+        +
+        i
+        FRArg:Infix
+          *
+          10
+          20
+      FRArg:Infix
+        +
+        i
+        1
+      FRPrimary:If
+        if
+        FRArg:Infix
+          ==
+          i
+          1
+        FRCompstmt:<null>
+          i
+    else
+    FRCompstmt:<null>
+      FRArg:Infix
+        +
+        i
+        1
+  FRArg:Infix
+    *
+    FRPrimary:If
+      if
+      FRArg:Infix
+        ==
+        i
+        0
+      FRCompstmt:<null>
+        i
+    10
+  FRPrimary:If
+    if
+    FRArg:Infix
+      +
+      FRArg:Infix
+        *
+        FRPrimary:If
+          if
+          FRArg:Infix
+            ==
+            i
+            0
+          FRCompstmt:<null>
+            i
+        10
+      20
+    FRCompstmt:<null>
+      10
+  FRArg:Infix
+    *
+    FRPrimary:If
+      if
+      FRArg:Infix
+        ==
+        i
+        0
+      FRCompstmt:<null>
+        i
+    i
+(Ln: 1, Col: 1): Entering CompStmt
+(Ln: 1, Col: 1): Entering Stmt
+(Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering if
+(Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering while
+(Ln: 1, Col: 7): Entering expr
+(Ln: 1, Col: 7): Entering if
+(Ln: 1, Col: 7): Leaving if (Error)
+(Ln: 1, Col: 7): Entering while
+(Ln: 1, Col: 7): Leaving while (Error)
+(Ln: 1, Col: 7): Entering class
+(Ln: 1, Col: 7): Leaving class (Error)
+(Ln: 1, Col: 7): Entering module
+(Ln: 1, Col: 7): Leaving module (Error)
+(Ln: 1, Col: 13): Leaving expr (Ok)
+(Ln: 2, Col: 3): Entering CompStmt
+(Ln: 2, Col: 3): Entering Stmt
+(Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering if
+(Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering while
+(Ln: 2, Col: 3): Leaving while (Error)
+(Ln: 2, Col: 3): Entering class
+(Ln: 2, Col: 3): Leaving class (Error)
+(Ln: 2, Col: 3): Entering module
+(Ln: 2, Col: 3): Leaving module (Error)
+(Ln: 2, Col: 4): Leaving expr (Ok)
+(Ln: 2, Col: 4): Leaving Stmt (Ok)
+(Ln: 3, Col: 1): Entering Stmt
+(Ln: 3, Col: 1): Entering expr
+(Ln: 3, Col: 3): Entering if
+(Ln: 3, Col: 6): Entering expr
+(Ln: 3, Col: 6): Entering if
+(Ln: 3, Col: 6): Leaving if (Error)
+(Ln: 3, Col: 6): Entering while
+(Ln: 3, Col: 6): Leaving while (Error)
+(Ln: 3, Col: 6): Entering class
+(Ln: 3, Col: 6): Leaving class (Error)
+(Ln: 3, Col: 6): Entering module
+(Ln: 3, Col: 6): Leaving module (Error)
+(Ln: 3, Col: 12): Leaving expr (Ok)
+(Ln: 4, Col: 1): Entering CompStmt
+(Ln: 4, Col: 1): Entering Stmt
+(Ln: 4, Col: 1): Entering expr
+(Ln: 4, Col: 5): Entering if
+(Ln: 4, Col: 5): Leaving if (Error)
+(Ln: 4, Col: 5): Entering while
+(Ln: 4, Col: 11): Entering expr
+(Ln: 4, Col: 11): Entering if
+(Ln: 4, Col: 11): Leaving if (Error)
+(Ln: 4, Col: 11): Entering while
+(Ln: 4, Col: 11): Leaving while (Error)
+(Ln: 4, Col: 11): Entering class
+(Ln: 4, Col: 11): Leaving class (Error)
+(Ln: 4, Col: 11): Entering module
+(Ln: 4, Col: 11): Leaving module (Error)
+(Ln: 4, Col: 17): Leaving expr (Ok)
+(Ln: 5, Col: 7): Entering CompStmt
+(Ln: 5, Col: 7): Entering Stmt
+(Ln: 5, Col: 7): Entering expr
+(Ln: 5, Col: 7): Entering if
+(Ln: 5, Col: 7): Leaving if (Error)
+(Ln: 5, Col: 7): Entering while
+(Ln: 5, Col: 7): Leaving while (Error)
+(Ln: 5, Col: 7): Entering class
+(Ln: 5, Col: 7): Leaving class (Error)
+(Ln: 5, Col: 7): Entering module
+(Ln: 5, Col: 7): Leaving module (Error)
+(Ln: 5, Col: 12): Leaving expr (Ok)
+(Ln: 5, Col: 12): Leaving Stmt (Ok)
+(Ln: 6, Col: 1): Entering Stmt
+(Ln: 6, Col: 1): Entering expr
+(Ln: 6, Col: 7): Entering if
+(Ln: 6, Col: 7): Leaving if (Error)
+(Ln: 6, Col: 7): Entering while
+(Ln: 6, Col: 7): Leaving while (Error)
+(Ln: 6, Col: 7): Entering class
+(Ln: 6, Col: 7): Leaving class (Error)
+(Ln: 6, Col: 7): Entering module
+(Ln: 6, Col: 7): Leaving module (Error)
+(Ln: 6, Col: 12): Leaving expr (Ok)
+(Ln: 6, Col: 12): Leaving Stmt (Ok)
+(Ln: 7, Col: 5): Leaving CompStmt (Ok)
+(Ln: 7, Col: 8): Leaving while (Ok)
+(Ln: 7, Col: 8): Leaving expr (Ok)
+(Ln: 7, Col: 8): Leaving Stmt (Ok)
+(Ln: 8, Col: 3): Entering if end
+(Ln: 8, Col: 6): Leaving if end (Ok)
+(Ln: 8, Col: 3): Leaving CompStmt (Ok)
+(Ln: 8, Col: 3): Entering elsif
+(Ln: 8, Col: 3): Leaving elsif (Error)
+(Ln: 8, Col: 6): Leaving if (Ok)
+(Ln: 8, Col: 6): Leaving expr (Ok)
+(Ln: 8, Col: 6): Leaving Stmt (Ok)
+(Ln: 9, Col: 1): Leaving CompStmt (Ok)
+(Ln: 9, Col: 4): Leaving while (Ok)
+(Ln: 9, Col: 4): Leaving expr (Ok)
+(Ln: 9, Col: 4): Leaving Stmt (Ok)
+(Ln: 11, Col: 1): Entering Stmt
+(Ln: 11, Col: 1): Entering expr
+(Ln: 11, Col: 2): Entering if
+(Ln: 11, Col: 2): Leaving if (Error)
+(Ln: 11, Col: 2): Entering while
+(Ln: 11, Col: 8): Entering expr
+(Ln: 11, Col: 8): Entering if
+(Ln: 11, Col: 8): Leaving if (Error)
+(Ln: 11, Col: 8): Entering while
+(Ln: 11, Col: 8): Leaving while (Error)
+(Ln: 11, Col: 8): Entering class
+(Ln: 11, Col: 8): Leaving class (Error)
+(Ln: 11, Col: 8): Entering module
+(Ln: 11, Col: 8): Leaving module (Error)
+(Ln: 11, Col: 15): Leaving expr (Ok)
+(Ln: 11, Col: 18): Entering CompStmt
+(Ln: 11, Col: 18): Entering Stmt
+(Ln: 11, Col: 18): Entering expr
+(Ln: 11, Col: 18): Entering if
+(Ln: 11, Col: 18): Leaving if (Error)
+(Ln: 11, Col: 18): Entering while
+(Ln: 11, Col: 18): Leaving while (Error)
+(Ln: 11, Col: 18): Entering class
+(Ln: 11, Col: 18): Leaving class (Error)
+(Ln: 11, Col: 18): Entering module
+(Ln: 11, Col: 18): Leaving module (Error)
+(Ln: 11, Col: 20): Leaving expr (Ok)
+(Ln: 11, Col: 20): Leaving Stmt (Ok)
+(Ln: 11, Col: 20): Leaving CompStmt (Ok)
+(Ln: 11, Col: 23): Leaving while (Ok)
+(Ln: 11, Col: 29): Leaving expr (Ok)
+(Ln: 11, Col: 29): Leaving Stmt (Ok)
+(Ln: 11, Col: 29): Leaving CompStmt (Ok)
+FRCompstmt:<null>
+  FRPrimary:While
+    while
+    FRArg:Infix
+      !=
+      i
+      0
+    FRCompstmt:<null>
+      i
+      FRPrimary:If
+        if
+        FRArg:Infix
+          ==
+          i
+          0
+        FRCompstmt:<null>
+          FRPrimary:While
+            while
+            FRArg:Infix
+              ==
+              i
+              0
+            FRCompstmt:<null>
+              FRArg:Infix
+                +
+                i
+                2
+              FRArg:Infix
+                -
+                i
+                2
+  FRArg:Infix
+    *
+    FRPrimary:While
+      while
+      FRArg:Infix
+        ==
+        i
+        0
+      FRCompstmt:<null>
+        i
+    10
+(Ln: 1, Col: 1): Entering CompStmt
+(Ln: 1, Col: 1): Entering Stmt
+(Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering if
+(Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering while
+(Ln: 1, Col: 1): Leaving while (Error)
+(Ln: 1, Col: 1): Entering class
+(Ln: 1, Col: 7): Entering Identifier
+(Ln: 1, Col: 8): Leaving Identifier (Ok)
+(Ln: 1, Col: 11): Entering Identifier
+(Ln: 1, Col: 16): Leaving Identifier (Ok)
+(Ln: 2, Col: 3): Entering CompStmt
+(Ln: 2, Col: 3): Entering Stmt
+(Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering if
+(Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering while
+(Ln: 2, Col: 9): Entering expr
+(Ln: 2, Col: 9): Entering if
+(Ln: 2, Col: 9): Leaving if (Error)
+(Ln: 2, Col: 9): Entering while
+(Ln: 2, Col: 9): Leaving while (Error)
+(Ln: 2, Col: 9): Entering class
+(Ln: 2, Col: 9): Leaving class (Error)
+(Ln: 2, Col: 9): Entering module
+(Ln: 2, Col: 9): Leaving module (Error)
+(Ln: 2, Col: 15): Leaving expr (Ok)
+(Ln: 3, Col: 5): Entering CompStmt
+(Ln: 3, Col: 5): Entering Stmt
+(Ln: 3, Col: 5): Entering expr
+(Ln: 3, Col: 5): Entering if
+(Ln: 3, Col: 5): Leaving if (Error)
+(Ln: 3, Col: 5): Entering while
+(Ln: 3, Col: 5): Leaving while (Error)
+(Ln: 3, Col: 5): Entering class
+(Ln: 3, Col: 5): Leaving class (Error)
+(Ln: 3, Col: 5): Entering module
+(Ln: 3, Col: 5): Leaving module (Error)
+(Ln: 3, Col: 10): Leaving expr (Ok)
+(Ln: 3, Col: 10): Leaving Stmt (Ok)
+(Ln: 4, Col: 3): Leaving CompStmt (Ok)
+(Ln: 4, Col: 6): Leaving while (Ok)
+(Ln: 4, Col: 6): Leaving expr (Ok)
+(Ln: 4, Col: 6): Leaving Stmt (Ok)
+(Ln: 5, Col: 1): Entering Stmt
+(Ln: 5, Col: 1): Entering expr
+(Ln: 5, Col: 3): Entering if
+(Ln: 5, Col: 6): Entering expr
+(Ln: 5, Col: 6): Entering if
+(Ln: 5, Col: 6): Leaving if (Error)
+(Ln: 5, Col: 6): Entering while
+(Ln: 5, Col: 6): Leaving while (Error)
+(Ln: 5, Col: 6): Entering class
+(Ln: 5, Col: 6): Leaving class (Error)
+(Ln: 5, Col: 6): Entering module
+(Ln: 5, Col: 6): Leaving module (Error)
+(Ln: 5, Col: 12): Leaving expr (Ok)
+(Ln: 6, Col: 1): Entering CompStmt
+(Ln: 6, Col: 1): Entering Stmt
+(Ln: 6, Col: 1): Entering expr
+(Ln: 6, Col: 5): Entering if
+(Ln: 6, Col: 5): Leaving if (Error)
+(Ln: 6, Col: 5): Entering while
+(Ln: 6, Col: 5): Leaving while (Error)
+(Ln: 6, Col: 5): Entering class
+(Ln: 6, Col: 5): Leaving class (Error)
+(Ln: 6, Col: 5): Entering module
+(Ln: 6, Col: 5): Leaving module (Error)
+(Ln: 6, Col: 10): Leaving expr (Ok)
+(Ln: 6, Col: 10): Leaving Stmt (Ok)
+(Ln: 7, Col: 3): Entering if end
+(Ln: 7, Col: 6): Leaving if end (Ok)
+(Ln: 7, Col: 3): Leaving CompStmt (Ok)
+(Ln: 7, Col: 3): Entering elsif
+(Ln: 7, Col: 3): Leaving elsif (Error)
+(Ln: 7, Col: 6): Leaving if (Ok)
+(Ln: 7, Col: 6): Leaving expr (Ok)
+(Ln: 7, Col: 6): Leaving Stmt (Ok)
+(Ln: 8, Col: 1): Leaving CompStmt (Ok)
+(Ln: 8, Col: 4): Leaving class (Ok)
+(Ln: 8, Col: 4): Leaving expr (Ok)
+(Ln: 8, Col: 4): Leaving Stmt (Ok)
+(Ln: 8, Col: 4): Leaving CompStmt (Ok)
+FRCompstmt:<null>
+  FRPrimary:Class
+    class
+    A
+    superclass
+    Class
+    FRCompstmt:<null>
+      FRPrimary:While
+        while
+        FRArg:Infix
+          !=
+          i
+          0
+        FRCompstmt:<null>
+          FRArg:Infix
+            -
+            i
+            1
+      FRPrimary:If
+        if
+        FRArg:Infix
+          ==
+          i
+          0
+        FRCompstmt:<null>
+          FRArg:Infix
+            +
+            i
+            1
+(Ln: 1, Col: 1): Entering CompStmt
+(Ln: 1, Col: 1): Entering Stmt
+(Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering if
+(Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering while
+(Ln: 1, Col: 1): Leaving while (Error)
+(Ln: 1, Col: 1): Entering class
+(Ln: 1, Col: 1): Leaving class (Error)
+(Ln: 1, Col: 1): Entering module
+(Ln: 1, Col: 8): Entering Identifier
+(Ln: 1, Col: 9): Leaving Identifier (Ok)
+(Ln: 2, Col: 3): Entering CompStmt
+(Ln: 2, Col: 3): Entering Stmt
+(Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering if
+(Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering while
+(Ln: 2, Col: 3): Leaving while (Error)
+(Ln: 2, Col: 3): Entering class
+(Ln: 2, Col: 3): Leaving class (Error)
+(Ln: 2, Col: 3): Entering module
+(Ln: 2, Col: 3): Leaving module (Error)
+(Ln: 2, Col: 7): Leaving expr (Ok)
+(Ln: 2, Col: 7): Leaving Stmt (Ok)
+(Ln: 2, Col: 7): Leaving CompStmt (Error)
+(Ln: 1, Col: 1): Leaving module (Error)
+(Ln: 1, Col: 1): Leaving expr (Error)
+(Ln: 1, Col: 1): Leaving Stmt (Error)
+(Ln: 1, Col: 1): Leaving CompStmt (Error)
+Failure: Error in Ln: 1 Col: 1
+module A
+^
+Expecting: floating-point number, integer number (64-bit, signed), ' ', '"',
+'(', 'class', 'if' or 'while'
+Other error messages:
+  Is a key word!
+
+The parser backtracked after:
+  Error in Ln: 2 Col: 7
+    def k
+        ^
+  Expecting: infix operator, newline, ' ' or ';'
+  Other error messages:
+    not end
