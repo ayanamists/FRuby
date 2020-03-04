@@ -152,7 +152,7 @@
                 FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Class, 
                     Terminal(FRKeyWord("class"))::a::Terminal(FRKeyWord("superclass"))::t::[c;])
 
-        let FRFormEquPrimary x = 
+        let FRFormAssignPrimary x = 
             match x with
             |(a, b) ->
                 FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Equ, Terminal(FRKeyWord("="))::a::[b;])

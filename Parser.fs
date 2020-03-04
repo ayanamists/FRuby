@@ -151,7 +151,7 @@
                     stream.BacktrackTo(state)
                     reply
                 else
-                    Reply(Error, messageError "not end")
+                    Reply(Error, messageError "SyntaxError: Not Complete Block")
             
         let pFRCompStmt endWith = 
             pFRStmt .>>. (manyTill (pFRTerms >>. pFRStmt) ( opt (pFRWhite) >>? (backTraceToBegin endWith))) 
@@ -234,9 +234,9 @@
         pFRAddInfix "%" 14 Associativity.Left
         
         /// Parse 'lhs = arg'
-        let pFRArgPrimary = 
-            (pipe5 pFRLhs pFRWhite (pstring "=") pFRWhite pFRArg 
-                (fun a b c d e -> (a, e)) ) |>> FRFormEquPrimary
+        let pFRAssignPrimary = 
+           attempt (pipe5 pFRLhs pFRWhite (pstring "=") pFRWhite pFRArg 
+                (fun a b c d e -> (a, e)) ) |>> FRFormAssignPrimary <!> "Assign"
             
         do pFRArgRef := pFRArgRaw.ExpressionParser
 
@@ -246,7 +246,7 @@
 
     // Parse Primary
         let pFRParenPrimary = pstring "(" >>. pFRPrimary .>> pstring ")"
-        do pFRPrimaryRef := pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRArgPrimary
+        do pFRPrimaryRef := pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRAssignPrimary
             <|> pFRIfPrimary <|> pFRWhilePrimary <|> pFRClassPrimary <|> pFRModulePrimary <|> pFRVarNameNode
 
     // Parse all

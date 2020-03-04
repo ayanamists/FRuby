@@ -1,0 +1,48 @@
+(Ln: 1, Col: 1): Entering CompStmt
+(Ln: 1, Col: 1): Entering Stmt
+(Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering Assign
+(Ln: 1, Col: 7): Leaving Assign (Ok)
+(Ln: 1, Col: 7): Leaving expr (Ok)
+(Ln: 1, Col: 7): Leaving Stmt (Ok)
+(Ln: 2, Col: 1): Entering Stmt
+(Ln: 2, Col: 1): Entering expr
+(Ln: 2, Col: 6): Entering Assign
+(Ln: 2, Col: 16): Leaving Assign (Ok)
+(Ln: 2, Col: 16): Leaving expr (Ok)
+(Ln: 2, Col: 16): Leaving Stmt (Ok)
+(Ln: 3, Col: 1): Entering Stmt
+(Ln: 3, Col: 1): Entering expr
+(Ln: 3, Col: 13): Entering Assign
+(Ln: 3, Col: 17): Entering Assign
+(Ln: 3, Col: 22): Leaving Assign (Ok)
+(Ln: 3, Col: 22): Leaving Assign (Ok)
+(Ln: 3, Col: 22): Leaving expr (Ok)
+(Ln: 3, Col: 22): Leaving Stmt (Ok)
+(Ln: 5, Col: 1): Entering Stmt
+(Ln: 5, Col: 1): Entering expr
+(Ln: 5, Col: 5): Entering Assign
+(Ln: 5, Col: 15): Entering Assign
+(Ln: 5, Col: 15): Leaving Assign (Error)
+(Ln: 5, Col: 15): Entering if
+(Ln: 5, Col: 15): Leaving if (Error)
+(Ln: 5, Col: 15): Entering while
+(Ln: 5, Col: 15): Leaving while (Error)
+(Ln: 5, Col: 15): Entering class
+(Ln: 5, Col: 15): Leaving class (Error)
+(Ln: 5, Col: 15): Entering module
+(Ln: 5, Col: 15): Leaving module (Error)
+(Ln: 5, Col: 26): Leaving Assign (Ok)
+(Ln: 5, Col: 26): Leaving expr (Ok)
+(Ln: 5, Col: 26): Leaving Stmt (Ok)
+(Ln: 7, Col: 1): Entering Stmt
+(Ln: 7, Col: 1): Entering expr
+(Ln: 7, Col: 3): Leaving expr (Ok)
+(Ln: 7, Col: 3): Leaving Stmt (Ok)
+(Ln: 7, Col: 3): Leaving CompStmt (Error)
+Failure: Error in Ln: 7 Col: 3
+1 = 1000
+  ^
+Expecting: infix operator, newline, ' ' or ';'
+Other error messages:
+  SyntaxError: Not Complete Block

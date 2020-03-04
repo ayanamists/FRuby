@@ -32,10 +32,11 @@ let runRealTest x =
 
 [<EntryPoint>]
 let main argv =
-    runRealTest "test_if.rb"
-    runRealTest "test_while.rb"
-    runRealTest "test_class.rb"
-    runRealTest "test_module.rb"
+    // runRealTest "test_if.rb"
+    // runRealTest "test_while.rb"
+    // runRealTest "test_class.rb"
+    // runRealTest "test_module.rb"
     // runRealTest "test_method_invocation.rb"
+    runRealTest "test_assign.rb"
     DumpToLog "./a.log"
     0 // return an integer exit code
