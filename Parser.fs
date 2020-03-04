@@ -59,9 +59,14 @@
             (pipe2 (pchar '@') (pFRIdentifier |>> GetValue1) 
                 (fun a b ->(addCharAndString a b))) |>> FRVarName.Instance
 
+        let pFRVarNormal: Parser<_, unit> = 
+            ((pipe2 (asciiLower <|> pchar '_') 
+                (many (asciiLetter <|> pchar '_' <|> digit)) 
+                (fun a b -> a.ToString() + (ListToString b)))) |>> FRVarName.Normal
+
         let pFRVarName = 
           (pFRVarGlobal |>> FRVarName) <|> (pFRVarInstance |>> FRVarName) <|>
-            (pFRIdentifierRaw |>> FRVarName.Normal |>> FRVarName)
+            (pFRVarNormal |>> FRVarName)
 
     // We handle key words in 'passitive mode',
     // that is, to check if an identifier is a key word,
@@ -128,6 +133,14 @@
 
     // Create Stmt Ref
         let pFRStmt, pFRStmtRef = createParserForwardedToRef<FRAstNode, unit>()
+    // Create Expr Ref
+        let pFRExpr, pFRExprRef = createParserForwardedToRef<FRAstNode, unit>()
+
+    // Create Arg Ref
+        let pFRArg, pFRArgRef = createParserForwardedToRef<FRAstNode, unit>()
+
+    // Create Primary Ref
+        let pFRPrimary, pFRPrimaryRef = createParserForwardedToRef<FRAstNode, unit>()
 
     // Create CompStmt 
         let backTraceToBegin (p: Parser<_,_>) : Parser<_,_> = 
@@ -144,14 +157,9 @@
             pFRStmt .>>. (manyTill (pFRTerms >>. pFRStmt) ( opt (pFRWhite) >>? (backTraceToBegin endWith))) 
                 |>> (fun (a, b) -> a :: b) |>> FRFormCompStmt <!> "CompStmt"
 
-    // Create Expr Ref
-        let pFRExpr, pFRExprRef = createParserForwardedToRef<FRAstNode, unit>()
-
-    // Create Arg Ref
-        let pFRArg, pFRArgRef = createParserForwardedToRef<FRAstNode, unit>()
-
-    // Create Primary Ref
-        let pFRPrimary, pFRPrimaryRef = createParserForwardedToRef<FRAstNode, unit>()
+    // Parse lhs
+        let pFRLhs = 
+            (pFRVarNormal |>> FRVarName) |>> Terminal
 
     // Parse if Primary
         let pFRIfBetween = pFRTerm <|> (pstring "then" |>> ignore) 
@@ -213,7 +221,6 @@
         pFRArgRaw.TermParser <- pFRSpace >>. pFRPrimary .>> pFRSpace
     
         /// Add some Binary Operators
-        pFRAddInfix "=" 10 Associativity.Right
         pFRAddInfix ">=" 11 Associativity.None
         pFRAddInfix ">" 11 Associativity.None
         pFRAddInfix "<=" 11 Associativity.None
@@ -226,6 +233,11 @@
         pFRAddInfix "/" 14 Associativity.Left
         pFRAddInfix "%" 14 Associativity.Left
         
+        /// Parse 'lhs = arg'
+        let pFRArgPrimary = 
+            (pipe5 pFRLhs pFRWhite (pstring "=") pFRWhite pFRArg 
+                (fun a b c d e -> (a, e)) ) |>> FRFormEquPrimary
+            
         do pFRArgRef := pFRArgRaw.ExpressionParser
 
     // Parse Stmt
@@ -233,8 +245,8 @@
         do pFRExprRef := pFRArg <!> "expr"
 
     // Parse Primary
-        let pFRParanPrimary = pstring "(" >>. pFRPrimary .>> pstring ")"
-        do pFRPrimaryRef := pFRParanPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode 
+        let pFRParenPrimary = pstring "(" >>. pFRPrimary .>> pstring ")"
+        do pFRPrimaryRef := pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRArgPrimary
             <|> pFRIfPrimary <|> pFRWhilePrimary <|> pFRClassPrimary <|> pFRModulePrimary <|> pFRVarNameNode
 
     // Parse all

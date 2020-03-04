@@ -10,9 +10,7 @@
             | FRArgs = 10
             | FRCallArgs = 11
             | FRMlhs = 12
-            | FRLhs = 13
             | FRMrhs = 14
-            | FRMrhsItem = 15
             | FRBlockVar = 16
             | FRWhenArgs = 19
             | FRPrimary = 20
@@ -56,6 +54,7 @@
             | Class = 10         // Class block
             | Module = 11        // Module block
             | Def = 12           // Def block
+            | Equ = 13           // lhs '=' Arg
 
         type LiteralSubType = 
             | FRInt = 0
@@ -91,17 +90,17 @@
             with
                 member t.ToString = 
                     match t with
-                    | FRFName(n) -> n.ToString()
-                    | FRString(n) -> n.ToString()
-                    | FRInt(n) -> n.ToString()
-                    | FRIdentifier(n) -> n.ToString()
-                    | FRFloat(n) -> n.ToString()
+                    | FRFName(n) -> "FRFName: "  + n.ToString()
+                    | FRString(n) -> "FRString: " +  n.ToString()
+                    | FRInt(n) -> "FRInt: " +  n.ToString()
+                    | FRIdentifier(n) -> "FRIdentifier: " + n.ToString()
+                    | FRFloat(n) -> "FRFloat: " + n.ToString()
                     | FRVarName(n) -> 
                         match n with 
-                        | Global(g) -> g.ToString()
-                        | Instance(i) -> i.ToString()
-                        | Normal(n) -> n.ToString()
-                    | FRKeyWord(n) -> n.ToString()
+                        | Global(g) -> "FRVarName->Global: " +  g.ToString()
+                        | Instance(i) -> "FRVarName->Instace: " + i.ToString()
+                        | Normal(n) -> "FRVarName->Normal: " +  n.ToString()
+                    | FRKeyWord(n) -> "FRKeyWord: " +  n.ToString()
                     | FRNull -> ""
 
         type FRSubType = obj
@@ -153,6 +152,11 @@
                 FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Class, 
                     Terminal(FRKeyWord("class"))::a::Terminal(FRKeyWord("superclass"))::t::[c;])
 
+        let FRFormEquPrimary x = 
+            match x with
+            |(a, b) ->
+                FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Equ, Terminal(FRKeyWord("="))::a::[b;])
+
         let FRFormModulePrimary x = 
             match x with
             | (a, b) ->
@@ -163,6 +167,9 @@
             match x with
             | (a, b, c) ->
             FRAstNode.NonTerminal(FRType.FRArg, FRArgSubType.Infix, Terminal(FRKeyWord(a))::b::[c;])
+
+        let FRFormArgList x = 
+            FRAstNode.NonTerminal(FRType.FRArglist, null, x)
 
         exception TypeError of string
 

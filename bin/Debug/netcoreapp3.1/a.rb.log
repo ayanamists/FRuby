@@ -244,87 +244,87 @@
 (Ln: 17, Col: 8): Leaving CompStmt (Ok)
 FRCompstmt:<null>
   FRPrimary:If
-    if
+    FRKeyWord: if
     FRArg:Infix
-      ==
+      FRKeyWord: ==
       FRArg:Infix
-        *
-        i
-        20
-      0
+        FRKeyWord: *
+        FRVarName->Normal: i
+        FRInt: 20
+      FRInt: 0
     FRCompstmt:<null>
-      1
-    elsif
+      FRInt: 1
+    FRKeyWord: elsif
     FRArg:Infix
-      !=
-      i
-      0
+      FRKeyWord: !=
+      FRVarName->Normal: i
+      FRInt: 0
     FRCompstmt:<null>
       FRArg:Infix
-        +
-        i
+        FRKeyWord: +
+        FRVarName->Normal: i
         FRArg:Infix
-          *
-          10
-          20
+          FRKeyWord: *
+          FRInt: 10
+          FRInt: 20
       FRArg:Infix
-        +
-        i
-        1
+        FRKeyWord: +
+        FRVarName->Normal: i
+        FRInt: 1
       FRPrimary:If
-        if
+        FRKeyWord: if
         FRArg:Infix
-          ==
-          i
-          1
+          FRKeyWord: ==
+          FRVarName->Normal: i
+          FRInt: 1
         FRCompstmt:<null>
-          i
-    else
+          FRVarName->Normal: i
+    FRKeyWord: else
     FRCompstmt:<null>
       FRArg:Infix
-        +
-        i
-        1
+        FRKeyWord: +
+        FRVarName->Normal: i
+        FRInt: 1
   FRArg:Infix
-    *
+    FRKeyWord: *
     FRPrimary:If
-      if
+      FRKeyWord: if
       FRArg:Infix
-        ==
-        i
-        0
+        FRKeyWord: ==
+        FRVarName->Normal: i
+        FRInt: 0
       FRCompstmt:<null>
-        i
-    10
+        FRVarName->Normal: i
+    FRInt: 10
   FRPrimary:If
-    if
+    FRKeyWord: if
     FRArg:Infix
-      +
+      FRKeyWord: +
       FRArg:Infix
-        *
+        FRKeyWord: *
         FRPrimary:If
-          if
+          FRKeyWord: if
           FRArg:Infix
-            ==
-            i
-            0
+            FRKeyWord: ==
+            FRVarName->Normal: i
+            FRInt: 0
           FRCompstmt:<null>
-            i
-        10
-      20
+            FRVarName->Normal: i
+        FRInt: 10
+      FRInt: 20
     FRCompstmt:<null>
-      10
+      FRInt: 10
   FRArg:Infix
-    *
+    FRKeyWord: *
     FRPrimary:If
-      if
+      FRKeyWord: if
       FRArg:Infix
-        ==
-        i
-        0
+        FRKeyWord: ==
+        FRVarName->Normal: i
+        FRInt: 0
       FRCompstmt:<null>
-        i
-    i
+        FRVarName->Normal: i
+    FRVarName->Normal: i
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -459,46 +459,46 @@ FRCompstmt:<null>
 (Ln: 11, Col: 29): Leaving CompStmt (Ok)
 FRCompstmt:<null>
   FRPrimary:While
-    while
+    FRKeyWord: while
     FRArg:Infix
-      !=
-      i
-      0
+      FRKeyWord: !=
+      FRVarName->Normal: i
+      FRInt: 0
     FRCompstmt:<null>
-      i
+      FRVarName->Normal: i
       FRPrimary:If
-        if
+        FRKeyWord: if
         FRArg:Infix
-          ==
-          i
-          0
+          FRKeyWord: ==
+          FRVarName->Normal: i
+          FRInt: 0
         FRCompstmt:<null>
           FRPrimary:While
-            while
+            FRKeyWord: while
             FRArg:Infix
-              ==
-              i
-              0
+              FRKeyWord: ==
+              FRVarName->Normal: i
+              FRInt: 0
             FRCompstmt:<null>
               FRArg:Infix
-                +
-                i
-                2
+                FRKeyWord: +
+                FRVarName->Normal: i
+                FRInt: 2
               FRArg:Infix
-                -
-                i
-                2
+                FRKeyWord: -
+                FRVarName->Normal: i
+                FRInt: 2
   FRArg:Infix
-    *
+    FRKeyWord: *
     FRPrimary:While
-      while
+      FRKeyWord: while
       FRArg:Infix
-        ==
-        i
-        0
+        FRKeyWord: ==
+        FRVarName->Normal: i
+        FRInt: 0
       FRCompstmt:<null>
-        i
-    10
+        FRVarName->Normal: i
+    FRInt: 10
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -585,33 +585,33 @@ FRCompstmt:<null>
 (Ln: 8, Col: 4): Leaving CompStmt (Ok)
 FRCompstmt:<null>
   FRPrimary:Class
-    class
-    A
-    superclass
-    Class
+    FRKeyWord: class
+    FRIdentifier: A
+    FRKeyWord: superclass
+    FRIdentifier: Class
     FRCompstmt:<null>
       FRPrimary:While
-        while
+        FRKeyWord: while
         FRArg:Infix
-          !=
-          i
-          0
+          FRKeyWord: !=
+          FRVarName->Normal: i
+          FRInt: 0
         FRCompstmt:<null>
           FRArg:Infix
-            -
-            i
-            1
+            FRKeyWord: -
+            FRVarName->Normal: i
+            FRInt: 1
       FRPrimary:If
-        if
+        FRKeyWord: if
         FRArg:Infix
-          ==
-          i
-          0
+          FRKeyWord: ==
+          FRVarName->Normal: i
+          FRInt: 0
         FRCompstmt:<null>
           FRArg:Infix
-            +
-            i
-            1
+            FRKeyWord: +
+            FRVarName->Normal: i
+            FRInt: 1
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
