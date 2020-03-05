@@ -1068,8 +1068,6 @@ FRCompstmt:<null>
 (Ln: 11, Col: 20): Entering ArguItem
 (Ln: 11, Col: 23): Leaving ArguItem (Ok)
 (Ln: 11, Col: 23): Leaving Argus (Ok)
-(Ln: 11, Col: 24): Entering Term
-(Ln: 12, Col: 1): Leaving Term (Ok)
 (Ln: 12, Col: 5): Leaving ArguList (Ok)
 (Ln: 12, Col: 5): Entering CompStmt
 (Ln: 12, Col: 5): Entering Stmt
@@ -1114,8 +1112,6 @@ FRCompstmt:<null>
 (Ln: 16, Col: 12): Entering ArguItem
 (Ln: 16, Col: 17): Leaving ArguItem (Ok)
 (Ln: 16, Col: 17): Leaving Argus (Ok)
-(Ln: 16, Col: 18): Entering Term
-(Ln: 17, Col: 1): Leaving Term (Ok)
 (Ln: 17, Col: 5): Leaving ArguList (Ok)
 (Ln: 17, Col: 5): Entering CompStmt
 (Ln: 17, Col: 5): Entering Stmt
@@ -1164,8 +1160,6 @@ FRCompstmt:<null>
 (Ln: 20, Col: 30): Entering ArguItem
 (Ln: 20, Col: 32): Leaving ArguItem (Ok)
 (Ln: 20, Col: 32): Leaving Argus (Ok)
-(Ln: 20, Col: 33): Entering Term
-(Ln: 21, Col: 1): Leaving Term (Ok)
 (Ln: 21, Col: 3): Leaving ArguList (Ok)
 (Ln: 21, Col: 3): Entering CompStmt
 (Ln: 21, Col: 3): Entering Stmt
@@ -1185,85 +1179,122 @@ FRCompstmt:<null>
 (Ln: 21, Col: 3): Leaving CompStmt (Ok)
 (Ln: 21, Col: 6): Leaving expr (Ok)
 (Ln: 21, Col: 6): Leaving Stmt (Ok)
-(Ln: 22, Col: 1): Leaving CompStmt (Ok)
-(Ln: 22, Col: 4): Leaving class (Ok)
-(Ln: 22, Col: 4): Leaving expr (Ok)
-(Ln: 22, Col: 4): Leaving Stmt (Ok)
-(Ln: 22, Col: 4): Leaving CompStmt (Ok)
-FRCompstmt:<null>
-  FRPrimary:Class
-    FRKeyWord: class
-    FRIdentifier: A
-    FRKeyWord: superclass
-    
-    FRCompstmt:<null>
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: a
-        FRArglist:<null>
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: *
-            FRVarName->Instace: @a
-            FRInt: 10
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: b
-        FRArglist:<null>
-          FRIdentifier: a
-          FRIdentifier: b
-          FRIdentifier: c
-          FRIdentifier: *t
-          FRIdentifier: &d
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: +
-            FRArg:Infix
-              FRKeyWord: +
-              FRVarName->Normal: a
-              FRVarName->Normal: b
-            FRVarName->Normal: c
-          FRVarName->Normal: d
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: c
-        FRArglist:<null>
-          FRIdentifier: fun
-          FRIdentifier: fuck
-          FRIdentifier: *ay
-        FRCompstmt:<null>
-          FRVarName->Normal: ay
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: d
-        FRArglist:<null>
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: a
-            FRInt: 1
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: b
-            FRInt: 2
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: c
-            FRInt: 3
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: e
-        FRArglist:<null>
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: a
-            FRInt: 2
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: c
-            FRInt: 1
-          FRIdentifier: d
-          FRIdentifier: *p
-          FRIdentifier: &b
-        FRCompstmt:<null>
+(Ln: 21, Col: 6): Entering Terms
+(Ln: 21, Col: 6): Entering Term
+(Ln: 22, Col: 1): Leaving Term (Ok)
+(Ln: 22, Col: 1): Entering Term
+(Ln: 23, Col: 1): Leaving Term (Ok)
+(Ln: 23, Col: 1): Entering Term
+(Ln: 23, Col: 1): Leaving Term (Error)
+(Ln: 23, Col: 1): Leaving Terms (Ok)
+(Ln: 23, Col: 3): Entering Stmt
+(Ln: 23, Col: 3): Entering expr
+(Ln: 23, Col: 3): Entering Assign
+(Ln: 23, Col: 3): Leaving Assign (Error)
+(Ln: 23, Col: 3): Entering if
+(Ln: 23, Col: 3): Leaving if (Error)
+(Ln: 23, Col: 3): Entering while
+(Ln: 23, Col: 3): Leaving while (Error)
+(Ln: 23, Col: 3): Entering class
+(Ln: 23, Col: 3): Leaving class (Error)
+(Ln: 23, Col: 3): Entering module
+(Ln: 23, Col: 3): Leaving module (Error)
+(Ln: 23, Col: 7): Entering Identifier
+(Ln: 23, Col: 8): Leaving Identifier (Ok)
+(Ln: 23, Col: 8): Entering ArguList
+(Ln: 23, Col: 9): Entering Argus
+(Ln: 23, Col: 9): Entering ArguItem
+(Ln: 23, Col: 14): Leaving ArguItem (Ok)
+(Ln: 23, Col: 14): Leaving Argus (Ok)
+(Ln: 23, Col: 16): Leaving ArguList (Ok)
+(Ln: 23, Col: 16): Entering CompStmt
+(Ln: 23, Col: 16): Entering Stmt
+(Ln: 23, Col: 16): Entering expr
+(Ln: 23, Col: 16): Entering Assign
+(Ln: 23, Col: 16): Leaving Assign (Error)
+(Ln: 23, Col: 16): Entering if
+(Ln: 23, Col: 16): Leaving if (Error)
+(Ln: 23, Col: 19): Leaving expr (Ok)
+(Ln: 23, Col: 19): Leaving Stmt (Ok)
+(Ln: 23, Col: 19): Leaving CompStmt (Ok)
+(Ln: 23, Col: 22): Leaving expr (Ok)
+(Ln: 23, Col: 22): Leaving Stmt (Ok)
+(Ln: 23, Col: 22): Entering Terms
+(Ln: 23, Col: 22): Entering Term
+(Ln: 24, Col: 1): Leaving Term (Ok)
+(Ln: 24, Col: 1): Entering Term
+(Ln: 24, Col: 1): Leaving Term (Error)
+(Ln: 24, Col: 1): Leaving Terms (Ok)
+(Ln: 24, Col: 3): Entering Stmt
+(Ln: 24, Col: 3): Entering expr
+(Ln: 24, Col: 3): Entering Assign
+(Ln: 24, Col: 3): Leaving Assign (Error)
+(Ln: 24, Col: 3): Entering if
+(Ln: 24, Col: 3): Leaving if (Error)
+(Ln: 24, Col: 3): Entering while
+(Ln: 24, Col: 3): Leaving while (Error)
+(Ln: 24, Col: 3): Entering class
+(Ln: 24, Col: 3): Leaving class (Error)
+(Ln: 24, Col: 3): Entering module
+(Ln: 24, Col: 3): Leaving module (Error)
+(Ln: 24, Col: 7): Entering Identifier
+(Ln: 24, Col: 8): Leaving Identifier (Ok)
+(Ln: 24, Col: 9): Entering ArguList
+(Ln: 24, Col: 9): Entering Argus
+(Ln: 24, Col: 9): Entering ArguItem
+(Ln: 24, Col: 12): Leaving ArguItem (Ok)
+(Ln: 24, Col: 12): Leaving Argus (Ok)
+(Ln: 24, Col: 12): Entering Term
+(Ln: 25, Col: 1): Leaving Term (Ok)
+(Ln: 25, Col: 1): Leaving ArguList (Ok)
+(Ln: 25, Col: 1): Entering CompStmt
+(Ln: 25, Col: 1): Entering Stmt
+(Ln: 25, Col: 1): Entering expr
+(Ln: 25, Col: 1): Entering Assign
+(Ln: 25, Col: 1): Leaving Assign (Error)
+(Ln: 25, Col: 1): Entering if
+(Ln: 25, Col: 1): Leaving if (Error)
+(Ln: 25, Col: 1): Entering while
+(Ln: 25, Col: 1): Leaving while (Error)
+(Ln: 25, Col: 1): Entering class
+(Ln: 25, Col: 1): Leaving class (Error)
+(Ln: 25, Col: 1): Entering module
+(Ln: 25, Col: 1): Leaving module (Error)
+(Ln: 25, Col: 1): Leaving expr (Error)
+(Ln: 25, Col: 1): Leaving Stmt (Error)
+(Ln: 25, Col: 1): Leaving CompStmt (Ok)
+(Ln: 25, Col: 4): Leaving expr (Ok)
+(Ln: 25, Col: 4): Leaving Stmt (Ok)
+(Ln: 25, Col: 4): Entering Terms
+(Ln: 25, Col: 4): Entering Term
+(Ln: 25, Col: 4): Leaving Term (Error)
+(Ln: 25, Col: 4): Leaving Terms (Error)
+(Ln: 25, Col: 4): Leaving CompStmt (Error)
+(Ln: 1, Col: 1): Leaving class (Error)
+(Ln: 1, Col: 1): Entering module
+(Ln: 1, Col: 1): Leaving module (Error)
+(Ln: 1, Col: 1): Leaving expr (Error)
+(Ln: 1, Col: 1): Leaving Stmt (Error)
+(Ln: 1, Col: 1): Leaving CompStmt (Ok)
+Failure: Error in Ln: 1 Col: 1
+class A
+^
+Expecting: end of input, floating-point number, integer number (64-bit, signed)
+, ' ', '"', '(', 'def', 'if', 'module' or 'while'
+Other error messages:
+  Is a key word!
+
+The parser backtracked after:
+  Error in Ln: 1 Col: 7
+  class A
+        ^
+  Expecting: '='
+
+The parser backtracked after:
+  Error in Ln: 25 Col: 4
+  end
+     ^
+  Note: The error occurred at the end of the input stream.
+  Expecting: infix operator, newline, ' ' or ';'
+  Other error messages:
+    SyntaxError: Not Complete Block

@@ -19,4 +19,6 @@ class A
 
   def e(a = 2, c = 1, d, *p, &b)
   end
+
+  def e(a = 1) $1 end
 end

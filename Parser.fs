@@ -33,18 +33,17 @@
             for i in a do 
                 str.Append(i) |> ignore
             str.ToString()
-
-        let pFRIdentifierRaw: Parser<_, unit> = 
-            ((pipe2 (asciiLetter <|> pchar '_') 
+        
+        let pFRIdentifierStartWith x = 
+            ((pipe2 x 
                 (many (asciiLetter <|> pchar '_' <|> digit)) 
                 (fun a b -> a.ToString() + (ListToString b))))
-
+        let pFRIdentifierRaw: Parser<_, unit> = 
+            pFRIdentifierStartWith (asciiLetter <|> pchar '_')
+        
         /// Nor means 'normal' which is not a constant
         let pFRIdentifierNor: Parser<_, unit> = 
-            ((pipe2 (asciiLower <|> pchar '_') 
-                (many (asciiLetter <|> pchar '_' <|> digit)) 
-                (fun a b -> a.ToString() + (ListToString b))))
-
+            pFRIdentifierStartWith (asciiLower <|> pchar '_')
         let pFRIdentifier:Parser<_, unit> = 
             pFRIdentifierRaw |>> FRIdentifier
 
@@ -59,7 +58,7 @@
             a.ToString() + b
 
         let pFRVarGlobal:Parser<_, unit> = 
-            (pipe2 (pchar '$') (pFRIdentifier |>> GetValue1) 
+            (pipe2 (pchar '$') (pFRIdentifierStartWith (asciiLetter <|> digit <|> pchar '_')) 
                 (fun a b ->(addCharAndString a b))) |>> FRVarName.Global
              
         let pFRVarInstance =
@@ -221,7 +220,7 @@
         let pFRArgus = sepBy pFRArguItem (attempt(pFRWhite >>. pstring "," .>> pFRWhite)) <!> "Argus"
         let pFRArguList = 
             (pstring "(" >>. pFRArgus .>> pstring ")" <|>
-                pFRArgus .>> pFRTerm) .>> pFRWhite |>> FRFormArgList <!> "ArguList"
+                (pFRArgus .>> pFRTerm)) .>> pFRWhite |>> FRFormArgList <!> "ArguList"
        
         let pFRMethodDefPrimary = 
             pipe7 (pstring "def") pFRWhite1 pFRIdentifierNode  
