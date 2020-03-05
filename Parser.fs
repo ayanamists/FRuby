@@ -157,21 +157,20 @@
                     Reply(Error, messageError "SyntaxError: Not Complete Block")
             
         let pFRCompStmt endWith = 
-            opt (pFRStmt .>>. (manyTill (pFRTerms >>. pFRSpace >>. pFRStmt) 
+            opt (pFRStmt .>>. (manyTill (pFRTerms >>. pFRWhite >>. pFRStmt) 
                 (opt (pFRWhite) >>? (backTraceToBegin endWith)))) |>> 
                     (fun x -> match x with 
                         | Some(a, b) -> a::b
                         | _ -> []) |>> FRFormCompStmt <!> "CompStmt"
 
     // Parse lhs
-        let pFRLhs = 
-            (pFRVarNormal |>> FRVarName) |>> Terminal
+        let pFRLhs = pFRVarNameNode
 
     // Parse if Primary
         let pFRIfBetween = pFRTerm <|> (pstring "then" |>> ignore) 
         let pFRIfEndKey = attempt(pstring "end") <|> attempt (pstring "else") <|> attempt (pstring "elsif") <!> "if end"
         let pFRIfElement = pipe4 pFRExpr pFRSpace pFRIfBetween (pFRCompStmt pFRIfEndKey) (fun a b c d -> (a, d))
-        let pFRIfBegin = pFRWhite >>. pFRKeyNode "if" >>? pFRWhite1 >>. pFRIfElement
+        let pFRIfBegin = pFRKeyNode "if" >>? pFRWhite1 >>. pFRIfElement
         let pFRElsif = pstring "elsif" >>? pFRWhite1 >>. pFRIfElement <!> "elsif"
         let pFRIfMiddle = many pFRElsif
         let pFRIfEnd = opt (pstring "else" >>? pFRWhite1 >>. pFRCompStmt (pstring "end")) .>> pstring "end"
@@ -221,9 +220,14 @@
         let pFRArguList = 
             (pstring "(" >>. pFRArgus .>> pstring ")" <|>
                 (pFRArgus .>> pFRTerm)) .>> pFRWhite |>> FRFormArgList <!> "ArguList"
+
+        let pFRMethodNameNode = 
+            ((pipe2 (asciiLower <|> pchar '_')
+                (many (asciiLetter <|> pchar '_' <|> pchar '?' <|> pchar '!' <|> digit <|> pchar '=')) 
+                (fun a b -> a.ToString() + (ListToString b)))) |>> FRIdentifier |>> Terminal
        
         let pFRMethodDefPrimary = 
-            pipe7 (pstring "def") pFRWhite1 pFRIdentifierNode  
+            pipe7 (pstring "def") pFRWhite1 pFRMethodNameNode  
                 pFRSpace pFRArguList  (pFRCompStmt (pstring "end")) (pstring "end")
                     (fun a b c d e f g -> (c, e, f)) |>> FRFormMethodDefPrimary
 

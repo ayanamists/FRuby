@@ -54,7 +54,7 @@
             | Class = 10         // Class block
             | Module = 11        // Module block
             | Def = 12           // Def block
-            | Equ = 13           // lhs '=' Arg
+            | Assign = 13           // lhs '=' Arg
 
         type LiteralSubType = 
             | FRInt = 0
@@ -158,7 +158,7 @@
         let FRFormAssignPrimary x = 
             match x with
             |(a, b) ->
-                FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Equ, Terminal(FRKeyWord("="))::a::[b;])
+                FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Assign, Terminal(FRKeyWord("="))::a::[b;])
 
         let FRFormModulePrimary x = 
             match x with

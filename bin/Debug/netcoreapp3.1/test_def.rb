@@ -21,4 +21,12 @@ class A
   end
 
   def e(a = 1) $1 end
+     
+  def a?; i end
+  def a!
+    i
+  end
+  def a= t
+    @a = t
+  end
 end
