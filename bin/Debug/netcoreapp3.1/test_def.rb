@@ -11,4 +11,12 @@ class A
   def c(fun, fuck, *ay)
     ay
   end
+
+  def d(a = 1, 
+    b = 2, c = 3)
+    i
+  end
+
+  def e(a = 2, c = 1, d, *p, &b)
+  end
 end

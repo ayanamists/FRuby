@@ -52,6 +52,10 @@ module AstPrint =
         for i in child do 
             internalPrint i tab
 
+    let internal PrintOther (child:list<FRAstNode>) tab = 
+        for i in child do
+            internalPrint i tab
+
     do PrintNonTerminal <-
         fun typeOut typeIn child tab ->
             RealPrintWithTab tab "%A:%A\n" typeOut typeIn
@@ -60,6 +64,7 @@ module AstPrint =
             | FRType.FRExpr -> PrintFRExpr (typeIn :?> FRExprSubType) child (nextTab tab)
             | FRType.FRArg -> PrintFRArg child (nextTab tab)
             | FRType.FRPrimary -> PrintFRPrimary child (nextTab tab) 
+            | _ -> PrintOther child (nextTab tab)
                 
                 
                 

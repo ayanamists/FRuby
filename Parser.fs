@@ -7,25 +7,26 @@
         open FParsec
         open Ast
 
+       // Debug helper
+        let (<!>) (p: Parser<_,_>) label : Parser<_,_> =
+           fun stream ->
+               RealPrint "%A: Entering %s\n" stream.Position label
+               let reply = p stream
+               RealPrint "%A: Leaving %s (%A)\n" stream.Position label reply.Status
+               reply
+ 
         let pFRWhite = spaces
         let pFRWhite1 = spaces1
         let pFRSpace : Parser<unit,unit> = skipMany (pstring " ")
         let pFRSpace1: Parser<unit,unit>  = skipMany1 (pstring " ")
         let pFRNewLine1: Parser<unit, unit> = skipNewline
-        let pFRTerm:Parser<unit, unit> = pFRNewLine1 <|> (pstring ";" |>> ignore)
-        let pFRTerms:Parser<unit, unit> = many1 pFRTerm |>> ignore
+        let pFRTerm:Parser<unit, unit> = pFRNewLine1 <|> (pstring ";" |>> ignore) <!> "Term"
+        let pFRTerms:Parser<unit, unit> = many1 pFRTerm |>> ignore <!> "Terms"
 
         let pFRStrNode(a): Parser<FRAstNode, unit> = pstring a |>> FRString |>> Terminal
         let pFRKeyNode(a): Parser<FRAstNode, unit> = pstring a |>> FRKeyWord |>> Terminal
     
-    // Debug helper
-        let (<!>) (p: Parser<_,_>) label : Parser<_,_> =
-            fun stream ->
-                RealPrint "%A: Entering %s\n" stream.Position label
-                let reply = p stream
-                RealPrint "%A: Leaving %s (%A)\n" stream.Position label reply.Status
-                reply
-
+    
     // Parse Identifiers
         let ListToString (a:list<char>) =
             let str = Text.StringBuilder()
@@ -36,7 +37,13 @@
         let pFRIdentifierRaw: Parser<_, unit> = 
             ((pipe2 (asciiLetter <|> pchar '_') 
                 (many (asciiLetter <|> pchar '_' <|> digit)) 
-                (fun a b -> a.ToString() + (ListToString b)))) 
+                (fun a b -> a.ToString() + (ListToString b))))
+
+        /// Nor means 'normal' which is not a constant
+        let pFRIdentifierNor: Parser<_, unit> = 
+            ((pipe2 (asciiLower <|> pchar '_') 
+                (many (asciiLetter <|> pchar '_' <|> digit)) 
+                (fun a b -> a.ToString() + (ListToString b))))
 
         let pFRIdentifier:Parser<_, unit> = 
             pFRIdentifierRaw |>> FRIdentifier
@@ -59,10 +66,7 @@
             (pipe2 (pchar '@') (pFRIdentifier |>> GetValue1) 
                 (fun a b ->(addCharAndString a b))) |>> FRVarName.Instance
 
-        let pFRVarNormal: Parser<_, unit> = 
-            ((pipe2 (asciiLower <|> pchar '_') 
-                (many (asciiLetter <|> pchar '_' <|> digit)) 
-                (fun a b -> a.ToString() + (ListToString b)))) |>> FRVarName.Normal
+        let pFRVarNormal: Parser<_, unit> = pFRIdentifierNor |>> FRVarName.Normal
 
         let pFRVarName = 
           (pFRVarGlobal |>> FRVarName) <|> (pFRVarInstance |>> FRVarName) <|>
@@ -73,7 +77,7 @@
     // and fail when it't a key word
         let FRKeyWordSet =
             System.Collections.Generic.HashSet<_>(
-                [|"end"; "else"; "elsif"; "if"; "while" ; "class" ; "module"|]
+                [|"end"; "else"; "elsif"; "if"; "while" ; "class" ; "module"; "def"|]
             )
 
         let resultSatisfies predicate msg (p: Parser<_,_>) : Parser<_,_> =
@@ -154,8 +158,11 @@
                     Reply(Error, messageError "SyntaxError: Not Complete Block")
             
         let pFRCompStmt endWith = 
-            pFRStmt .>>. (manyTill (pFRTerms >>. pFRStmt) ( opt (pFRWhite) >>? (backTraceToBegin endWith))) 
-                |>> (fun (a, b) -> a :: b) |>> FRFormCompStmt <!> "CompStmt"
+            opt (pFRStmt .>>. (manyTill (pFRTerms >>. pFRSpace >>. pFRStmt) 
+                (opt (pFRWhite) >>? (backTraceToBegin endWith)))) |>> 
+                    (fun x -> match x with 
+                        | Some(a, b) -> a::b
+                        | _ -> []) |>> FRFormCompStmt <!> "CompStmt"
 
     // Parse lhs
         let pFRLhs = 
@@ -189,15 +196,39 @@
         let pFRClassInherit = pFRSpace >>. opt ((pstring "<") >>. pFRWhite >>. pFRIdentifierNode)
         let pFRClassPrimary = 
             attempt ((pipe6 pFRClassBegin pFRIdentifierNode 
-                pFRClassInherit pFRWhite1 (pFRCompStmt (pstring "end")) (pstring "end")
-                (fun a b c d e f -> (b, c, e)))|>> FRFormClassPrimary) <!> "class"
+                pFRClassInherit pFRWhite1 (pFRCompStmt (pstring "end")) 
+                    (pstring "end") (fun a b c d e f -> (b, c, e)))|>> FRFormClassPrimary) <!> "class"
 
-    // Parse Method 
+    // Parse Method Def Primary
         let pipe7 p1 p2 p3 p4 p5 p6 p7 f =
             pipe4 p1 p2 p3 (tuple4 p4 p5 p6 p7)
                  (fun x1 x2 x3 (x4, x5, x6, x7) -> f x1 x2 x3 x4 x5 x6 x7)
 
-    // Parse Module Def
+        let pFRNorArgu = pFRIdentifierNor |>> FRIdentifier |>> Terminal
+        let pFRBlockArgu = 
+            pstring "&" .>>. pFRIdentifierRaw |>> 
+                (fun (a,b) -> a + b) |>> FRIdentifier |>> Terminal
+        let pFRRestArgu = 
+            pstring "*" .>>. pFRIdentifierRaw |>> 
+                (fun (a,b) -> a + b) |>> FRIdentifier |>> Terminal
+        let pFRAssignArgu = 
+            pipe5 pFRNorArgu pFRWhite (pstring "=") pFRWhite pFRArg
+                (fun a b c d e -> (c, a, e)) |>> FRFormInfixArg
+ 
+        let pFRArguItem = 
+            attempt(pFRAssignArgu) <|> pFRBlockArgu <|> pFRRestArgu <|> pFRNorArgu <!> "ArguItem"
+
+        let pFRArgus = sepBy pFRArguItem (attempt(pFRWhite >>. pstring "," .>> pFRWhite)) <!> "Argus"
+        let pFRArguList = 
+            (pstring "(" >>. pFRArgus .>> pstring ")" <|>
+                pFRArgus .>> pFRTerm) .>> pFRWhite |>> FRFormArgList <!> "ArguList"
+       
+        let pFRMethodDefPrimary = 
+            pipe7 (pstring "def") pFRWhite1 pFRIdentifierNode  
+                pFRSpace pFRArguList  (pFRCompStmt (pstring "end")) (pstring "end")
+                    (fun a b c d e f g -> (c, e, f)) |>> FRFormMethodDefPrimary
+
+    // Parse Module Def Primary
         let pFRModulePrimary = 
             attempt ((pipe6 (pstring "module") pFRSpace1 pFRIdentifierNode 
                 pFRWhite (pFRCompStmt (pstring "end")) (pstring "end") 
@@ -245,9 +276,11 @@
         do pFRExprRef := pFRArg <!> "expr"
 
     // Parse Primary
-        let pFRParenPrimary = pstring "(" >>. pFRPrimary .>> pstring ")"
-        do pFRPrimaryRef := pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRAssignPrimary
-            <|> pFRIfPrimary <|> pFRWhilePrimary <|> pFRClassPrimary <|> pFRModulePrimary <|> pFRVarNameNode
+        let pFRParenPrimary = pstring "(" >>. (pFRCompStmt (pstring ")"))  .>> pstring ")"
+        do pFRPrimaryRef := 
+            pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRAssignPrimary <|> 
+            pFRIfPrimary <|> pFRVarNameNode <|> pFRWhilePrimary <|> pFRClassPrimary <|> 
+            pFRModulePrimary <|> pFRMethodDefPrimary
 
     // Parse all
         let pFR:Parser<FRAstNode, unit> = (pFRCompStmt eof) .>> eof

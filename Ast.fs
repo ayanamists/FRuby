@@ -109,7 +109,10 @@
             | NonTerminal of FRType * FRSubType * list<FRAstNode>
             | Terminal of FRTerminal
 
-        let FRFormTerminalAst(x:'a):FRAstNode = Terminal x
+        let internal Key k = 
+            Terminal(FRKeyWord(k))
+
+        let FRFormTerminalAst(x):FRAstNode = Terminal x
 
         let FRFormCompStmt(x) = 
             FRAstNode.NonTerminal(FRType.FRCompstmt, null , x)
@@ -170,6 +173,10 @@
 
         let FRFormArgList x = 
             FRAstNode.NonTerminal(FRType.FRArglist, null, x)
+
+        let FRFormMethodDefPrimary(a, b, c) = 
+            let child = Terminal(FRKeyWord("def"))::a::b::[c;]
+            FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Def, child)
 
         exception TypeError of string
 
