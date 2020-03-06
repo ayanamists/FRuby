@@ -1,20 +1,33 @@
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
 (Ln: 1, Col: 1): Leaving Assign (Error)
 (Ln: 1, Col: 1): Entering if
 (Ln: 1, Col: 4): Entering expr
+(Ln: 1, Col: 4): Entering method invocation
 (Ln: 1, Col: 4): Entering Assign
 (Ln: 1, Col: 4): Leaving Assign (Error)
 (Ln: 1, Col: 4): Entering if
 (Ln: 1, Col: 4): Leaving if (Error)
+(Ln: 1, Col: 4): Entering method invocation cell
+(Ln: 1, Col: 5): Entering ArgList
+(Ln: 1, Col: 5): Leaving ArgList (Error)
+(Ln: 1, Col: 4): Leaving method invocation cell (Error)
+(Ln: 1, Col: 5): Leaving method invocation (Ok)
+(Ln: 1, Col: 8): Entering method invocation
+(Ln: 1, Col: 10): Leaving method invocation (Ok)
+(Ln: 1, Col: 14): Entering method invocation
+(Ln: 1, Col: 15): Leaving method invocation (Ok)
 (Ln: 1, Col: 15): Leaving expr (Ok)
 (Ln: 1, Col: 15): Entering Term
 (Ln: 2, Col: 1): Leaving Term (Ok)
 (Ln: 2, Col: 1): Entering CompStmt
 (Ln: 2, Col: 1): Entering Stmt
 (Ln: 2, Col: 1): Entering expr
+(Ln: 2, Col: 3): Entering method invocation
+(Ln: 2, Col: 4): Leaving method invocation (Ok)
 (Ln: 2, Col: 4): Leaving expr (Ok)
 (Ln: 2, Col: 4): Leaving Stmt (Ok)
 (Ln: 3, Col: 3): Entering if end
@@ -22,20 +35,38 @@
 (Ln: 3, Col: 3): Leaving CompStmt (Ok)
 (Ln: 3, Col: 3): Entering elsif
 (Ln: 3, Col: 9): Entering expr
+(Ln: 3, Col: 9): Entering method invocation
 (Ln: 3, Col: 9): Entering Assign
 (Ln: 3, Col: 9): Leaving Assign (Error)
 (Ln: 3, Col: 9): Entering if
 (Ln: 3, Col: 9): Leaving if (Error)
+(Ln: 3, Col: 9): Entering method invocation cell
+(Ln: 3, Col: 10): Entering ArgList
+(Ln: 3, Col: 10): Leaving ArgList (Error)
+(Ln: 3, Col: 9): Leaving method invocation cell (Error)
+(Ln: 3, Col: 10): Leaving method invocation (Ok)
+(Ln: 3, Col: 14): Entering method invocation
+(Ln: 3, Col: 15): Leaving method invocation (Ok)
 (Ln: 3, Col: 15): Leaving expr (Ok)
 (Ln: 3, Col: 15): Entering Term
 (Ln: 4, Col: 1): Leaving Term (Ok)
 (Ln: 4, Col: 1): Entering CompStmt
 (Ln: 4, Col: 1): Entering Stmt
 (Ln: 4, Col: 1): Entering expr
+(Ln: 4, Col: 3): Entering method invocation
 (Ln: 4, Col: 3): Entering Assign
 (Ln: 4, Col: 3): Leaving Assign (Error)
 (Ln: 4, Col: 3): Entering if
 (Ln: 4, Col: 3): Leaving if (Error)
+(Ln: 4, Col: 3): Entering method invocation cell
+(Ln: 4, Col: 4): Entering ArgList
+(Ln: 4, Col: 4): Leaving ArgList (Error)
+(Ln: 4, Col: 3): Leaving method invocation cell (Error)
+(Ln: 4, Col: 4): Leaving method invocation (Ok)
+(Ln: 4, Col: 7): Entering method invocation
+(Ln: 4, Col: 9): Leaving method invocation (Ok)
+(Ln: 4, Col: 12): Entering method invocation
+(Ln: 4, Col: 14): Leaving method invocation (Ok)
 (Ln: 4, Col: 14): Leaving expr (Ok)
 (Ln: 4, Col: 14): Leaving Stmt (Ok)
 (Ln: 5, Col: 3): Entering if end
@@ -48,10 +79,18 @@
 (Ln: 5, Col: 1): Leaving Terms (Ok)
 (Ln: 5, Col: 3): Entering Stmt
 (Ln: 5, Col: 3): Entering expr
+(Ln: 5, Col: 3): Entering method invocation
 (Ln: 5, Col: 3): Entering Assign
 (Ln: 5, Col: 3): Leaving Assign (Error)
 (Ln: 5, Col: 3): Entering if
 (Ln: 5, Col: 3): Leaving if (Error)
+(Ln: 5, Col: 3): Entering method invocation cell
+(Ln: 5, Col: 4): Entering ArgList
+(Ln: 5, Col: 4): Leaving ArgList (Error)
+(Ln: 5, Col: 3): Leaving method invocation cell (Error)
+(Ln: 5, Col: 4): Leaving method invocation (Ok)
+(Ln: 5, Col: 7): Entering method invocation
+(Ln: 5, Col: 8): Leaving method invocation (Ok)
 (Ln: 5, Col: 8): Leaving expr (Ok)
 (Ln: 5, Col: 8): Leaving Stmt (Ok)
 (Ln: 6, Col: 3): Entering if end
@@ -64,34 +103,53 @@
 (Ln: 6, Col: 1): Leaving Terms (Ok)
 (Ln: 6, Col: 3): Entering Stmt
 (Ln: 6, Col: 3): Entering expr
+(Ln: 6, Col: 3): Entering method invocation
 (Ln: 6, Col: 3): Entering Assign
 (Ln: 6, Col: 3): Leaving Assign (Error)
 (Ln: 6, Col: 3): Entering if
 (Ln: 6, Col: 6): Entering expr
+(Ln: 6, Col: 6): Entering method invocation
 (Ln: 6, Col: 6): Entering Assign
+(Ln: 6, Col: 9): Entering method invocation
 (Ln: 6, Col: 9): Entering Assign
 (Ln: 6, Col: 9): Leaving Assign (Error)
 (Ln: 6, Col: 9): Entering if
 (Ln: 6, Col: 9): Leaving if (Error)
+(Ln: 6, Col: 9): Entering method invocation cell
+(Ln: 6, Col: 9): Leaving method invocation cell (Error)
 (Ln: 6, Col: 9): Entering while
 (Ln: 6, Col: 9): Leaving while (Error)
 (Ln: 6, Col: 9): Entering class
 (Ln: 6, Col: 9): Leaving class (Error)
 (Ln: 6, Col: 9): Entering module
 (Ln: 6, Col: 9): Leaving module (Error)
+(Ln: 6, Col: 9): Leaving method invocation (Error)
 (Ln: 6, Col: 6): Leaving Assign (Error)
 (Ln: 6, Col: 6): Entering if
 (Ln: 6, Col: 6): Leaving if (Error)
+(Ln: 6, Col: 6): Entering method invocation cell
+(Ln: 6, Col: 7): Entering ArgList
+(Ln: 6, Col: 7): Leaving ArgList (Error)
+(Ln: 6, Col: 6): Leaving method invocation cell (Error)
+(Ln: 6, Col: 7): Leaving method invocation (Ok)
+(Ln: 6, Col: 11): Entering method invocation
+(Ln: 6, Col: 12): Leaving method invocation (Ok)
 (Ln: 6, Col: 12): Leaving expr (Ok)
 (Ln: 6, Col: 12): Entering Term
 (Ln: 6, Col: 13): Leaving Term (Ok)
 (Ln: 6, Col: 13): Entering CompStmt
 (Ln: 6, Col: 13): Entering Stmt
 (Ln: 6, Col: 13): Entering expr
+(Ln: 6, Col: 14): Entering method invocation
 (Ln: 6, Col: 14): Entering Assign
 (Ln: 6, Col: 14): Leaving Assign (Error)
 (Ln: 6, Col: 14): Entering if
 (Ln: 6, Col: 14): Leaving if (Error)
+(Ln: 6, Col: 14): Entering method invocation cell
+(Ln: 6, Col: 15): Entering ArgList
+(Ln: 6, Col: 15): Leaving ArgList (Error)
+(Ln: 6, Col: 14): Leaving method invocation cell (Error)
+(Ln: 6, Col: 15): Leaving method invocation (Ok)
 (Ln: 6, Col: 16): Leaving expr (Ok)
 (Ln: 6, Col: 16): Leaving Stmt (Ok)
 (Ln: 6, Col: 16): Entering if end
@@ -100,6 +158,7 @@
 (Ln: 6, Col: 16): Entering elsif
 (Ln: 6, Col: 16): Leaving elsif (Error)
 (Ln: 6, Col: 19): Leaving if (Ok)
+(Ln: 6, Col: 19): Leaving method invocation (Ok)
 (Ln: 6, Col: 19): Leaving expr (Ok)
 (Ln: 6, Col: 19): Leaving Stmt (Ok)
 (Ln: 7, Col: 1): Entering if end
@@ -111,14 +170,23 @@
 (Ln: 8, Col: 3): Entering CompStmt
 (Ln: 8, Col: 3): Entering Stmt
 (Ln: 8, Col: 3): Entering expr
+(Ln: 8, Col: 3): Entering method invocation
 (Ln: 8, Col: 3): Entering Assign
 (Ln: 8, Col: 3): Leaving Assign (Error)
 (Ln: 8, Col: 3): Entering if
 (Ln: 8, Col: 3): Leaving if (Error)
+(Ln: 8, Col: 3): Entering method invocation cell
+(Ln: 8, Col: 4): Entering ArgList
+(Ln: 8, Col: 4): Leaving ArgList (Error)
+(Ln: 8, Col: 3): Leaving method invocation cell (Error)
+(Ln: 8, Col: 4): Leaving method invocation (Ok)
+(Ln: 8, Col: 7): Entering method invocation
+(Ln: 8, Col: 8): Leaving method invocation (Ok)
 (Ln: 8, Col: 8): Leaving expr (Ok)
 (Ln: 8, Col: 8): Leaving Stmt (Ok)
 (Ln: 9, Col: 1): Leaving CompStmt (Ok)
 (Ln: 9, Col: 4): Leaving if (Ok)
+(Ln: 9, Col: 4): Leaving method invocation (Ok)
 (Ln: 9, Col: 4): Leaving expr (Ok)
 (Ln: 9, Col: 4): Leaving Stmt (Ok)
 (Ln: 9, Col: 4): Entering Terms
@@ -129,37 +197,57 @@
 (Ln: 10, Col: 1): Leaving Terms (Ok)
 (Ln: 10, Col: 1): Entering Stmt
 (Ln: 10, Col: 1): Entering expr
+(Ln: 10, Col: 1): Entering method invocation
 (Ln: 10, Col: 2): Entering CompStmt
 (Ln: 10, Col: 2): Entering Stmt
 (Ln: 10, Col: 2): Entering expr
+(Ln: 10, Col: 2): Entering method invocation
 (Ln: 10, Col: 2): Entering Assign
 (Ln: 10, Col: 2): Leaving Assign (Error)
 (Ln: 10, Col: 2): Entering if
 (Ln: 10, Col: 5): Entering expr
+(Ln: 10, Col: 5): Entering method invocation
 (Ln: 10, Col: 5): Entering Assign
+(Ln: 10, Col: 8): Entering method invocation
 (Ln: 10, Col: 8): Entering Assign
 (Ln: 10, Col: 8): Leaving Assign (Error)
 (Ln: 10, Col: 8): Entering if
 (Ln: 10, Col: 8): Leaving if (Error)
+(Ln: 10, Col: 8): Entering method invocation cell
+(Ln: 10, Col: 8): Leaving method invocation cell (Error)
 (Ln: 10, Col: 8): Entering while
 (Ln: 10, Col: 8): Leaving while (Error)
 (Ln: 10, Col: 8): Entering class
 (Ln: 10, Col: 8): Leaving class (Error)
 (Ln: 10, Col: 8): Entering module
 (Ln: 10, Col: 8): Leaving module (Error)
+(Ln: 10, Col: 8): Leaving method invocation (Error)
 (Ln: 10, Col: 5): Leaving Assign (Error)
 (Ln: 10, Col: 5): Entering if
 (Ln: 10, Col: 5): Leaving if (Error)
+(Ln: 10, Col: 5): Entering method invocation cell
+(Ln: 10, Col: 6): Entering ArgList
+(Ln: 10, Col: 6): Leaving ArgList (Error)
+(Ln: 10, Col: 5): Leaving method invocation cell (Error)
+(Ln: 10, Col: 6): Leaving method invocation (Ok)
+(Ln: 10, Col: 10): Entering method invocation
+(Ln: 10, Col: 11): Leaving method invocation (Ok)
 (Ln: 10, Col: 11): Leaving expr (Ok)
 (Ln: 10, Col: 11): Entering Term
 (Ln: 10, Col: 12): Leaving Term (Ok)
 (Ln: 10, Col: 12): Entering CompStmt
 (Ln: 10, Col: 12): Entering Stmt
 (Ln: 10, Col: 12): Entering expr
+(Ln: 10, Col: 13): Entering method invocation
 (Ln: 10, Col: 13): Entering Assign
 (Ln: 10, Col: 13): Leaving Assign (Error)
 (Ln: 10, Col: 13): Entering if
 (Ln: 10, Col: 13): Leaving if (Error)
+(Ln: 10, Col: 13): Entering method invocation cell
+(Ln: 10, Col: 14): Entering ArgList
+(Ln: 10, Col: 14): Leaving ArgList (Error)
+(Ln: 10, Col: 13): Leaving method invocation cell (Error)
+(Ln: 10, Col: 14): Leaving method invocation (Ok)
 (Ln: 10, Col: 15): Leaving expr (Ok)
 (Ln: 10, Col: 15): Leaving Stmt (Ok)
 (Ln: 10, Col: 15): Entering if end
@@ -168,9 +256,13 @@
 (Ln: 10, Col: 15): Entering elsif
 (Ln: 10, Col: 15): Leaving elsif (Error)
 (Ln: 10, Col: 18): Leaving if (Ok)
+(Ln: 10, Col: 18): Leaving method invocation (Ok)
 (Ln: 10, Col: 18): Leaving expr (Ok)
 (Ln: 10, Col: 18): Leaving Stmt (Ok)
 (Ln: 10, Col: 18): Leaving CompStmt (Ok)
+(Ln: 10, Col: 19): Leaving method invocation (Ok)
+(Ln: 10, Col: 22): Entering method invocation
+(Ln: 10, Col: 24): Leaving method invocation (Ok)
 (Ln: 10, Col: 24): Leaving expr (Ok)
 (Ln: 10, Col: 24): Leaving Stmt (Ok)
 (Ln: 10, Col: 24): Entering Terms
@@ -183,41 +275,62 @@
 (Ln: 12, Col: 1): Leaving Terms (Ok)
 (Ln: 12, Col: 1): Entering Stmt
 (Ln: 12, Col: 1): Entering expr
+(Ln: 12, Col: 1): Entering method invocation
 (Ln: 12, Col: 1): Entering Assign
 (Ln: 12, Col: 1): Leaving Assign (Error)
 (Ln: 12, Col: 1): Entering if
 (Ln: 12, Col: 4): Entering expr
+(Ln: 12, Col: 4): Entering method invocation
 (Ln: 12, Col: 5): Entering CompStmt
 (Ln: 12, Col: 5): Entering Stmt
 (Ln: 12, Col: 5): Entering expr
+(Ln: 12, Col: 5): Entering method invocation
 (Ln: 12, Col: 5): Entering Assign
 (Ln: 12, Col: 5): Leaving Assign (Error)
 (Ln: 12, Col: 5): Entering if
 (Ln: 12, Col: 8): Entering expr
+(Ln: 12, Col: 8): Entering method invocation
 (Ln: 12, Col: 8): Entering Assign
+(Ln: 12, Col: 11): Entering method invocation
 (Ln: 12, Col: 11): Entering Assign
 (Ln: 12, Col: 11): Leaving Assign (Error)
 (Ln: 12, Col: 11): Entering if
 (Ln: 12, Col: 11): Leaving if (Error)
+(Ln: 12, Col: 11): Entering method invocation cell
+(Ln: 12, Col: 11): Leaving method invocation cell (Error)
 (Ln: 12, Col: 11): Entering while
 (Ln: 12, Col: 11): Leaving while (Error)
 (Ln: 12, Col: 11): Entering class
 (Ln: 12, Col: 11): Leaving class (Error)
 (Ln: 12, Col: 11): Entering module
 (Ln: 12, Col: 11): Leaving module (Error)
+(Ln: 12, Col: 11): Leaving method invocation (Error)
 (Ln: 12, Col: 8): Leaving Assign (Error)
 (Ln: 12, Col: 8): Entering if
 (Ln: 12, Col: 8): Leaving if (Error)
+(Ln: 12, Col: 8): Entering method invocation cell
+(Ln: 12, Col: 9): Entering ArgList
+(Ln: 12, Col: 9): Leaving ArgList (Error)
+(Ln: 12, Col: 8): Leaving method invocation cell (Error)
+(Ln: 12, Col: 9): Leaving method invocation (Ok)
+(Ln: 12, Col: 13): Entering method invocation
+(Ln: 12, Col: 14): Leaving method invocation (Ok)
 (Ln: 12, Col: 15): Leaving expr (Ok)
 (Ln: 12, Col: 15): Entering Term
 (Ln: 12, Col: 15): Leaving Term (Error)
 (Ln: 12, Col: 19): Entering CompStmt
 (Ln: 12, Col: 19): Entering Stmt
 (Ln: 12, Col: 19): Entering expr
+(Ln: 12, Col: 20): Entering method invocation
 (Ln: 12, Col: 20): Entering Assign
 (Ln: 12, Col: 20): Leaving Assign (Error)
 (Ln: 12, Col: 20): Entering if
 (Ln: 12, Col: 20): Leaving if (Error)
+(Ln: 12, Col: 20): Entering method invocation cell
+(Ln: 12, Col: 21): Entering ArgList
+(Ln: 12, Col: 21): Leaving ArgList (Error)
+(Ln: 12, Col: 20): Leaving method invocation cell (Error)
+(Ln: 12, Col: 21): Leaving method invocation (Ok)
 (Ln: 12, Col: 22): Leaving expr (Ok)
 (Ln: 12, Col: 22): Leaving Stmt (Ok)
 (Ln: 12, Col: 22): Entering if end
@@ -226,15 +339,23 @@
 (Ln: 12, Col: 22): Entering elsif
 (Ln: 12, Col: 22): Leaving elsif (Error)
 (Ln: 12, Col: 25): Leaving if (Ok)
+(Ln: 12, Col: 25): Leaving method invocation (Ok)
 (Ln: 12, Col: 25): Leaving expr (Ok)
 (Ln: 12, Col: 25): Leaving Stmt (Ok)
 (Ln: 12, Col: 25): Leaving CompStmt (Ok)
+(Ln: 12, Col: 26): Leaving method invocation (Ok)
+(Ln: 12, Col: 29): Entering method invocation
+(Ln: 12, Col: 31): Leaving method invocation (Ok)
+(Ln: 12, Col: 34): Entering method invocation
+(Ln: 12, Col: 36): Leaving method invocation (Ok)
 (Ln: 12, Col: 36): Leaving expr (Ok)
 (Ln: 12, Col: 36): Entering Term
 (Ln: 12, Col: 37): Leaving Term (Ok)
 (Ln: 12, Col: 37): Entering CompStmt
 (Ln: 12, Col: 37): Entering Stmt
 (Ln: 12, Col: 37): Entering expr
+(Ln: 12, Col: 38): Entering method invocation
+(Ln: 12, Col: 40): Leaving method invocation (Ok)
 (Ln: 12, Col: 40): Leaving expr (Ok)
 (Ln: 12, Col: 40): Leaving Stmt (Ok)
 (Ln: 13, Col: 1): Entering if end
@@ -243,6 +364,7 @@
 (Ln: 13, Col: 1): Entering elsif
 (Ln: 13, Col: 1): Leaving elsif (Error)
 (Ln: 13, Col: 4): Leaving if (Ok)
+(Ln: 13, Col: 4): Leaving method invocation (Ok)
 (Ln: 13, Col: 4): Leaving expr (Ok)
 (Ln: 13, Col: 4): Leaving Stmt (Ok)
 (Ln: 13, Col: 4): Entering Terms
@@ -255,34 +377,53 @@
 (Ln: 15, Col: 1): Leaving Terms (Ok)
 (Ln: 15, Col: 1): Entering Stmt
 (Ln: 15, Col: 1): Entering expr
+(Ln: 15, Col: 1): Entering method invocation
 (Ln: 15, Col: 1): Entering Assign
 (Ln: 15, Col: 1): Leaving Assign (Error)
 (Ln: 15, Col: 1): Entering if
 (Ln: 15, Col: 4): Entering expr
+(Ln: 15, Col: 4): Entering method invocation
 (Ln: 15, Col: 4): Entering Assign
+(Ln: 15, Col: 7): Entering method invocation
 (Ln: 15, Col: 7): Entering Assign
 (Ln: 15, Col: 7): Leaving Assign (Error)
 (Ln: 15, Col: 7): Entering if
 (Ln: 15, Col: 7): Leaving if (Error)
+(Ln: 15, Col: 7): Entering method invocation cell
+(Ln: 15, Col: 7): Leaving method invocation cell (Error)
 (Ln: 15, Col: 7): Entering while
 (Ln: 15, Col: 7): Leaving while (Error)
 (Ln: 15, Col: 7): Entering class
 (Ln: 15, Col: 7): Leaving class (Error)
 (Ln: 15, Col: 7): Entering module
 (Ln: 15, Col: 7): Leaving module (Error)
+(Ln: 15, Col: 7): Leaving method invocation (Error)
 (Ln: 15, Col: 4): Leaving Assign (Error)
 (Ln: 15, Col: 4): Entering if
 (Ln: 15, Col: 4): Leaving if (Error)
+(Ln: 15, Col: 4): Entering method invocation cell
+(Ln: 15, Col: 5): Entering ArgList
+(Ln: 15, Col: 5): Leaving ArgList (Error)
+(Ln: 15, Col: 4): Leaving method invocation cell (Error)
+(Ln: 15, Col: 5): Leaving method invocation (Ok)
+(Ln: 15, Col: 9): Entering method invocation
+(Ln: 15, Col: 10): Leaving method invocation (Ok)
 (Ln: 15, Col: 11): Leaving expr (Ok)
 (Ln: 15, Col: 11): Entering Term
 (Ln: 16, Col: 1): Leaving Term (Ok)
 (Ln: 16, Col: 1): Entering CompStmt
 (Ln: 16, Col: 1): Entering Stmt
 (Ln: 16, Col: 1): Entering expr
+(Ln: 16, Col: 3): Entering method invocation
 (Ln: 16, Col: 3): Entering Assign
 (Ln: 16, Col: 3): Leaving Assign (Error)
 (Ln: 16, Col: 3): Entering if
 (Ln: 16, Col: 3): Leaving if (Error)
+(Ln: 16, Col: 3): Entering method invocation cell
+(Ln: 16, Col: 4): Entering ArgList
+(Ln: 16, Col: 4): Leaving ArgList (Error)
+(Ln: 16, Col: 3): Leaving method invocation cell (Error)
+(Ln: 16, Col: 4): Leaving method invocation (Ok)
 (Ln: 16, Col: 4): Leaving expr (Ok)
 (Ln: 16, Col: 4): Leaving Stmt (Ok)
 (Ln: 17, Col: 1): Entering if end
@@ -291,10 +432,17 @@
 (Ln: 17, Col: 1): Entering elsif
 (Ln: 17, Col: 1): Leaving elsif (Error)
 (Ln: 17, Col: 4): Leaving if (Ok)
+(Ln: 17, Col: 4): Leaving method invocation (Ok)
+(Ln: 17, Col: 7): Entering method invocation
 (Ln: 17, Col: 7): Entering Assign
 (Ln: 17, Col: 7): Leaving Assign (Error)
 (Ln: 17, Col: 7): Entering if
 (Ln: 17, Col: 7): Leaving if (Error)
+(Ln: 17, Col: 7): Entering method invocation cell
+(Ln: 17, Col: 8): Entering ArgList
+(Ln: 17, Col: 8): Leaving ArgList (Error)
+(Ln: 17, Col: 7): Leaving method invocation cell (Error)
+(Ln: 17, Col: 8): Leaving method invocation (Ok)
 (Ln: 17, Col: 8): Leaving expr (Ok)
 (Ln: 17, Col: 8): Leaving Stmt (Ok)
 (Ln: 17, Col: 8): Leaving CompStmt (Ok)
@@ -386,24 +534,43 @@ FRCompstmt:<null>
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
 (Ln: 1, Col: 1): Leaving Assign (Error)
 (Ln: 1, Col: 1): Entering if
 (Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering method invocation cell
+(Ln: 1, Col: 6): Entering ArgList
+(Ln: 1, Col: 6): Leaving ArgList (Error)
+(Ln: 1, Col: 1): Leaving method invocation cell (Error)
 (Ln: 1, Col: 1): Entering while
 (Ln: 1, Col: 7): Entering expr
+(Ln: 1, Col: 7): Entering method invocation
 (Ln: 1, Col: 7): Entering Assign
 (Ln: 1, Col: 7): Leaving Assign (Error)
 (Ln: 1, Col: 7): Entering if
 (Ln: 1, Col: 7): Leaving if (Error)
+(Ln: 1, Col: 7): Entering method invocation cell
+(Ln: 1, Col: 8): Entering ArgList
+(Ln: 1, Col: 8): Leaving ArgList (Error)
+(Ln: 1, Col: 7): Leaving method invocation cell (Error)
+(Ln: 1, Col: 8): Leaving method invocation (Ok)
+(Ln: 1, Col: 12): Entering method invocation
+(Ln: 1, Col: 13): Leaving method invocation (Ok)
 (Ln: 1, Col: 13): Leaving expr (Ok)
 (Ln: 2, Col: 3): Entering CompStmt
 (Ln: 2, Col: 3): Entering Stmt
 (Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering method invocation
 (Ln: 2, Col: 3): Entering Assign
 (Ln: 2, Col: 3): Leaving Assign (Error)
 (Ln: 2, Col: 3): Entering if
 (Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering method invocation cell
+(Ln: 2, Col: 4): Entering ArgList
+(Ln: 2, Col: 4): Leaving ArgList (Error)
+(Ln: 2, Col: 3): Leaving method invocation cell (Error)
+(Ln: 2, Col: 4): Leaving method invocation (Ok)
 (Ln: 2, Col: 4): Leaving expr (Ok)
 (Ln: 2, Col: 4): Leaving Stmt (Ok)
 (Ln: 2, Col: 4): Entering Terms
@@ -414,58 +581,96 @@ FRCompstmt:<null>
 (Ln: 3, Col: 1): Leaving Terms (Ok)
 (Ln: 3, Col: 3): Entering Stmt
 (Ln: 3, Col: 3): Entering expr
+(Ln: 3, Col: 3): Entering method invocation
 (Ln: 3, Col: 3): Entering Assign
 (Ln: 3, Col: 3): Leaving Assign (Error)
 (Ln: 3, Col: 3): Entering if
 (Ln: 3, Col: 6): Entering expr
+(Ln: 3, Col: 6): Entering method invocation
 (Ln: 3, Col: 6): Entering Assign
+(Ln: 3, Col: 9): Entering method invocation
 (Ln: 3, Col: 9): Entering Assign
 (Ln: 3, Col: 9): Leaving Assign (Error)
 (Ln: 3, Col: 9): Entering if
 (Ln: 3, Col: 9): Leaving if (Error)
+(Ln: 3, Col: 9): Entering method invocation cell
+(Ln: 3, Col: 9): Leaving method invocation cell (Error)
 (Ln: 3, Col: 9): Entering while
 (Ln: 3, Col: 9): Leaving while (Error)
 (Ln: 3, Col: 9): Entering class
 (Ln: 3, Col: 9): Leaving class (Error)
 (Ln: 3, Col: 9): Entering module
 (Ln: 3, Col: 9): Leaving module (Error)
+(Ln: 3, Col: 9): Leaving method invocation (Error)
 (Ln: 3, Col: 6): Leaving Assign (Error)
 (Ln: 3, Col: 6): Entering if
 (Ln: 3, Col: 6): Leaving if (Error)
+(Ln: 3, Col: 6): Entering method invocation cell
+(Ln: 3, Col: 7): Entering ArgList
+(Ln: 3, Col: 7): Leaving ArgList (Error)
+(Ln: 3, Col: 6): Leaving method invocation cell (Error)
+(Ln: 3, Col: 7): Leaving method invocation (Ok)
+(Ln: 3, Col: 11): Entering method invocation
+(Ln: 3, Col: 12): Leaving method invocation (Ok)
 (Ln: 3, Col: 12): Leaving expr (Ok)
 (Ln: 3, Col: 12): Entering Term
 (Ln: 4, Col: 1): Leaving Term (Ok)
 (Ln: 4, Col: 1): Entering CompStmt
 (Ln: 4, Col: 1): Entering Stmt
 (Ln: 4, Col: 1): Entering expr
+(Ln: 4, Col: 5): Entering method invocation
 (Ln: 4, Col: 5): Entering Assign
 (Ln: 4, Col: 5): Leaving Assign (Error)
 (Ln: 4, Col: 5): Entering if
 (Ln: 4, Col: 5): Leaving if (Error)
+(Ln: 4, Col: 5): Entering method invocation cell
+(Ln: 4, Col: 10): Entering ArgList
+(Ln: 4, Col: 10): Leaving ArgList (Error)
+(Ln: 4, Col: 5): Leaving method invocation cell (Error)
 (Ln: 4, Col: 5): Entering while
 (Ln: 4, Col: 11): Entering expr
+(Ln: 4, Col: 11): Entering method invocation
 (Ln: 4, Col: 11): Entering Assign
+(Ln: 4, Col: 14): Entering method invocation
 (Ln: 4, Col: 14): Entering Assign
 (Ln: 4, Col: 14): Leaving Assign (Error)
 (Ln: 4, Col: 14): Entering if
 (Ln: 4, Col: 14): Leaving if (Error)
+(Ln: 4, Col: 14): Entering method invocation cell
+(Ln: 4, Col: 14): Leaving method invocation cell (Error)
 (Ln: 4, Col: 14): Entering while
 (Ln: 4, Col: 14): Leaving while (Error)
 (Ln: 4, Col: 14): Entering class
 (Ln: 4, Col: 14): Leaving class (Error)
 (Ln: 4, Col: 14): Entering module
 (Ln: 4, Col: 14): Leaving module (Error)
+(Ln: 4, Col: 14): Leaving method invocation (Error)
 (Ln: 4, Col: 11): Leaving Assign (Error)
 (Ln: 4, Col: 11): Entering if
 (Ln: 4, Col: 11): Leaving if (Error)
+(Ln: 4, Col: 11): Entering method invocation cell
+(Ln: 4, Col: 12): Entering ArgList
+(Ln: 4, Col: 12): Leaving ArgList (Error)
+(Ln: 4, Col: 11): Leaving method invocation cell (Error)
+(Ln: 4, Col: 12): Leaving method invocation (Ok)
+(Ln: 4, Col: 16): Entering method invocation
+(Ln: 4, Col: 17): Leaving method invocation (Ok)
 (Ln: 4, Col: 17): Leaving expr (Ok)
 (Ln: 5, Col: 7): Entering CompStmt
 (Ln: 5, Col: 7): Entering Stmt
 (Ln: 5, Col: 7): Entering expr
+(Ln: 5, Col: 7): Entering method invocation
 (Ln: 5, Col: 7): Entering Assign
 (Ln: 5, Col: 7): Leaving Assign (Error)
 (Ln: 5, Col: 7): Entering if
 (Ln: 5, Col: 7): Leaving if (Error)
+(Ln: 5, Col: 7): Entering method invocation cell
+(Ln: 5, Col: 8): Entering ArgList
+(Ln: 5, Col: 8): Leaving ArgList (Error)
+(Ln: 5, Col: 7): Leaving method invocation cell (Error)
+(Ln: 5, Col: 8): Leaving method invocation (Ok)
+(Ln: 5, Col: 11): Entering method invocation
+(Ln: 5, Col: 12): Leaving method invocation (Ok)
 (Ln: 5, Col: 12): Leaving expr (Ok)
 (Ln: 5, Col: 12): Leaving Stmt (Ok)
 (Ln: 5, Col: 12): Entering Terms
@@ -476,14 +681,23 @@ FRCompstmt:<null>
 (Ln: 6, Col: 1): Leaving Terms (Ok)
 (Ln: 6, Col: 7): Entering Stmt
 (Ln: 6, Col: 7): Entering expr
+(Ln: 6, Col: 7): Entering method invocation
 (Ln: 6, Col: 7): Entering Assign
 (Ln: 6, Col: 7): Leaving Assign (Error)
 (Ln: 6, Col: 7): Entering if
 (Ln: 6, Col: 7): Leaving if (Error)
+(Ln: 6, Col: 7): Entering method invocation cell
+(Ln: 6, Col: 8): Entering ArgList
+(Ln: 6, Col: 8): Leaving ArgList (Error)
+(Ln: 6, Col: 7): Leaving method invocation cell (Error)
+(Ln: 6, Col: 8): Leaving method invocation (Ok)
+(Ln: 6, Col: 11): Entering method invocation
+(Ln: 6, Col: 12): Leaving method invocation (Ok)
 (Ln: 6, Col: 12): Leaving expr (Ok)
 (Ln: 6, Col: 12): Leaving Stmt (Ok)
 (Ln: 7, Col: 5): Leaving CompStmt (Ok)
 (Ln: 7, Col: 8): Leaving while (Ok)
+(Ln: 7, Col: 8): Leaving method invocation (Ok)
 (Ln: 7, Col: 8): Leaving expr (Ok)
 (Ln: 7, Col: 8): Leaving Stmt (Ok)
 (Ln: 8, Col: 3): Entering if end
@@ -492,10 +706,12 @@ FRCompstmt:<null>
 (Ln: 8, Col: 3): Entering elsif
 (Ln: 8, Col: 3): Leaving elsif (Error)
 (Ln: 8, Col: 6): Leaving if (Ok)
+(Ln: 8, Col: 6): Leaving method invocation (Ok)
 (Ln: 8, Col: 6): Leaving expr (Ok)
 (Ln: 8, Col: 6): Leaving Stmt (Ok)
 (Ln: 9, Col: 1): Leaving CompStmt (Ok)
 (Ln: 9, Col: 4): Leaving while (Ok)
+(Ln: 9, Col: 4): Leaving method invocation (Ok)
 (Ln: 9, Col: 4): Leaving expr (Ok)
 (Ln: 9, Col: 4): Leaving Stmt (Ok)
 (Ln: 9, Col: 4): Entering Terms
@@ -508,44 +724,72 @@ FRCompstmt:<null>
 (Ln: 11, Col: 1): Leaving Terms (Ok)
 (Ln: 11, Col: 1): Entering Stmt
 (Ln: 11, Col: 1): Entering expr
+(Ln: 11, Col: 1): Entering method invocation
 (Ln: 11, Col: 2): Entering CompStmt
 (Ln: 11, Col: 2): Entering Stmt
 (Ln: 11, Col: 2): Entering expr
+(Ln: 11, Col: 2): Entering method invocation
 (Ln: 11, Col: 2): Entering Assign
 (Ln: 11, Col: 2): Leaving Assign (Error)
 (Ln: 11, Col: 2): Entering if
 (Ln: 11, Col: 2): Leaving if (Error)
+(Ln: 11, Col: 2): Entering method invocation cell
+(Ln: 11, Col: 7): Entering ArgList
+(Ln: 11, Col: 7): Leaving ArgList (Error)
+(Ln: 11, Col: 2): Leaving method invocation cell (Error)
 (Ln: 11, Col: 2): Entering while
 (Ln: 11, Col: 8): Entering expr
+(Ln: 11, Col: 8): Entering method invocation
 (Ln: 11, Col: 8): Entering Assign
+(Ln: 11, Col: 11): Entering method invocation
 (Ln: 11, Col: 11): Entering Assign
 (Ln: 11, Col: 11): Leaving Assign (Error)
 (Ln: 11, Col: 11): Entering if
 (Ln: 11, Col: 11): Leaving if (Error)
+(Ln: 11, Col: 11): Entering method invocation cell
+(Ln: 11, Col: 11): Leaving method invocation cell (Error)
 (Ln: 11, Col: 11): Entering while
 (Ln: 11, Col: 11): Leaving while (Error)
 (Ln: 11, Col: 11): Entering class
 (Ln: 11, Col: 11): Leaving class (Error)
 (Ln: 11, Col: 11): Entering module
 (Ln: 11, Col: 11): Leaving module (Error)
+(Ln: 11, Col: 11): Leaving method invocation (Error)
 (Ln: 11, Col: 8): Leaving Assign (Error)
 (Ln: 11, Col: 8): Entering if
 (Ln: 11, Col: 8): Leaving if (Error)
+(Ln: 11, Col: 8): Entering method invocation cell
+(Ln: 11, Col: 9): Entering ArgList
+(Ln: 11, Col: 9): Leaving ArgList (Error)
+(Ln: 11, Col: 8): Leaving method invocation cell (Error)
+(Ln: 11, Col: 9): Leaving method invocation (Ok)
+(Ln: 11, Col: 13): Entering method invocation
+(Ln: 11, Col: 14): Leaving method invocation (Ok)
 (Ln: 11, Col: 15): Leaving expr (Ok)
 (Ln: 11, Col: 18): Entering CompStmt
 (Ln: 11, Col: 18): Entering Stmt
 (Ln: 11, Col: 18): Entering expr
+(Ln: 11, Col: 18): Entering method invocation
 (Ln: 11, Col: 18): Entering Assign
 (Ln: 11, Col: 18): Leaving Assign (Error)
 (Ln: 11, Col: 18): Entering if
 (Ln: 11, Col: 18): Leaving if (Error)
+(Ln: 11, Col: 18): Entering method invocation cell
+(Ln: 11, Col: 19): Entering ArgList
+(Ln: 11, Col: 19): Leaving ArgList (Error)
+(Ln: 11, Col: 18): Leaving method invocation cell (Error)
+(Ln: 11, Col: 19): Leaving method invocation (Ok)
 (Ln: 11, Col: 20): Leaving expr (Ok)
 (Ln: 11, Col: 20): Leaving Stmt (Ok)
 (Ln: 11, Col: 20): Leaving CompStmt (Ok)
 (Ln: 11, Col: 23): Leaving while (Ok)
+(Ln: 11, Col: 23): Leaving method invocation (Ok)
 (Ln: 11, Col: 23): Leaving expr (Ok)
 (Ln: 11, Col: 23): Leaving Stmt (Ok)
 (Ln: 11, Col: 23): Leaving CompStmt (Ok)
+(Ln: 11, Col: 24): Leaving method invocation (Ok)
+(Ln: 11, Col: 27): Entering method invocation
+(Ln: 11, Col: 29): Leaving method invocation (Ok)
 (Ln: 11, Col: 29): Leaving expr (Ok)
 (Ln: 11, Col: 29): Leaving Stmt (Ok)
 (Ln: 11, Col: 29): Leaving CompStmt (Ok)
@@ -595,42 +839,67 @@ FRCompstmt:<null>
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
 (Ln: 1, Col: 1): Leaving Assign (Error)
 (Ln: 1, Col: 1): Entering if
 (Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering method invocation cell
+(Ln: 1, Col: 6): Entering ArgList
+(Ln: 1, Col: 6): Leaving ArgList (Error)
+(Ln: 1, Col: 1): Leaving method invocation cell (Error)
 (Ln: 1, Col: 1): Entering while
 (Ln: 1, Col: 1): Leaving while (Error)
 (Ln: 1, Col: 1): Entering class
-(Ln: 1, Col: 7): Entering Identifier
-(Ln: 1, Col: 8): Leaving Identifier (Ok)
 (Ln: 1, Col: 11): Entering Identifier
 (Ln: 1, Col: 16): Leaving Identifier (Ok)
 (Ln: 2, Col: 3): Entering CompStmt
 (Ln: 2, Col: 3): Entering Stmt
 (Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering method invocation
 (Ln: 2, Col: 3): Entering Assign
 (Ln: 2, Col: 3): Leaving Assign (Error)
 (Ln: 2, Col: 3): Entering if
 (Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering method invocation cell
+(Ln: 2, Col: 8): Entering ArgList
+(Ln: 2, Col: 8): Leaving ArgList (Error)
+(Ln: 2, Col: 3): Leaving method invocation cell (Error)
 (Ln: 2, Col: 3): Entering while
 (Ln: 2, Col: 9): Entering expr
+(Ln: 2, Col: 9): Entering method invocation
 (Ln: 2, Col: 9): Entering Assign
 (Ln: 2, Col: 9): Leaving Assign (Error)
 (Ln: 2, Col: 9): Entering if
 (Ln: 2, Col: 9): Leaving if (Error)
+(Ln: 2, Col: 9): Entering method invocation cell
+(Ln: 2, Col: 10): Entering ArgList
+(Ln: 2, Col: 10): Leaving ArgList (Error)
+(Ln: 2, Col: 9): Leaving method invocation cell (Error)
+(Ln: 2, Col: 10): Leaving method invocation (Ok)
+(Ln: 2, Col: 14): Entering method invocation
+(Ln: 2, Col: 15): Leaving method invocation (Ok)
 (Ln: 2, Col: 15): Leaving expr (Ok)
 (Ln: 3, Col: 5): Entering CompStmt
 (Ln: 3, Col: 5): Entering Stmt
 (Ln: 3, Col: 5): Entering expr
+(Ln: 3, Col: 5): Entering method invocation
 (Ln: 3, Col: 5): Entering Assign
 (Ln: 3, Col: 5): Leaving Assign (Error)
 (Ln: 3, Col: 5): Entering if
 (Ln: 3, Col: 5): Leaving if (Error)
+(Ln: 3, Col: 5): Entering method invocation cell
+(Ln: 3, Col: 6): Entering ArgList
+(Ln: 3, Col: 6): Leaving ArgList (Error)
+(Ln: 3, Col: 5): Leaving method invocation cell (Error)
+(Ln: 3, Col: 6): Leaving method invocation (Ok)
+(Ln: 3, Col: 9): Entering method invocation
+(Ln: 3, Col: 10): Leaving method invocation (Ok)
 (Ln: 3, Col: 10): Leaving expr (Ok)
 (Ln: 3, Col: 10): Leaving Stmt (Ok)
 (Ln: 4, Col: 3): Leaving CompStmt (Ok)
 (Ln: 4, Col: 6): Leaving while (Ok)
+(Ln: 4, Col: 6): Leaving method invocation (Ok)
 (Ln: 4, Col: 6): Leaving expr (Ok)
 (Ln: 4, Col: 6): Leaving Stmt (Ok)
 (Ln: 4, Col: 6): Entering Terms
@@ -641,34 +910,55 @@ FRCompstmt:<null>
 (Ln: 5, Col: 1): Leaving Terms (Ok)
 (Ln: 5, Col: 3): Entering Stmt
 (Ln: 5, Col: 3): Entering expr
+(Ln: 5, Col: 3): Entering method invocation
 (Ln: 5, Col: 3): Entering Assign
 (Ln: 5, Col: 3): Leaving Assign (Error)
 (Ln: 5, Col: 3): Entering if
 (Ln: 5, Col: 6): Entering expr
+(Ln: 5, Col: 6): Entering method invocation
 (Ln: 5, Col: 6): Entering Assign
+(Ln: 5, Col: 9): Entering method invocation
 (Ln: 5, Col: 9): Entering Assign
 (Ln: 5, Col: 9): Leaving Assign (Error)
 (Ln: 5, Col: 9): Entering if
 (Ln: 5, Col: 9): Leaving if (Error)
+(Ln: 5, Col: 9): Entering method invocation cell
+(Ln: 5, Col: 9): Leaving method invocation cell (Error)
 (Ln: 5, Col: 9): Entering while
 (Ln: 5, Col: 9): Leaving while (Error)
 (Ln: 5, Col: 9): Entering class
 (Ln: 5, Col: 9): Leaving class (Error)
 (Ln: 5, Col: 9): Entering module
 (Ln: 5, Col: 9): Leaving module (Error)
+(Ln: 5, Col: 9): Leaving method invocation (Error)
 (Ln: 5, Col: 6): Leaving Assign (Error)
 (Ln: 5, Col: 6): Entering if
 (Ln: 5, Col: 6): Leaving if (Error)
+(Ln: 5, Col: 6): Entering method invocation cell
+(Ln: 5, Col: 7): Entering ArgList
+(Ln: 5, Col: 7): Leaving ArgList (Error)
+(Ln: 5, Col: 6): Leaving method invocation cell (Error)
+(Ln: 5, Col: 7): Leaving method invocation (Ok)
+(Ln: 5, Col: 11): Entering method invocation
+(Ln: 5, Col: 12): Leaving method invocation (Ok)
 (Ln: 5, Col: 12): Leaving expr (Ok)
 (Ln: 5, Col: 12): Entering Term
 (Ln: 6, Col: 1): Leaving Term (Ok)
 (Ln: 6, Col: 1): Entering CompStmt
 (Ln: 6, Col: 1): Entering Stmt
 (Ln: 6, Col: 1): Entering expr
+(Ln: 6, Col: 5): Entering method invocation
 (Ln: 6, Col: 5): Entering Assign
 (Ln: 6, Col: 5): Leaving Assign (Error)
 (Ln: 6, Col: 5): Entering if
 (Ln: 6, Col: 5): Leaving if (Error)
+(Ln: 6, Col: 5): Entering method invocation cell
+(Ln: 6, Col: 6): Entering ArgList
+(Ln: 6, Col: 6): Leaving ArgList (Error)
+(Ln: 6, Col: 5): Leaving method invocation cell (Error)
+(Ln: 6, Col: 6): Leaving method invocation (Ok)
+(Ln: 6, Col: 9): Entering method invocation
+(Ln: 6, Col: 10): Leaving method invocation (Ok)
 (Ln: 6, Col: 10): Leaving expr (Ok)
 (Ln: 6, Col: 10): Leaving Stmt (Ok)
 (Ln: 7, Col: 3): Entering if end
@@ -677,63 +967,91 @@ FRCompstmt:<null>
 (Ln: 7, Col: 3): Entering elsif
 (Ln: 7, Col: 3): Leaving elsif (Error)
 (Ln: 7, Col: 6): Leaving if (Ok)
+(Ln: 7, Col: 6): Leaving method invocation (Ok)
 (Ln: 7, Col: 6): Leaving expr (Ok)
 (Ln: 7, Col: 6): Leaving Stmt (Ok)
 (Ln: 8, Col: 1): Leaving CompStmt (Ok)
 (Ln: 8, Col: 4): Leaving class (Ok)
+(Ln: 8, Col: 4): Leaving method invocation (Ok)
 (Ln: 8, Col: 4): Leaving expr (Ok)
 (Ln: 8, Col: 4): Leaving Stmt (Ok)
-(Ln: 8, Col: 4): Leaving CompStmt (Ok)
-FRCompstmt:<null>
-  FRPrimary:Class
-    FRKeyWord: class
-    FRIdentifier: A
-    FRKeyWord: superclass
-    FRIdentifier: Class
-    FRCompstmt:<null>
-      FRPrimary:While
-        FRKeyWord: while
-        FRArg:Infix
-          FRKeyWord: !=
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: -
-            FRVarName->Normal: i
-            FRInt: 1
-      FRPrimary:If
-        FRKeyWord: if
-        FRArg:Infix
-          FRKeyWord: ==
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: +
-            FRVarName->Normal: i
-            FRInt: 1
+(Ln: 8, Col: 4): Entering Terms
+(Ln: 8, Col: 4): Entering Term
+(Ln: 9, Col: 1): Leaving Term (Ok)
+(Ln: 9, Col: 1): Entering Term
+(Ln: 10, Col: 1): Leaving Term (Ok)
+(Ln: 10, Col: 1): Entering Term
+(Ln: 10, Col: 1): Leaving Term (Error)
+(Ln: 10, Col: 1): Leaving Terms (Ok)
+(Ln: 10, Col: 1): Entering Stmt
+(Ln: 10, Col: 1): Entering expr
+(Ln: 10, Col: 1): Entering method invocation
+(Ln: 10, Col: 1): Entering Assign
+(Ln: 10, Col: 1): Leaving Assign (Error)
+(Ln: 10, Col: 1): Entering if
+(Ln: 10, Col: 1): Leaving if (Error)
+(Ln: 10, Col: 1): Entering method invocation cell
+(Ln: 10, Col: 6): Entering ArgList
+(Ln: 10, Col: 6): Leaving ArgList (Error)
+(Ln: 10, Col: 1): Leaving method invocation cell (Error)
+(Ln: 10, Col: 1): Entering while
+(Ln: 10, Col: 1): Leaving while (Error)
+(Ln: 10, Col: 1): Entering class
+(Ln: 10, Col: 1): Leaving class (Error)
+(Ln: 10, Col: 1): Entering module
+(Ln: 10, Col: 1): Leaving module (Error)
+(Ln: 10, Col: 1): Leaving method invocation (Error)
+(Ln: 10, Col: 1): Leaving expr (Error)
+(Ln: 10, Col: 1): Leaving Stmt (Error)
+(Ln: 10, Col: 1): Leaving CompStmt (Error)
+Failure: Error in Ln: 10 Col: 1
+class a 
+^
+Expecting: Ascii uppercase letter, floating-point number, integer number
+(64-bit, signed), newline, ' ', '"', '(', ';', 'def', 'if', 'module' or 'while'
+Other error messages:
+  Is a key word!
+
+The parser backtracked after:
+  Error in Ln: 10 Col: 6
+  class a 
+       ^
+  Expecting: Ascii letter, decimal digit, '!', '(', '=', '?' or '_'
+
+The parser backtracked after:
+  Error in Ln: 10 Col: 7
+  class a 
+        ^
+  Expecting: Ascii uppercase letter
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
 (Ln: 1, Col: 1): Leaving Assign (Error)
 (Ln: 1, Col: 1): Entering if
 (Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering method invocation cell
+(Ln: 1, Col: 7): Entering ArgList
+(Ln: 1, Col: 7): Leaving ArgList (Error)
+(Ln: 1, Col: 1): Leaving method invocation cell (Error)
 (Ln: 1, Col: 1): Entering while
 (Ln: 1, Col: 1): Leaving while (Error)
 (Ln: 1, Col: 1): Entering class
 (Ln: 1, Col: 1): Leaving class (Error)
 (Ln: 1, Col: 1): Entering module
-(Ln: 1, Col: 8): Entering Identifier
-(Ln: 1, Col: 9): Leaving Identifier (Ok)
 (Ln: 2, Col: 3): Entering CompStmt
 (Ln: 2, Col: 3): Entering Stmt
 (Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering method invocation
 (Ln: 2, Col: 3): Entering Assign
 (Ln: 2, Col: 3): Leaving Assign (Error)
 (Ln: 2, Col: 3): Entering if
 (Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering method invocation cell
+(Ln: 2, Col: 6): Entering ArgList
+(Ln: 2, Col: 6): Leaving ArgList (Error)
+(Ln: 2, Col: 3): Leaving method invocation cell (Error)
 (Ln: 2, Col: 3): Entering while
 (Ln: 2, Col: 3): Leaving while (Error)
 (Ln: 2, Col: 3): Entering class
@@ -751,17 +1069,27 @@ FRCompstmt:<null>
 (Ln: 3, Col: 5): Entering CompStmt
 (Ln: 3, Col: 5): Entering Stmt
 (Ln: 3, Col: 5): Entering expr
+(Ln: 3, Col: 5): Entering method invocation
 (Ln: 3, Col: 5): Entering Assign
 (Ln: 3, Col: 5): Leaving Assign (Error)
 (Ln: 3, Col: 5): Entering if
 (Ln: 3, Col: 5): Leaving if (Error)
+(Ln: 3, Col: 5): Entering method invocation cell
+(Ln: 3, Col: 6): Entering ArgList
+(Ln: 3, Col: 6): Leaving ArgList (Error)
+(Ln: 3, Col: 5): Leaving method invocation cell (Error)
+(Ln: 3, Col: 6): Leaving method invocation (Ok)
+(Ln: 3, Col: 9): Entering method invocation
+(Ln: 3, Col: 10): Leaving method invocation (Ok)
 (Ln: 3, Col: 10): Leaving expr (Ok)
 (Ln: 3, Col: 10): Leaving Stmt (Ok)
 (Ln: 4, Col: 3): Leaving CompStmt (Ok)
+(Ln: 4, Col: 6): Leaving method invocation (Ok)
 (Ln: 4, Col: 6): Leaving expr (Ok)
 (Ln: 4, Col: 6): Leaving Stmt (Ok)
 (Ln: 5, Col: 1): Leaving CompStmt (Ok)
 (Ln: 5, Col: 4): Leaving module (Ok)
+(Ln: 5, Col: 4): Leaving method invocation (Ok)
 (Ln: 5, Col: 4): Leaving expr (Ok)
 (Ln: 5, Col: 4): Leaving Stmt (Ok)
 (Ln: 5, Col: 4): Entering Terms
@@ -774,15 +1102,19 @@ FRCompstmt:<null>
 (Ln: 7, Col: 1): Leaving Terms (Ok)
 (Ln: 7, Col: 1): Entering Stmt
 (Ln: 7, Col: 1): Entering expr
+(Ln: 7, Col: 1): Entering method invocation
 (Ln: 7, Col: 1): Entering Assign
+(Ln: 7, Col: 12): Entering method invocation
+(Ln: 7, Col: 13): Leaving method invocation (Ok)
 (Ln: 7, Col: 13): Leaving Assign (Ok)
+(Ln: 7, Col: 13): Leaving method invocation (Ok)
 (Ln: 7, Col: 13): Leaving expr (Ok)
 (Ln: 7, Col: 13): Leaving Stmt (Ok)
 (Ln: 7, Col: 13): Leaving CompStmt (Ok)
 FRCompstmt:<null>
   FRPrimary:Module
     FRKeyWord: module
-    FRIdentifier: A
+    FRConstant: A
     FRCompstmt:<null>
       FRPrimary:Def
         FRKeyWord: def
@@ -800,34 +1132,689 @@ FRCompstmt:<null>
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
-(Ln: 1, Col: 2): Entering CompStmt
-(Ln: 1, Col: 2): Entering Stmt
-(Ln: 1, Col: 2): Entering expr
-(Ln: 1, Col: 2): Entering Assign
-(Ln: 1, Col: 2): Leaving Assign (Error)
-(Ln: 1, Col: 2): Entering if
-(Ln: 1, Col: 2): Leaving if (Error)
-(Ln: 1, Col: 7): Leaving expr (Ok)
-(Ln: 1, Col: 7): Leaving Stmt (Ok)
-(Ln: 1, Col: 7): Entering Terms
-(Ln: 1, Col: 7): Entering Term
-(Ln: 1, Col: 7): Leaving Term (Error)
-(Ln: 1, Col: 7): Leaving Terms (Error)
-(Ln: 1, Col: 7): Leaving CompStmt (Error)
-(Ln: 1, Col: 7): Leaving expr (Error)
-(Ln: 1, Col: 7): Leaving Stmt (Error)
-(Ln: 1, Col: 7): Leaving CompStmt (Error)
-Failure: Error in Ln: 1 Col: 7
-(puts "hello")
-      ^
-Expecting: infix operator, newline, ' ' or ';'
-Other error messages:
-  SyntaxError: Not Complete Block
+(Ln: 1, Col: 1): Entering method invocation
+(Ln: 1, Col: 1): Entering Assign
+(Ln: 1, Col: 1): Leaving Assign (Error)
+(Ln: 1, Col: 1): Entering if
+(Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering method invocation cell
+(Ln: 1, Col: 5): Entering ArgList
+(Ln: 1, Col: 6): Entering method invocation
+(Ln: 1, Col: 13): Leaving method invocation (Ok)
+(Ln: 1, Col: 14): Leaving ArgList (Ok)
+(Ln: 1, Col: 14): Leaving method invocation cell (Ok)
+(Ln: 1, Col: 14): Leaving method invocation (Ok)
+(Ln: 1, Col: 14): Leaving expr (Ok)
+(Ln: 1, Col: 14): Leaving Stmt (Ok)
+(Ln: 1, Col: 14): Entering Terms
+(Ln: 1, Col: 14): Entering Term
+(Ln: 2, Col: 1): Leaving Term (Ok)
+(Ln: 2, Col: 1): Entering Term
+(Ln: 3, Col: 1): Leaving Term (Ok)
+(Ln: 3, Col: 1): Entering Term
+(Ln: 3, Col: 1): Leaving Term (Error)
+(Ln: 3, Col: 1): Leaving Terms (Ok)
+(Ln: 3, Col: 1): Entering Stmt
+(Ln: 3, Col: 1): Entering expr
+(Ln: 3, Col: 1): Entering method invocation
+(Ln: 3, Col: 1): Entering Assign
+(Ln: 3, Col: 5): Entering method invocation
+(Ln: 3, Col: 6): Leaving method invocation (Ok)
+(Ln: 3, Col: 6): Leaving Assign (Ok)
+(Ln: 3, Col: 6): Leaving method invocation (Ok)
+(Ln: 3, Col: 6): Leaving expr (Ok)
+(Ln: 3, Col: 6): Leaving Stmt (Ok)
+(Ln: 3, Col: 6): Entering Terms
+(Ln: 3, Col: 6): Entering Term
+(Ln: 4, Col: 1): Leaving Term (Ok)
+(Ln: 4, Col: 1): Entering Term
+(Ln: 4, Col: 1): Leaving Term (Error)
+(Ln: 4, Col: 1): Leaving Terms (Ok)
+(Ln: 4, Col: 1): Entering Stmt
+(Ln: 4, Col: 1): Entering expr
+(Ln: 4, Col: 1): Entering method invocation
+(Ln: 4, Col: 1): Entering Assign
+(Ln: 4, Col: 1): Leaving Assign (Error)
+(Ln: 4, Col: 1): Entering if
+(Ln: 4, Col: 1): Leaving if (Error)
+(Ln: 4, Col: 1): Entering method invocation cell
+(Ln: 4, Col: 2): Entering ArgList
+(Ln: 4, Col: 2): Leaving ArgList (Error)
+(Ln: 4, Col: 1): Leaving method invocation cell (Error)
+(Ln: 4, Col: 3): Entering Assign
+(Ln: 4, Col: 3): Leaving Assign (Error)
+(Ln: 4, Col: 3): Entering if
+(Ln: 4, Col: 3): Leaving if (Error)
+(Ln: 4, Col: 3): Entering method invocation cell
+(Ln: 4, Col: 8): Entering ArgList
+(Ln: 4, Col: 9): Entering method invocation
+(Ln: 4, Col: 9): Entering Assign
+(Ln: 4, Col: 9): Leaving Assign (Error)
+(Ln: 4, Col: 9): Entering if
+(Ln: 4, Col: 9): Leaving if (Error)
+(Ln: 4, Col: 9): Entering method invocation cell
+(Ln: 4, Col: 9): Leaving method invocation cell (Error)
+(Ln: 4, Col: 9): Entering while
+(Ln: 4, Col: 9): Leaving while (Error)
+(Ln: 4, Col: 9): Entering class
+(Ln: 4, Col: 9): Leaving class (Error)
+(Ln: 4, Col: 9): Entering module
+(Ln: 4, Col: 9): Leaving module (Error)
+(Ln: 4, Col: 9): Leaving method invocation (Error)
+(Ln: 4, Col: 10): Leaving ArgList (Ok)
+(Ln: 4, Col: 15): Entering ArguItem
+(Ln: 4, Col: 16): Leaving ArguItem (Ok)
+(Ln: 5, Col: 3): Entering CompStmt
+(Ln: 5, Col: 3): Entering Stmt
+(Ln: 5, Col: 3): Entering expr
+(Ln: 5, Col: 3): Entering method invocation
+(Ln: 5, Col: 3): Entering Assign
+(Ln: 5, Col: 3): Leaving Assign (Error)
+(Ln: 5, Col: 3): Entering if
+(Ln: 5, Col: 3): Leaving if (Error)
+(Ln: 5, Col: 3): Entering method invocation cell
+(Ln: 5, Col: 7): Entering ArgList
+(Ln: 5, Col: 8): Entering method invocation
+(Ln: 5, Col: 8): Entering Assign
+(Ln: 5, Col: 8): Leaving Assign (Error)
+(Ln: 5, Col: 8): Entering if
+(Ln: 5, Col: 8): Leaving if (Error)
+(Ln: 5, Col: 8): Entering method invocation cell
+(Ln: 5, Col: 9): Entering ArgList
+(Ln: 5, Col: 9): Leaving ArgList (Error)
+(Ln: 5, Col: 8): Leaving method invocation cell (Error)
+(Ln: 5, Col: 9): Leaving method invocation (Ok)
+(Ln: 5, Col: 10): Leaving ArgList (Ok)
+(Ln: 5, Col: 10): Leaving method invocation cell (Ok)
+(Ln: 5, Col: 10): Leaving method invocation (Ok)
+(Ln: 5, Col: 10): Leaving expr (Ok)
+(Ln: 5, Col: 10): Leaving Stmt (Ok)
+(Ln: 5, Col: 10): Entering Terms
+(Ln: 5, Col: 10): Entering Term
+(Ln: 6, Col: 1): Leaving Term (Ok)
+(Ln: 6, Col: 1): Entering Term
+(Ln: 6, Col: 1): Leaving Term (Error)
+(Ln: 6, Col: 1): Leaving Terms (Ok)
+(Ln: 6, Col: 3): Entering Stmt
+(Ln: 6, Col: 3): Entering expr
+(Ln: 6, Col: 3): Entering method invocation
+(Ln: 6, Col: 3): Entering Assign
+(Ln: 6, Col: 3): Leaving Assign (Error)
+(Ln: 6, Col: 3): Entering if
+(Ln: 6, Col: 3): Leaving if (Error)
+(Ln: 6, Col: 3): Entering method invocation cell
+(Ln: 6, Col: 4): Entering ArgList
+(Ln: 6, Col: 4): Leaving ArgList (Error)
+(Ln: 6, Col: 3): Leaving method invocation cell (Error)
+(Ln: 6, Col: 4): Leaving method invocation (Ok)
+(Ln: 6, Col: 7): Entering method invocation
+(Ln: 6, Col: 8): Leaving method invocation (Ok)
+(Ln: 6, Col: 8): Leaving expr (Ok)
+(Ln: 6, Col: 8): Leaving Stmt (Ok)
+(Ln: 7, Col: 1): Leaving CompStmt (Ok)
+(Ln: 7, Col: 4): Leaving method invocation cell (Ok)
+(Ln: 7, Col: 4): Leaving method invocation (Ok)
+(Ln: 7, Col: 4): Leaving expr (Ok)
+(Ln: 7, Col: 4): Leaving Stmt (Ok)
+(Ln: 7, Col: 4): Entering Terms
+(Ln: 7, Col: 4): Entering Term
+(Ln: 8, Col: 1): Leaving Term (Ok)
+(Ln: 8, Col: 1): Entering Term
+(Ln: 9, Col: 1): Leaving Term (Ok)
+(Ln: 9, Col: 1): Entering Term
+(Ln: 9, Col: 1): Leaving Term (Error)
+(Ln: 9, Col: 1): Leaving Terms (Ok)
+(Ln: 9, Col: 1): Entering Stmt
+(Ln: 9, Col: 1): Entering expr
+(Ln: 9, Col: 1): Entering method invocation
+(Ln: 9, Col: 1): Entering Assign
+(Ln: 9, Col: 1): Leaving Assign (Error)
+(Ln: 9, Col: 1): Entering if
+(Ln: 9, Col: 1): Leaving if (Error)
+(Ln: 9, Col: 1): Entering method invocation cell
+(Ln: 9, Col: 2): Entering ArgList
+(Ln: 9, Col: 2): Leaving ArgList (Error)
+(Ln: 9, Col: 1): Leaving method invocation cell (Error)
+(Ln: 9, Col: 3): Entering Assign
+(Ln: 9, Col: 3): Leaving Assign (Error)
+(Ln: 9, Col: 3): Entering if
+(Ln: 9, Col: 3): Leaving if (Error)
+(Ln: 9, Col: 3): Entering method invocation cell
+(Ln: 9, Col: 8): Entering ArgList
+(Ln: 9, Col: 9): Entering method invocation
+(Ln: 9, Col: 9): Entering Assign
+(Ln: 9, Col: 9): Leaving Assign (Error)
+(Ln: 9, Col: 9): Entering if
+(Ln: 9, Col: 9): Leaving if (Error)
+(Ln: 9, Col: 9): Entering method invocation cell
+(Ln: 9, Col: 10): Entering ArgList
+(Ln: 9, Col: 10): Leaving ArgList (Error)
+(Ln: 9, Col: 9): Leaving method invocation cell (Error)
+(Ln: 9, Col: 10): Leaving method invocation (Ok)
+(Ln: 9, Col: 12): Entering method invocation
+(Ln: 9, Col: 12): Entering Assign
+(Ln: 9, Col: 12): Leaving Assign (Error)
+(Ln: 9, Col: 12): Entering if
+(Ln: 9, Col: 15): Entering expr
+(Ln: 9, Col: 15): Entering method invocation
+(Ln: 9, Col: 15): Entering Assign
+(Ln: 9, Col: 18): Entering method invocation
+(Ln: 9, Col: 18): Entering Assign
+(Ln: 9, Col: 18): Leaving Assign (Error)
+(Ln: 9, Col: 18): Entering if
+(Ln: 9, Col: 18): Leaving if (Error)
+(Ln: 9, Col: 18): Entering method invocation cell
+(Ln: 9, Col: 18): Leaving method invocation cell (Error)
+(Ln: 9, Col: 18): Entering while
+(Ln: 9, Col: 18): Leaving while (Error)
+(Ln: 9, Col: 18): Entering class
+(Ln: 9, Col: 18): Leaving class (Error)
+(Ln: 9, Col: 18): Entering module
+(Ln: 9, Col: 18): Leaving module (Error)
+(Ln: 9, Col: 18): Leaving method invocation (Error)
+(Ln: 9, Col: 15): Leaving Assign (Error)
+(Ln: 9, Col: 15): Entering if
+(Ln: 9, Col: 15): Leaving if (Error)
+(Ln: 9, Col: 15): Entering method invocation cell
+(Ln: 9, Col: 16): Entering ArgList
+(Ln: 9, Col: 16): Leaving ArgList (Error)
+(Ln: 9, Col: 15): Leaving method invocation cell (Error)
+(Ln: 9, Col: 16): Leaving method invocation (Ok)
+(Ln: 9, Col: 20): Entering method invocation
+(Ln: 9, Col: 21): Leaving method invocation (Ok)
+(Ln: 9, Col: 22): Leaving expr (Ok)
+(Ln: 9, Col: 22): Entering Term
+(Ln: 9, Col: 22): Leaving Term (Error)
+(Ln: 9, Col: 26): Entering CompStmt
+(Ln: 9, Col: 26): Entering Stmt
+(Ln: 9, Col: 26): Entering expr
+(Ln: 9, Col: 27): Entering method invocation
+(Ln: 9, Col: 27): Entering Assign
+(Ln: 9, Col: 27): Leaving Assign (Error)
+(Ln: 9, Col: 27): Entering if
+(Ln: 9, Col: 27): Leaving if (Error)
+(Ln: 9, Col: 27): Entering method invocation cell
+(Ln: 9, Col: 28): Entering ArgList
+(Ln: 9, Col: 28): Leaving ArgList (Error)
+(Ln: 9, Col: 27): Leaving method invocation cell (Error)
+(Ln: 9, Col: 28): Leaving method invocation (Ok)
+(Ln: 9, Col: 29): Leaving expr (Ok)
+(Ln: 9, Col: 29): Leaving Stmt (Ok)
+(Ln: 9, Col: 29): Entering if end
+(Ln: 9, Col: 32): Leaving if end (Ok)
+(Ln: 9, Col: 29): Leaving CompStmt (Ok)
+(Ln: 9, Col: 29): Entering elsif
+(Ln: 9, Col: 29): Leaving elsif (Error)
+(Ln: 9, Col: 32): Leaving if (Ok)
+(Ln: 9, Col: 32): Leaving method invocation (Ok)
+(Ln: 9, Col: 34): Entering method invocation
+(Ln: 9, Col: 34): Entering Assign
+(Ln: 9, Col: 34): Leaving Assign (Error)
+(Ln: 9, Col: 34): Entering if
+(Ln: 9, Col: 34): Leaving if (Error)
+(Ln: 9, Col: 34): Entering method invocation cell
+(Ln: 9, Col: 35): Entering ArgList
+(Ln: 9, Col: 35): Leaving ArgList (Error)
+(Ln: 9, Col: 34): Leaving method invocation cell (Error)
+(Ln: 9, Col: 35): Leaving method invocation (Ok)
+(Ln: 9, Col: 37): Entering method invocation
+(Ln: 9, Col: 39): Leaving method invocation (Ok)
+(Ln: 9, Col: 40): Leaving ArgList (Ok)
+(Ln: 10, Col: 4): Entering ArguItem
+(Ln: 10, Col: 5): Leaving ArguItem (Ok)
+(Ln: 10, Col: 6): Entering ArguItem
+(Ln: 10, Col: 7): Leaving ArguItem (Ok)
+(Ln: 10, Col: 8): Entering ArguItem
+(Ln: 10, Col: 9): Leaving ArguItem (Ok)
+(Ln: 11, Col: 3): Entering CompStmt
+(Ln: 11, Col: 3): Entering Stmt
+(Ln: 11, Col: 3): Entering expr
+(Ln: 11, Col: 3): Entering method invocation
+(Ln: 11, Col: 3): Entering Assign
+(Ln: 11, Col: 3): Leaving Assign (Error)
+(Ln: 11, Col: 3): Entering if
+(Ln: 11, Col: 3): Leaving if (Error)
+(Ln: 11, Col: 3): Entering method invocation cell
+(Ln: 11, Col: 4): Entering ArgList
+(Ln: 11, Col: 4): Leaving ArgList (Error)
+(Ln: 11, Col: 3): Leaving method invocation cell (Error)
+(Ln: 11, Col: 4): Leaving method invocation (Ok)
+(Ln: 11, Col: 7): Entering method invocation
+(Ln: 11, Col: 7): Entering Assign
+(Ln: 11, Col: 7): Leaving Assign (Error)
+(Ln: 11, Col: 7): Entering if
+(Ln: 11, Col: 7): Leaving if (Error)
+(Ln: 11, Col: 7): Entering method invocation cell
+(Ln: 11, Col: 8): Entering ArgList
+(Ln: 11, Col: 8): Leaving ArgList (Error)
+(Ln: 11, Col: 7): Leaving method invocation cell (Error)
+(Ln: 11, Col: 8): Leaving method invocation (Ok)
+(Ln: 11, Col: 11): Entering method invocation
+(Ln: 11, Col: 11): Entering Assign
+(Ln: 11, Col: 11): Leaving Assign (Error)
+(Ln: 11, Col: 11): Entering if
+(Ln: 11, Col: 11): Leaving if (Error)
+(Ln: 11, Col: 11): Entering method invocation cell
+(Ln: 11, Col: 12): Entering ArgList
+(Ln: 11, Col: 12): Leaving ArgList (Error)
+(Ln: 11, Col: 11): Leaving method invocation cell (Error)
+(Ln: 11, Col: 12): Leaving method invocation (Ok)
+(Ln: 11, Col: 12): Leaving expr (Ok)
+(Ln: 11, Col: 12): Leaving Stmt (Ok)
+(Ln: 12, Col: 1): Leaving CompStmt (Ok)
+(Ln: 12, Col: 2): Leaving method invocation cell (Ok)
+(Ln: 12, Col: 2): Leaving method invocation (Ok)
+(Ln: 12, Col: 2): Leaving expr (Ok)
+(Ln: 12, Col: 2): Leaving Stmt (Ok)
+(Ln: 12, Col: 2): Entering Terms
+(Ln: 12, Col: 2): Entering Term
+(Ln: 13, Col: 1): Leaving Term (Ok)
+(Ln: 13, Col: 1): Entering Term
+(Ln: 14, Col: 1): Leaving Term (Ok)
+(Ln: 14, Col: 1): Entering Term
+(Ln: 14, Col: 1): Leaving Term (Error)
+(Ln: 14, Col: 1): Leaving Terms (Ok)
+(Ln: 14, Col: 1): Entering Stmt
+(Ln: 14, Col: 1): Entering expr
+(Ln: 14, Col: 1): Entering method invocation
+(Ln: 14, Col: 1): Entering Assign
+(Ln: 14, Col: 1): Leaving Assign (Error)
+(Ln: 14, Col: 1): Entering if
+(Ln: 14, Col: 1): Leaving if (Error)
+(Ln: 14, Col: 1): Entering method invocation cell
+(Ln: 14, Col: 6): Entering ArgList
+(Ln: 14, Col: 6): Leaving ArgList (Error)
+(Ln: 14, Col: 1): Leaving method invocation cell (Error)
+(Ln: 14, Col: 1): Entering while
+(Ln: 14, Col: 7): Entering expr
+(Ln: 14, Col: 7): Entering method invocation
+(Ln: 14, Col: 7): Entering Assign
+(Ln: 14, Col: 7): Leaving Assign (Error)
+(Ln: 14, Col: 7): Entering if
+(Ln: 14, Col: 7): Leaving if (Error)
+(Ln: 14, Col: 7): Entering method invocation cell
+(Ln: 14, Col: 8): Entering ArgList
+(Ln: 14, Col: 8): Leaving ArgList (Error)
+(Ln: 14, Col: 7): Leaving method invocation cell (Error)
+(Ln: 14, Col: 8): Leaving method invocation (Ok)
+(Ln: 14, Col: 12): Entering method invocation
+(Ln: 14, Col: 13): Leaving method invocation (Ok)
+(Ln: 14, Col: 13): Leaving expr (Ok)
+(Ln: 15, Col: 3): Entering CompStmt
+(Ln: 15, Col: 3): Entering Stmt
+(Ln: 15, Col: 3): Entering expr
+(Ln: 15, Col: 3): Entering method invocation
+(Ln: 15, Col: 3): Entering Assign
+(Ln: 15, Col: 7): Entering method invocation
+(Ln: 15, Col: 7): Entering Assign
+(Ln: 15, Col: 7): Leaving Assign (Error)
+(Ln: 15, Col: 7): Entering if
+(Ln: 15, Col: 7): Leaving if (Error)
+(Ln: 15, Col: 7): Entering method invocation cell
+(Ln: 15, Col: 8): Entering ArgList
+(Ln: 15, Col: 8): Leaving ArgList (Error)
+(Ln: 15, Col: 7): Leaving method invocation cell (Error)
+(Ln: 15, Col: 8): Leaving method invocation (Ok)
+(Ln: 15, Col: 11): Entering method invocation
+(Ln: 15, Col: 12): Leaving method invocation (Ok)
+(Ln: 15, Col: 13): Leaving Assign (Ok)
+(Ln: 15, Col: 13): Leaving method invocation (Ok)
+(Ln: 15, Col: 13): Leaving expr (Ok)
+(Ln: 15, Col: 13): Leaving Stmt (Ok)
+(Ln: 16, Col: 1): Leaving CompStmt (Ok)
+(Ln: 16, Col: 4): Leaving while (Ok)
+(Ln: 16, Col: 5): Entering Assign
+(Ln: 16, Col: 5): Leaving Assign (Error)
+(Ln: 16, Col: 5): Entering if
+(Ln: 16, Col: 5): Leaving if (Error)
+(Ln: 16, Col: 5): Entering method invocation cell
+(Ln: 16, Col: 10): Entering ArgList
+(Ln: 16, Col: 11): Entering method invocation
+(Ln: 16, Col: 11): Entering Assign
+(Ln: 16, Col: 11): Leaving Assign (Error)
+(Ln: 16, Col: 11): Entering if
+(Ln: 16, Col: 11): Leaving if (Error)
+(Ln: 16, Col: 11): Entering method invocation cell
+(Ln: 16, Col: 11): Leaving method invocation cell (Error)
+(Ln: 16, Col: 11): Entering while
+(Ln: 16, Col: 11): Leaving while (Error)
+(Ln: 16, Col: 11): Entering class
+(Ln: 16, Col: 11): Leaving class (Error)
+(Ln: 16, Col: 11): Entering module
+(Ln: 16, Col: 11): Leaving module (Error)
+(Ln: 16, Col: 11): Leaving method invocation (Error)
+(Ln: 16, Col: 12): Leaving ArgList (Ok)
+(Ln: 16, Col: 17): Entering ArguItem
+(Ln: 16, Col: 18): Leaving ArguItem (Ok)
+(Ln: 17, Col: 3): Entering CompStmt
+(Ln: 17, Col: 3): Entering Stmt
+(Ln: 17, Col: 3): Entering expr
+(Ln: 17, Col: 3): Entering method invocation
+(Ln: 17, Col: 3): Entering Assign
+(Ln: 17, Col: 3): Leaving Assign (Error)
+(Ln: 17, Col: 3): Entering if
+(Ln: 17, Col: 3): Leaving if (Error)
+(Ln: 17, Col: 3): Entering method invocation cell
+(Ln: 17, Col: 7): Entering ArgList
+(Ln: 17, Col: 8): Entering method invocation
+(Ln: 17, Col: 8): Entering Assign
+(Ln: 17, Col: 8): Leaving Assign (Error)
+(Ln: 17, Col: 8): Entering if
+(Ln: 17, Col: 8): Leaving if (Error)
+(Ln: 17, Col: 8): Entering method invocation cell
+(Ln: 17, Col: 9): Entering ArgList
+(Ln: 17, Col: 9): Leaving ArgList (Error)
+(Ln: 17, Col: 8): Leaving method invocation cell (Error)
+(Ln: 17, Col: 9): Leaving method invocation (Ok)
+(Ln: 17, Col: 10): Leaving ArgList (Ok)
+(Ln: 17, Col: 10): Leaving method invocation cell (Ok)
+(Ln: 17, Col: 10): Leaving method invocation (Ok)
+(Ln: 17, Col: 10): Leaving expr (Ok)
+(Ln: 17, Col: 10): Leaving Stmt (Ok)
+(Ln: 18, Col: 1): Leaving CompStmt (Ok)
+(Ln: 18, Col: 4): Leaving method invocation cell (Ok)
+(Ln: 18, Col: 4): Leaving method invocation (Ok)
+(Ln: 18, Col: 4): Leaving expr (Ok)
+(Ln: 18, Col: 4): Leaving Stmt (Ok)
+(Ln: 18, Col: 4): Entering Terms
+(Ln: 18, Col: 4): Entering Term
+(Ln: 19, Col: 1): Leaving Term (Ok)
+(Ln: 19, Col: 1): Entering Term
+(Ln: 20, Col: 1): Leaving Term (Ok)
+(Ln: 20, Col: 1): Entering Term
+(Ln: 20, Col: 1): Leaving Term (Error)
+(Ln: 20, Col: 1): Leaving Terms (Ok)
+(Ln: 20, Col: 1): Entering Stmt
+(Ln: 20, Col: 1): Entering expr
+(Ln: 20, Col: 1): Entering method invocation
+(Ln: 20, Col: 1): Entering Assign
+(Ln: 20, Col: 1): Leaving Assign (Error)
+(Ln: 20, Col: 7): Entering Assign
+(Ln: 20, Col: 7): Leaving Assign (Error)
+(Ln: 20, Col: 7): Entering if
+(Ln: 20, Col: 7): Leaving if (Error)
+(Ln: 20, Col: 7): Entering method invocation cell
+(Ln: 20, Col: 10): Entering ArgList
+(Ln: 20, Col: 11): Entering method invocation
+(Ln: 20, Col: 20): Leaving method invocation (Ok)
+(Ln: 20, Col: 21): Leaving ArgList (Ok)
+(Ln: 20, Col: 26): Entering ArguItem
+(Ln: 20, Col: 27): Leaving ArguItem (Ok)
+(Ln: 21, Col: 3): Entering CompStmt
+(Ln: 21, Col: 3): Entering Stmt
+(Ln: 21, Col: 3): Entering expr
+(Ln: 21, Col: 3): Entering method invocation
+(Ln: 21, Col: 3): Entering Assign
+(Ln: 21, Col: 3): Leaving Assign (Error)
+(Ln: 21, Col: 3): Entering if
+(Ln: 21, Col: 3): Leaving if (Error)
+(Ln: 21, Col: 3): Entering method invocation cell
+(Ln: 21, Col: 4): Entering ArgList
+(Ln: 21, Col: 4): Leaving ArgList (Error)
+(Ln: 21, Col: 3): Leaving method invocation cell (Error)
+(Ln: 21, Col: 5): Entering Assign
+(Ln: 21, Col: 5): Leaving Assign (Error)
+(Ln: 21, Col: 5): Entering if
+(Ln: 21, Col: 5): Leaving if (Error)
+(Ln: 21, Col: 5): Entering method invocation cell
+(Ln: 21, Col: 10): Entering ArgList
+(Ln: 21, Col: 11): Entering method invocation
+(Ln: 21, Col: 17): Leaving method invocation (Ok)
+(Ln: 21, Col: 18): Leaving ArgList (Ok)
+(Ln: 21, Col: 18): Leaving method invocation cell (Ok)
+(Ln: 21, Col: 18): Leaving method invocation (Ok)
+(Ln: 21, Col: 18): Leaving expr (Ok)
+(Ln: 21, Col: 18): Leaving Stmt (Ok)
+(Ln: 22, Col: 1): Leaving CompStmt (Ok)
+(Ln: 22, Col: 4): Leaving method invocation cell (Ok)
+(Ln: 22, Col: 4): Leaving method invocation (Ok)
+(Ln: 22, Col: 4): Leaving expr (Ok)
+(Ln: 22, Col: 4): Leaving Stmt (Ok)
+(Ln: 22, Col: 4): Entering Terms
+(Ln: 22, Col: 4): Entering Term
+(Ln: 23, Col: 1): Leaving Term (Ok)
+(Ln: 23, Col: 1): Entering Term
+(Ln: 24, Col: 1): Leaving Term (Ok)
+(Ln: 24, Col: 1): Entering Term
+(Ln: 24, Col: 1): Leaving Term (Error)
+(Ln: 24, Col: 1): Leaving Terms (Ok)
+(Ln: 24, Col: 1): Entering Stmt
+(Ln: 24, Col: 1): Entering expr
+(Ln: 24, Col: 1): Entering method invocation
+(Ln: 24, Col: 1): Entering Assign
+(Ln: 24, Col: 5): Entering method invocation
+(Ln: 24, Col: 5): Entering Assign
+(Ln: 24, Col: 5): Leaving Assign (Error)
+(Ln: 24, Col: 14): Entering Assign
+(Ln: 24, Col: 14): Leaving Assign (Error)
+(Ln: 24, Col: 14): Entering if
+(Ln: 24, Col: 14): Leaving if (Error)
+(Ln: 24, Col: 14): Entering method invocation cell
+(Ln: 24, Col: 20): Entering ArgList
+(Ln: 24, Col: 21): Entering method invocation
+(Ln: 24, Col: 21): Entering Assign
+(Ln: 24, Col: 21): Leaving Assign (Error)
+(Ln: 24, Col: 21): Entering if
+(Ln: 24, Col: 21): Leaving if (Error)
+(Ln: 24, Col: 21): Entering method invocation cell
+(Ln: 24, Col: 21): Leaving method invocation cell (Error)
+(Ln: 24, Col: 21): Entering while
+(Ln: 24, Col: 21): Leaving while (Error)
+(Ln: 24, Col: 21): Entering class
+(Ln: 24, Col: 21): Leaving class (Error)
+(Ln: 24, Col: 21): Entering module
+(Ln: 24, Col: 21): Leaving module (Error)
+(Ln: 24, Col: 21): Leaving method invocation (Error)
+(Ln: 24, Col: 22): Leaving ArgList (Ok)
+(Ln: 24, Col: 22): Leaving method invocation cell (Ok)
+(Ln: 24, Col: 23): Entering Assign
+(Ln: 24, Col: 23): Leaving Assign (Error)
+(Ln: 24, Col: 23): Entering if
+(Ln: 24, Col: 23): Leaving if (Error)
+(Ln: 24, Col: 23): Entering method invocation cell
+(Ln: 24, Col: 26): Entering ArgList
+(Ln: 24, Col: 27): Entering method invocation
+(Ln: 24, Col: 30): Leaving method invocation (Ok)
+(Ln: 24, Col: 31): Leaving ArgList (Ok)
+(Ln: 24, Col: 31): Leaving method invocation cell (Ok)
+(Ln: 24, Col: 31): Leaving method invocation (Ok)
+(Ln: 24, Col: 31): Leaving Assign (Ok)
+(Ln: 24, Col: 31): Leaving method invocation (Ok)
+(Ln: 24, Col: 31): Leaving expr (Ok)
+(Ln: 24, Col: 31): Leaving Stmt (Ok)
+(Ln: 24, Col: 31): Entering Terms
+(Ln: 24, Col: 31): Entering Term
+(Ln: 25, Col: 1): Leaving Term (Ok)
+(Ln: 25, Col: 1): Entering Term
+(Ln: 26, Col: 1): Leaving Term (Ok)
+(Ln: 26, Col: 1): Entering Term
+(Ln: 26, Col: 1): Leaving Term (Error)
+(Ln: 26, Col: 1): Leaving Terms (Ok)
+(Ln: 26, Col: 1): Entering Stmt
+(Ln: 26, Col: 1): Entering expr
+(Ln: 26, Col: 1): Entering method invocation
+(Ln: 26, Col: 5): Entering Assign
+(Ln: 26, Col: 5): Leaving Assign (Error)
+(Ln: 26, Col: 5): Entering if
+(Ln: 26, Col: 5): Leaving if (Error)
+(Ln: 26, Col: 5): Entering method invocation cell
+(Ln: 26, Col: 10): Entering ArgList
+(Ln: 26, Col: 11): Entering method invocation
+(Ln: 26, Col: 11): Entering Assign
+(Ln: 26, Col: 11): Leaving Assign (Error)
+(Ln: 26, Col: 11): Entering if
+(Ln: 26, Col: 11): Leaving if (Error)
+(Ln: 26, Col: 11): Entering method invocation cell
+(Ln: 26, Col: 11): Leaving method invocation cell (Error)
+(Ln: 26, Col: 11): Entering while
+(Ln: 26, Col: 11): Leaving while (Error)
+(Ln: 26, Col: 11): Entering class
+(Ln: 26, Col: 11): Leaving class (Error)
+(Ln: 26, Col: 11): Entering module
+(Ln: 26, Col: 11): Leaving module (Error)
+(Ln: 26, Col: 11): Leaving method invocation (Error)
+(Ln: 26, Col: 12): Leaving ArgList (Ok)
+(Ln: 26, Col: 17): Entering ArguItem
+(Ln: 26, Col: 18): Leaving ArguItem (Ok)
+(Ln: 26, Col: 20): Entering CompStmt
+(Ln: 26, Col: 20): Entering Stmt
+(Ln: 26, Col: 20): Entering expr
+(Ln: 26, Col: 20): Entering method invocation
+(Ln: 26, Col: 20): Entering Assign
+(Ln: 26, Col: 24): Entering method invocation
+(Ln: 26, Col: 25): Leaving method invocation (Ok)
+(Ln: 26, Col: 26): Leaving Assign (Ok)
+(Ln: 26, Col: 26): Leaving method invocation (Ok)
+(Ln: 26, Col: 26): Leaving expr (Ok)
+(Ln: 26, Col: 26): Leaving Stmt (Ok)
+(Ln: 26, Col: 26): Leaving CompStmt (Ok)
+(Ln: 26, Col: 29): Leaving method invocation cell (Ok)
+(Ln: 26, Col: 29): Leaving method invocation (Ok)
+(Ln: 26, Col: 29): Leaving expr (Ok)
+(Ln: 26, Col: 29): Leaving Stmt (Ok)
+(Ln: 26, Col: 29): Leaving CompStmt (Ok)
+FRCompstmt:<null>
+  FRPrimary:MethodInvocationCell
+    FRIdentifier: puts
+    FRArglist:<null>
+      FRString: hello
+  FRPrimary:Assign
+    FRKeyWord: =
+    FRVarName->Normal: i
+    FRInt: 1
+  FRPrimary:MethodInvocation
+    FRKeyWord: .
+    FRVarName->Normal: i
+    FRPrimary:MethodInvocationCell
+      FRIdentifier: times
+      FRArglist:<null>
+      FRBlock:<null>
+        FRArglist:<null>
+          FRIdentifier: k
+        FRCompstmt:<null>
+          FRPrimary:MethodInvocationCell
+            FRIdentifier: puts
+            FRArglist:<null>
+              FRVarName->Normal: k
+          FRArg:Infix
+            FRKeyWord: +
+            FRVarName->Normal: k
+            FRInt: 1
+  FRPrimary:MethodInvocation
+    FRKeyWord: .
+    FRVarName->Normal: i
+    FRPrimary:MethodInvocationCell
+      FRIdentifier: times
+      FRArglist:<null>
+        FRVarName->Normal: a
+        FRPrimary:If
+          FRKeyWord: if
+          FRArg:Infix
+            FRKeyWord: ==
+            FRVarName->Normal: i
+            FRInt: 0
+          FRCompstmt:<null>
+            FRVarName->Normal: i
+        FRArg:Infix
+          FRKeyWord: *
+          FRVarName->Normal: i
+          FRInt: 10
+      FRBlock:<null>
+        FRArglist:<null>
+          FRIdentifier: j
+          FRIdentifier: k
+          FRIdentifier: l
+        FRCompstmt:<null>
+          FRArg:Infix
+            FRKeyWord: *
+            FRArg:Infix
+              FRKeyWord: *
+              FRVarName->Normal: j
+              FRVarName->Normal: k
+            FRVarName->Normal: l
+  FRPrimary:MethodInvocation
+    FRKeyWord: .
+    FRPrimary:While
+      FRKeyWord: while
+      FRArg:Infix
+        FRKeyWord: !=
+        FRVarName->Normal: i
+        FRInt: 0
+      FRCompstmt:<null>
+        FRPrimary:Assign
+          FRKeyWord: =
+          FRVarName->Normal: i
+          FRArg:Infix
+            FRKeyWord: -
+            FRVarName->Normal: i
+            FRInt: 1
+    FRPrimary:MethodInvocationCell
+      FRIdentifier: times
+      FRArglist:<null>
+      FRBlock:<null>
+        FRArglist:<null>
+          FRIdentifier: j
+        FRCompstmt:<null>
+          FRPrimary:MethodInvocationCell
+            FRIdentifier: puts
+            FRArglist:<null>
+              FRVarName->Normal: j
+  FRPrimary:MethodInvocation
+    FRKeyWord: ::
+    FRConstant: File
+    FRPrimary:MethodInvocationCell
+      FRIdentifier: new
+      FRArglist:<null>
+        FRString: ./a.log
+      FRBlock:<null>
+        FRArglist:<null>
+          FRIdentifier: i
+        FRCompstmt:<null>
+          FRPrimary:MethodInvocation
+            FRKeyWord: .
+            FRVarName->Normal: i
+            FRPrimary:MethodInvocationCell
+              FRIdentifier: write
+              FRArglist:<null>
+                FRString: hehe
+  FRPrimary:Assign
+    FRKeyWord: =
+    FRVarName->Normal: i
+    FRPrimary:MethodInvocation
+      FRKeyWord: .
+      FRPrimary:MethodInvocation
+        FRKeyWord: ::
+        FRConstant: Openssl
+        FRPrimary:MethodInvocationCell
+          FRIdentifier: digest
+          FRArglist:<null>
+      FRPrimary:MethodInvocationCell
+        FRIdentifier: md5
+        FRArglist:<null>
+          FRString: a
+  FRPrimary:MethodInvocation
+    FRKeyWord: .
+    FRFloat: 1.1
+    FRPrimary:MethodInvocationCell
+      FRIdentifier: times
+      FRArglist:<null>
+      FRBlock:<null>
+        FRArglist:<null>
+          FRIdentifier: i
+        FRCompstmt:<null>
+          FRPrimary:Assign
+            FRKeyWord: =
+            FRVarName->Normal: i
+            FRInt: 0
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
+(Ln: 1, Col: 5): Entering method invocation
+(Ln: 1, Col: 7): Leaving method invocation (Ok)
 (Ln: 1, Col: 7): Leaving Assign (Ok)
+(Ln: 1, Col: 7): Leaving method invocation (Ok)
 (Ln: 1, Col: 7): Leaving expr (Ok)
 (Ln: 1, Col: 7): Leaving Stmt (Ok)
 (Ln: 1, Col: 7): Entering Terms
@@ -838,8 +1825,16 @@ Other error messages:
 (Ln: 2, Col: 1): Leaving Terms (Ok)
 (Ln: 2, Col: 1): Entering Stmt
 (Ln: 2, Col: 1): Entering expr
+(Ln: 2, Col: 1): Entering method invocation
+(Ln: 2, Col: 3): Leaving method invocation (Ok)
+(Ln: 2, Col: 6): Entering method invocation
 (Ln: 2, Col: 6): Entering Assign
+(Ln: 2, Col: 10): Entering method invocation
+(Ln: 2, Col: 12): Leaving method invocation (Ok)
+(Ln: 2, Col: 15): Entering method invocation
+(Ln: 2, Col: 16): Leaving method invocation (Ok)
 (Ln: 2, Col: 16): Leaving Assign (Ok)
+(Ln: 2, Col: 16): Leaving method invocation (Ok)
 (Ln: 2, Col: 16): Leaving expr (Ok)
 (Ln: 2, Col: 16): Leaving Stmt (Ok)
 (Ln: 2, Col: 16): Entering Terms
@@ -850,10 +1845,20 @@ Other error messages:
 (Ln: 3, Col: 1): Leaving Terms (Ok)
 (Ln: 3, Col: 1): Entering Stmt
 (Ln: 3, Col: 1): Entering expr
+(Ln: 3, Col: 1): Entering method invocation
+(Ln: 3, Col: 4): Leaving method invocation (Ok)
+(Ln: 3, Col: 7): Entering method invocation
+(Ln: 3, Col: 10): Leaving method invocation (Ok)
+(Ln: 3, Col: 13): Entering method invocation
 (Ln: 3, Col: 13): Entering Assign
+(Ln: 3, Col: 17): Entering method invocation
 (Ln: 3, Col: 17): Entering Assign
+(Ln: 3, Col: 21): Entering method invocation
+(Ln: 3, Col: 22): Leaving method invocation (Ok)
 (Ln: 3, Col: 22): Leaving Assign (Ok)
+(Ln: 3, Col: 22): Leaving method invocation (Ok)
 (Ln: 3, Col: 22): Leaving Assign (Ok)
+(Ln: 3, Col: 22): Leaving method invocation (Ok)
 (Ln: 3, Col: 22): Leaving expr (Ok)
 (Ln: 3, Col: 22): Leaving Stmt (Ok)
 (Ln: 3, Col: 22): Entering Terms
@@ -866,12 +1871,26 @@ Other error messages:
 (Ln: 5, Col: 1): Leaving Terms (Ok)
 (Ln: 5, Col: 5): Entering Stmt
 (Ln: 5, Col: 5): Entering expr
+(Ln: 5, Col: 5): Entering method invocation
 (Ln: 5, Col: 5): Entering Assign
+(Ln: 5, Col: 9): Entering method invocation
+(Ln: 5, Col: 12): Leaving method invocation (Ok)
+(Ln: 5, Col: 15): Entering method invocation
 (Ln: 5, Col: 15): Entering Assign
 (Ln: 5, Col: 15): Leaving Assign (Error)
 (Ln: 5, Col: 15): Entering if
 (Ln: 5, Col: 15): Leaving if (Error)
+(Ln: 5, Col: 15): Entering method invocation cell
+(Ln: 5, Col: 16): Entering ArgList
+(Ln: 5, Col: 16): Leaving ArgList (Error)
+(Ln: 5, Col: 15): Leaving method invocation cell (Error)
+(Ln: 5, Col: 16): Leaving method invocation (Ok)
+(Ln: 5, Col: 19): Entering method invocation
+(Ln: 5, Col: 22): Leaving method invocation (Ok)
+(Ln: 5, Col: 25): Entering method invocation
+(Ln: 5, Col: 26): Leaving method invocation (Ok)
 (Ln: 5, Col: 26): Leaving Assign (Ok)
+(Ln: 5, Col: 26): Leaving method invocation (Ok)
 (Ln: 5, Col: 26): Leaving expr (Ok)
 (Ln: 5, Col: 26): Leaving Stmt (Ok)
 (Ln: 6, Col: 1): Leaving CompStmt (Ok)
@@ -919,22 +1938,30 @@ FRCompstmt:<null>
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
+(Ln: 1, Col: 1): Entering method invocation
 (Ln: 1, Col: 1): Entering Assign
 (Ln: 1, Col: 1): Leaving Assign (Error)
 (Ln: 1, Col: 1): Entering if
 (Ln: 1, Col: 1): Leaving if (Error)
+(Ln: 1, Col: 1): Entering method invocation cell
+(Ln: 1, Col: 6): Entering ArgList
+(Ln: 1, Col: 6): Leaving ArgList (Error)
+(Ln: 1, Col: 1): Leaving method invocation cell (Error)
 (Ln: 1, Col: 1): Entering while
 (Ln: 1, Col: 1): Leaving while (Error)
 (Ln: 1, Col: 1): Entering class
-(Ln: 1, Col: 7): Entering Identifier
-(Ln: 1, Col: 8): Leaving Identifier (Ok)
 (Ln: 2, Col: 3): Entering CompStmt
 (Ln: 2, Col: 3): Entering Stmt
 (Ln: 2, Col: 3): Entering expr
+(Ln: 2, Col: 3): Entering method invocation
 (Ln: 2, Col: 3): Entering Assign
 (Ln: 2, Col: 3): Leaving Assign (Error)
 (Ln: 2, Col: 3): Entering if
 (Ln: 2, Col: 3): Leaving if (Error)
+(Ln: 2, Col: 3): Entering method invocation cell
+(Ln: 2, Col: 6): Entering ArgList
+(Ln: 2, Col: 6): Leaving ArgList (Error)
+(Ln: 2, Col: 3): Leaving method invocation cell (Error)
 (Ln: 2, Col: 3): Entering while
 (Ln: 2, Col: 3): Leaving while (Error)
 (Ln: 2, Col: 3): Entering class
@@ -952,13 +1979,20 @@ FRCompstmt:<null>
 (Ln: 3, Col: 5): Entering CompStmt
 (Ln: 3, Col: 5): Entering Stmt
 (Ln: 3, Col: 5): Entering expr
+(Ln: 3, Col: 5): Entering method invocation
 (Ln: 3, Col: 5): Entering Assign
 (Ln: 3, Col: 5): Leaving Assign (Error)
 (Ln: 3, Col: 5): Entering if
 (Ln: 3, Col: 5): Leaving if (Error)
+(Ln: 3, Col: 5): Entering method invocation cell
+(Ln: 3, Col: 5): Leaving method invocation cell (Error)
+(Ln: 3, Col: 7): Leaving method invocation (Ok)
+(Ln: 3, Col: 10): Entering method invocation
+(Ln: 3, Col: 12): Leaving method invocation (Ok)
 (Ln: 3, Col: 12): Leaving expr (Ok)
 (Ln: 3, Col: 12): Leaving Stmt (Ok)
 (Ln: 4, Col: 3): Leaving CompStmt (Ok)
+(Ln: 4, Col: 6): Leaving method invocation (Ok)
 (Ln: 4, Col: 6): Leaving expr (Ok)
 (Ln: 4, Col: 6): Leaving Stmt (Ok)
 (Ln: 4, Col: 6): Entering Terms
@@ -971,10 +2005,15 @@ FRCompstmt:<null>
 (Ln: 6, Col: 1): Leaving Terms (Ok)
 (Ln: 6, Col: 3): Entering Stmt
 (Ln: 6, Col: 3): Entering expr
+(Ln: 6, Col: 3): Entering method invocation
 (Ln: 6, Col: 3): Entering Assign
 (Ln: 6, Col: 3): Leaving Assign (Error)
 (Ln: 6, Col: 3): Entering if
 (Ln: 6, Col: 3): Leaving if (Error)
+(Ln: 6, Col: 3): Entering method invocation cell
+(Ln: 6, Col: 6): Entering ArgList
+(Ln: 6, Col: 6): Leaving ArgList (Error)
+(Ln: 6, Col: 3): Leaving method invocation cell (Error)
 (Ln: 6, Col: 3): Entering while
 (Ln: 6, Col: 3): Leaving while (Error)
 (Ln: 6, Col: 3): Entering class
@@ -1000,18 +2039,36 @@ FRCompstmt:<null>
 (Ln: 7, Col: 5): Entering CompStmt
 (Ln: 7, Col: 5): Entering Stmt
 (Ln: 7, Col: 5): Entering expr
+(Ln: 7, Col: 5): Entering method invocation
 (Ln: 7, Col: 5): Entering Assign
 (Ln: 7, Col: 5): Leaving Assign (Error)
 (Ln: 7, Col: 5): Entering if
 (Ln: 7, Col: 5): Leaving if (Error)
+(Ln: 7, Col: 5): Entering method invocation cell
+(Ln: 7, Col: 6): Entering ArgList
+(Ln: 7, Col: 6): Leaving ArgList (Error)
+(Ln: 7, Col: 5): Leaving method invocation cell (Error)
+(Ln: 7, Col: 6): Leaving method invocation (Ok)
+(Ln: 7, Col: 9): Entering method invocation
 (Ln: 7, Col: 9): Entering Assign
 (Ln: 7, Col: 9): Leaving Assign (Error)
 (Ln: 7, Col: 9): Entering if
 (Ln: 7, Col: 9): Leaving if (Error)
+(Ln: 7, Col: 9): Entering method invocation cell
+(Ln: 7, Col: 10): Entering ArgList
+(Ln: 7, Col: 10): Leaving ArgList (Error)
+(Ln: 7, Col: 9): Leaving method invocation cell (Error)
+(Ln: 7, Col: 10): Leaving method invocation (Ok)
+(Ln: 7, Col: 13): Entering method invocation
 (Ln: 7, Col: 13): Entering Assign
 (Ln: 7, Col: 13): Leaving Assign (Error)
 (Ln: 7, Col: 13): Entering if
 (Ln: 7, Col: 13): Leaving if (Error)
+(Ln: 7, Col: 13): Entering method invocation cell
+(Ln: 7, Col: 14): Entering ArgList
+(Ln: 7, Col: 14): Leaving ArgList (Error)
+(Ln: 7, Col: 13): Leaving method invocation cell (Error)
+(Ln: 7, Col: 14): Leaving method invocation (Ok)
 (Ln: 7, Col: 14): Leaving expr (Ok)
 (Ln: 7, Col: 14): Leaving Stmt (Ok)
 (Ln: 7, Col: 14): Entering Terms
@@ -1022,13 +2079,20 @@ FRCompstmt:<null>
 (Ln: 8, Col: 1): Leaving Terms (Ok)
 (Ln: 8, Col: 5): Entering Stmt
 (Ln: 8, Col: 5): Entering expr
+(Ln: 8, Col: 5): Entering method invocation
 (Ln: 8, Col: 5): Entering Assign
 (Ln: 8, Col: 5): Leaving Assign (Error)
 (Ln: 8, Col: 5): Entering if
 (Ln: 8, Col: 5): Leaving if (Error)
+(Ln: 8, Col: 5): Entering method invocation cell
+(Ln: 8, Col: 6): Entering ArgList
+(Ln: 8, Col: 6): Leaving ArgList (Error)
+(Ln: 8, Col: 5): Leaving method invocation cell (Error)
+(Ln: 8, Col: 6): Leaving method invocation (Ok)
 (Ln: 8, Col: 6): Leaving expr (Ok)
 (Ln: 8, Col: 6): Leaving Stmt (Ok)
 (Ln: 9, Col: 3): Leaving CompStmt (Ok)
+(Ln: 9, Col: 6): Leaving method invocation (Ok)
 (Ln: 9, Col: 6): Leaving expr (Ok)
 (Ln: 9, Col: 6): Leaving Stmt (Ok)
 (Ln: 9, Col: 6): Entering Terms
@@ -1041,10 +2105,15 @@ FRCompstmt:<null>
 (Ln: 11, Col: 1): Leaving Terms (Ok)
 (Ln: 11, Col: 3): Entering Stmt
 (Ln: 11, Col: 3): Entering expr
+(Ln: 11, Col: 3): Entering method invocation
 (Ln: 11, Col: 3): Entering Assign
 (Ln: 11, Col: 3): Leaving Assign (Error)
 (Ln: 11, Col: 3): Entering if
 (Ln: 11, Col: 3): Leaving if (Error)
+(Ln: 11, Col: 3): Entering method invocation cell
+(Ln: 11, Col: 6): Entering ArgList
+(Ln: 11, Col: 6): Leaving ArgList (Error)
+(Ln: 11, Col: 3): Leaving method invocation cell (Error)
 (Ln: 11, Col: 3): Entering while
 (Ln: 11, Col: 3): Leaving while (Error)
 (Ln: 11, Col: 3): Entering class
@@ -1064,13 +2133,20 @@ FRCompstmt:<null>
 (Ln: 12, Col: 5): Entering CompStmt
 (Ln: 12, Col: 5): Entering Stmt
 (Ln: 12, Col: 5): Entering expr
+(Ln: 12, Col: 5): Entering method invocation
 (Ln: 12, Col: 5): Entering Assign
 (Ln: 12, Col: 5): Leaving Assign (Error)
 (Ln: 12, Col: 5): Entering if
 (Ln: 12, Col: 5): Leaving if (Error)
+(Ln: 12, Col: 5): Entering method invocation cell
+(Ln: 12, Col: 7): Entering ArgList
+(Ln: 12, Col: 7): Leaving ArgList (Error)
+(Ln: 12, Col: 5): Leaving method invocation cell (Error)
+(Ln: 12, Col: 7): Leaving method invocation (Ok)
 (Ln: 12, Col: 7): Leaving expr (Ok)
 (Ln: 12, Col: 7): Leaving Stmt (Ok)
 (Ln: 13, Col: 3): Leaving CompStmt (Ok)
+(Ln: 13, Col: 6): Leaving method invocation (Ok)
 (Ln: 13, Col: 6): Leaving expr (Ok)
 (Ln: 13, Col: 6): Leaving Stmt (Ok)
 (Ln: 13, Col: 6): Entering Terms
@@ -1083,10 +2159,15 @@ FRCompstmt:<null>
 (Ln: 15, Col: 1): Leaving Terms (Ok)
 (Ln: 15, Col: 3): Entering Stmt
 (Ln: 15, Col: 3): Entering expr
+(Ln: 15, Col: 3): Entering method invocation
 (Ln: 15, Col: 3): Entering Assign
 (Ln: 15, Col: 3): Leaving Assign (Error)
 (Ln: 15, Col: 3): Entering if
 (Ln: 15, Col: 3): Leaving if (Error)
+(Ln: 15, Col: 3): Entering method invocation cell
+(Ln: 15, Col: 6): Entering ArgList
+(Ln: 15, Col: 6): Leaving ArgList (Error)
+(Ln: 15, Col: 3): Leaving method invocation cell (Error)
 (Ln: 15, Col: 3): Entering while
 (Ln: 15, Col: 3): Leaving while (Error)
 (Ln: 15, Col: 3): Entering class
@@ -1096,23 +2177,36 @@ FRCompstmt:<null>
 (Ln: 15, Col: 8): Entering ArguList
 (Ln: 15, Col: 9): Entering Argus
 (Ln: 15, Col: 9): Entering ArguItem
+(Ln: 15, Col: 13): Entering method invocation
+(Ln: 15, Col: 14): Leaving method invocation (Ok)
 (Ln: 15, Col: 14): Leaving ArguItem (Ok)
 (Ln: 16, Col: 5): Entering ArguItem
+(Ln: 16, Col: 9): Entering method invocation
+(Ln: 16, Col: 10): Leaving method invocation (Ok)
 (Ln: 16, Col: 10): Leaving ArguItem (Ok)
 (Ln: 16, Col: 12): Entering ArguItem
+(Ln: 16, Col: 16): Entering method invocation
+(Ln: 16, Col: 17): Leaving method invocation (Ok)
 (Ln: 16, Col: 17): Leaving ArguItem (Ok)
 (Ln: 16, Col: 17): Leaving Argus (Ok)
 (Ln: 17, Col: 5): Leaving ArguList (Ok)
 (Ln: 17, Col: 5): Entering CompStmt
 (Ln: 17, Col: 5): Entering Stmt
 (Ln: 17, Col: 5): Entering expr
+(Ln: 17, Col: 5): Entering method invocation
 (Ln: 17, Col: 5): Entering Assign
 (Ln: 17, Col: 5): Leaving Assign (Error)
 (Ln: 17, Col: 5): Entering if
 (Ln: 17, Col: 5): Leaving if (Error)
+(Ln: 17, Col: 5): Entering method invocation cell
+(Ln: 17, Col: 6): Entering ArgList
+(Ln: 17, Col: 6): Leaving ArgList (Error)
+(Ln: 17, Col: 5): Leaving method invocation cell (Error)
+(Ln: 17, Col: 6): Leaving method invocation (Ok)
 (Ln: 17, Col: 6): Leaving expr (Ok)
 (Ln: 17, Col: 6): Leaving Stmt (Ok)
 (Ln: 18, Col: 3): Leaving CompStmt (Ok)
+(Ln: 18, Col: 6): Leaving method invocation (Ok)
 (Ln: 18, Col: 6): Leaving expr (Ok)
 (Ln: 18, Col: 6): Leaving Stmt (Ok)
 (Ln: 18, Col: 6): Entering Terms
@@ -1125,10 +2219,15 @@ FRCompstmt:<null>
 (Ln: 20, Col: 1): Leaving Terms (Ok)
 (Ln: 20, Col: 3): Entering Stmt
 (Ln: 20, Col: 3): Entering expr
+(Ln: 20, Col: 3): Entering method invocation
 (Ln: 20, Col: 3): Entering Assign
 (Ln: 20, Col: 3): Leaving Assign (Error)
 (Ln: 20, Col: 3): Entering if
 (Ln: 20, Col: 3): Leaving if (Error)
+(Ln: 20, Col: 3): Entering method invocation cell
+(Ln: 20, Col: 6): Entering ArgList
+(Ln: 20, Col: 6): Leaving ArgList (Error)
+(Ln: 20, Col: 3): Leaving method invocation cell (Error)
 (Ln: 20, Col: 3): Entering while
 (Ln: 20, Col: 3): Leaving while (Error)
 (Ln: 20, Col: 3): Entering class
@@ -1138,8 +2237,12 @@ FRCompstmt:<null>
 (Ln: 20, Col: 8): Entering ArguList
 (Ln: 20, Col: 9): Entering Argus
 (Ln: 20, Col: 9): Entering ArguItem
+(Ln: 20, Col: 13): Entering method invocation
+(Ln: 20, Col: 14): Leaving method invocation (Ok)
 (Ln: 20, Col: 14): Leaving ArguItem (Ok)
 (Ln: 20, Col: 16): Entering ArguItem
+(Ln: 20, Col: 20): Entering method invocation
+(Ln: 20, Col: 21): Leaving method invocation (Ok)
 (Ln: 20, Col: 21): Leaving ArguItem (Ok)
 (Ln: 20, Col: 23): Entering ArguItem
 (Ln: 20, Col: 24): Leaving ArguItem (Ok)
@@ -1152,19 +2255,26 @@ FRCompstmt:<null>
 (Ln: 21, Col: 3): Entering CompStmt
 (Ln: 21, Col: 3): Entering Stmt
 (Ln: 21, Col: 3): Entering expr
+(Ln: 21, Col: 3): Entering method invocation
 (Ln: 21, Col: 3): Entering Assign
 (Ln: 21, Col: 3): Leaving Assign (Error)
 (Ln: 21, Col: 3): Entering if
 (Ln: 21, Col: 3): Leaving if (Error)
+(Ln: 21, Col: 3): Entering method invocation cell
+(Ln: 21, Col: 6): Entering ArgList
+(Ln: 21, Col: 6): Leaving ArgList (Error)
+(Ln: 21, Col: 3): Leaving method invocation cell (Error)
 (Ln: 21, Col: 3): Entering while
 (Ln: 21, Col: 3): Leaving while (Error)
 (Ln: 21, Col: 3): Entering class
 (Ln: 21, Col: 3): Leaving class (Error)
 (Ln: 21, Col: 3): Entering module
 (Ln: 21, Col: 3): Leaving module (Error)
+(Ln: 21, Col: 3): Leaving method invocation (Error)
 (Ln: 21, Col: 3): Leaving expr (Error)
 (Ln: 21, Col: 3): Leaving Stmt (Error)
 (Ln: 21, Col: 3): Leaving CompStmt (Ok)
+(Ln: 21, Col: 6): Leaving method invocation (Ok)
 (Ln: 21, Col: 6): Leaving expr (Ok)
 (Ln: 21, Col: 6): Leaving Stmt (Ok)
 (Ln: 21, Col: 6): Entering Terms
@@ -1177,10 +2287,15 @@ FRCompstmt:<null>
 (Ln: 23, Col: 1): Leaving Terms (Ok)
 (Ln: 23, Col: 3): Entering Stmt
 (Ln: 23, Col: 3): Entering expr
+(Ln: 23, Col: 3): Entering method invocation
 (Ln: 23, Col: 3): Entering Assign
 (Ln: 23, Col: 3): Leaving Assign (Error)
 (Ln: 23, Col: 3): Entering if
 (Ln: 23, Col: 3): Leaving if (Error)
+(Ln: 23, Col: 3): Entering method invocation cell
+(Ln: 23, Col: 6): Entering ArgList
+(Ln: 23, Col: 6): Leaving ArgList (Error)
+(Ln: 23, Col: 3): Leaving method invocation cell (Error)
 (Ln: 23, Col: 3): Entering while
 (Ln: 23, Col: 3): Leaving while (Error)
 (Ln: 23, Col: 3): Entering class
@@ -1190,19 +2305,26 @@ FRCompstmt:<null>
 (Ln: 23, Col: 8): Entering ArguList
 (Ln: 23, Col: 9): Entering Argus
 (Ln: 23, Col: 9): Entering ArguItem
+(Ln: 23, Col: 13): Entering method invocation
+(Ln: 23, Col: 14): Leaving method invocation (Ok)
 (Ln: 23, Col: 14): Leaving ArguItem (Ok)
 (Ln: 23, Col: 14): Leaving Argus (Ok)
 (Ln: 23, Col: 16): Leaving ArguList (Ok)
 (Ln: 23, Col: 16): Entering CompStmt
 (Ln: 23, Col: 16): Entering Stmt
 (Ln: 23, Col: 16): Entering expr
+(Ln: 23, Col: 16): Entering method invocation
 (Ln: 23, Col: 16): Entering Assign
 (Ln: 23, Col: 16): Leaving Assign (Error)
 (Ln: 23, Col: 16): Entering if
 (Ln: 23, Col: 16): Leaving if (Error)
+(Ln: 23, Col: 16): Entering method invocation cell
+(Ln: 23, Col: 16): Leaving method invocation cell (Error)
+(Ln: 23, Col: 18): Leaving method invocation (Ok)
 (Ln: 23, Col: 19): Leaving expr (Ok)
 (Ln: 23, Col: 19): Leaving Stmt (Ok)
 (Ln: 23, Col: 19): Leaving CompStmt (Ok)
+(Ln: 23, Col: 22): Leaving method invocation (Ok)
 (Ln: 23, Col: 22): Leaving expr (Ok)
 (Ln: 23, Col: 22): Leaving Stmt (Ok)
 (Ln: 23, Col: 22): Entering Terms
@@ -1213,10 +2335,15 @@ FRCompstmt:<null>
 (Ln: 24, Col: 1): Leaving Terms (Ok)
 (Ln: 25, Col: 3): Entering Stmt
 (Ln: 25, Col: 3): Entering expr
+(Ln: 25, Col: 3): Entering method invocation
 (Ln: 25, Col: 3): Entering Assign
 (Ln: 25, Col: 3): Leaving Assign (Error)
 (Ln: 25, Col: 3): Entering if
 (Ln: 25, Col: 3): Leaving if (Error)
+(Ln: 25, Col: 3): Entering method invocation cell
+(Ln: 25, Col: 6): Entering ArgList
+(Ln: 25, Col: 6): Leaving ArgList (Error)
+(Ln: 25, Col: 3): Leaving method invocation cell (Error)
 (Ln: 25, Col: 3): Entering while
 (Ln: 25, Col: 3): Leaving while (Error)
 (Ln: 25, Col: 3): Entering class
@@ -1234,13 +2361,20 @@ FRCompstmt:<null>
 (Ln: 25, Col: 11): Entering CompStmt
 (Ln: 25, Col: 11): Entering Stmt
 (Ln: 25, Col: 11): Entering expr
+(Ln: 25, Col: 11): Entering method invocation
 (Ln: 25, Col: 11): Entering Assign
 (Ln: 25, Col: 11): Leaving Assign (Error)
 (Ln: 25, Col: 11): Entering if
 (Ln: 25, Col: 11): Leaving if (Error)
+(Ln: 25, Col: 11): Entering method invocation cell
+(Ln: 25, Col: 12): Entering ArgList
+(Ln: 25, Col: 12): Leaving ArgList (Error)
+(Ln: 25, Col: 11): Leaving method invocation cell (Error)
+(Ln: 25, Col: 12): Leaving method invocation (Ok)
 (Ln: 25, Col: 13): Leaving expr (Ok)
 (Ln: 25, Col: 13): Leaving Stmt (Ok)
 (Ln: 25, Col: 13): Leaving CompStmt (Ok)
+(Ln: 25, Col: 16): Leaving method invocation (Ok)
 (Ln: 25, Col: 16): Leaving expr (Ok)
 (Ln: 25, Col: 16): Leaving Stmt (Ok)
 (Ln: 25, Col: 16): Entering Terms
@@ -1251,10 +2385,15 @@ FRCompstmt:<null>
 (Ln: 26, Col: 1): Leaving Terms (Ok)
 (Ln: 26, Col: 3): Entering Stmt
 (Ln: 26, Col: 3): Entering expr
+(Ln: 26, Col: 3): Entering method invocation
 (Ln: 26, Col: 3): Entering Assign
 (Ln: 26, Col: 3): Leaving Assign (Error)
 (Ln: 26, Col: 3): Entering if
 (Ln: 26, Col: 3): Leaving if (Error)
+(Ln: 26, Col: 3): Entering method invocation cell
+(Ln: 26, Col: 6): Entering ArgList
+(Ln: 26, Col: 6): Leaving ArgList (Error)
+(Ln: 26, Col: 3): Leaving method invocation cell (Error)
 (Ln: 26, Col: 3): Entering while
 (Ln: 26, Col: 3): Leaving while (Error)
 (Ln: 26, Col: 3): Entering class
@@ -1272,13 +2411,20 @@ FRCompstmt:<null>
 (Ln: 27, Col: 5): Entering CompStmt
 (Ln: 27, Col: 5): Entering Stmt
 (Ln: 27, Col: 5): Entering expr
+(Ln: 27, Col: 5): Entering method invocation
 (Ln: 27, Col: 5): Entering Assign
 (Ln: 27, Col: 5): Leaving Assign (Error)
 (Ln: 27, Col: 5): Entering if
 (Ln: 27, Col: 5): Leaving if (Error)
+(Ln: 27, Col: 5): Entering method invocation cell
+(Ln: 27, Col: 6): Entering ArgList
+(Ln: 27, Col: 6): Leaving ArgList (Error)
+(Ln: 27, Col: 5): Leaving method invocation cell (Error)
+(Ln: 27, Col: 6): Leaving method invocation (Ok)
 (Ln: 27, Col: 6): Leaving expr (Ok)
 (Ln: 27, Col: 6): Leaving Stmt (Ok)
 (Ln: 28, Col: 3): Leaving CompStmt (Ok)
+(Ln: 28, Col: 6): Leaving method invocation (Ok)
 (Ln: 28, Col: 6): Leaving expr (Ok)
 (Ln: 28, Col: 6): Leaving Stmt (Ok)
 (Ln: 28, Col: 6): Entering Terms
@@ -1289,10 +2435,15 @@ FRCompstmt:<null>
 (Ln: 29, Col: 1): Leaving Terms (Ok)
 (Ln: 29, Col: 3): Entering Stmt
 (Ln: 29, Col: 3): Entering expr
+(Ln: 29, Col: 3): Entering method invocation
 (Ln: 29, Col: 3): Entering Assign
 (Ln: 29, Col: 3): Leaving Assign (Error)
 (Ln: 29, Col: 3): Entering if
 (Ln: 29, Col: 3): Leaving if (Error)
+(Ln: 29, Col: 3): Entering method invocation cell
+(Ln: 29, Col: 6): Entering ArgList
+(Ln: 29, Col: 6): Leaving ArgList (Error)
+(Ln: 29, Col: 3): Leaving method invocation cell (Error)
 (Ln: 29, Col: 3): Entering while
 (Ln: 29, Col: 3): Leaving while (Error)
 (Ln: 29, Col: 3): Entering class
@@ -1310,26 +2461,36 @@ FRCompstmt:<null>
 (Ln: 30, Col: 5): Entering CompStmt
 (Ln: 30, Col: 5): Entering Stmt
 (Ln: 30, Col: 5): Entering expr
+(Ln: 30, Col: 5): Entering method invocation
 (Ln: 30, Col: 5): Entering Assign
+(Ln: 30, Col: 10): Entering method invocation
 (Ln: 30, Col: 10): Entering Assign
 (Ln: 30, Col: 10): Leaving Assign (Error)
 (Ln: 30, Col: 10): Entering if
 (Ln: 30, Col: 10): Leaving if (Error)
+(Ln: 30, Col: 10): Entering method invocation cell
+(Ln: 30, Col: 11): Entering ArgList
+(Ln: 30, Col: 11): Leaving ArgList (Error)
+(Ln: 30, Col: 10): Leaving method invocation cell (Error)
+(Ln: 30, Col: 11): Leaving method invocation (Ok)
 (Ln: 30, Col: 11): Leaving Assign (Ok)
+(Ln: 30, Col: 11): Leaving method invocation (Ok)
 (Ln: 30, Col: 11): Leaving expr (Ok)
 (Ln: 30, Col: 11): Leaving Stmt (Ok)
 (Ln: 31, Col: 3): Leaving CompStmt (Ok)
+(Ln: 31, Col: 6): Leaving method invocation (Ok)
 (Ln: 31, Col: 6): Leaving expr (Ok)
 (Ln: 31, Col: 6): Leaving Stmt (Ok)
 (Ln: 32, Col: 1): Leaving CompStmt (Ok)
 (Ln: 32, Col: 4): Leaving class (Ok)
+(Ln: 32, Col: 4): Leaving method invocation (Ok)
 (Ln: 32, Col: 4): Leaving expr (Ok)
 (Ln: 32, Col: 4): Leaving Stmt (Ok)
 (Ln: 32, Col: 4): Leaving CompStmt (Ok)
 FRCompstmt:<null>
   FRPrimary:Class
     FRKeyWord: class
-    FRIdentifier: A
+    FRConstant: A
     FRKeyWord: superclass
     
     FRCompstmt:<null>

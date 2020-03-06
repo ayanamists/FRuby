@@ -11,17 +11,16 @@
             | FRCallArgs = 11
             | FRMlhs = 12
             | FRMrhs = 14
-            | FRBlockVar = 16
             | FRWhenArgs = 19
             | FRPrimary = 20
             | FRArg = 21
-            | FRFunction = 22
             | FRCommand = 23
             | FRCall = 24
             | FRExpr = 25
             | FRStmt = 26
             | FRCompstmt = 27
             | FRProgram = 28
+            | FRBlock = 29
 
         type FRStmtSubType = 
             | CallBlock = 0
@@ -54,7 +53,9 @@
             | Class = 10         // Class block
             | Module = 11        // Module block
             | Def = 12           // Def block
-            | Assign = 13           // lhs '=' Arg
+            | Assign = 13               // lhs '=' Arg
+            | MethodInvocation = 14     // a.b() {||}
+            | MethodInvocationCell = 15 // b() {||}
 
         type LiteralSubType = 
             | FRInt = 0
@@ -82,7 +83,8 @@
             | FRFName of FRFName
             | FRString of FRString
             | FRInt of FRInt
-            | FRIdentifier of FRIdentifier
+            | FRIdentifier of FRIdentifier // FRIdentifier is used for method name
+            | FRConstant of FRIdentifier
             | FRFloat of FRFloat
             | FRVarName of FRVarName
             | FRKeyWord of FRKeyWord
@@ -95,6 +97,7 @@
                     | FRInt(n) -> "FRInt: " +  n.ToString()
                     | FRIdentifier(n) -> "FRIdentifier: " + n.ToString()
                     | FRFloat(n) -> "FRFloat: " + n.ToString()
+                    | FRConstant(n) -> "FRConstant: " + n.ToString()
                     | FRVarName(n) -> 
                         match n with 
                         | Global(g) -> "FRVarName->Global: " +  g.ToString()
@@ -108,6 +111,16 @@
         type FRAstNode = 
             | NonTerminal of FRType * FRSubType * list<FRAstNode>
             | Terminal of FRTerminal
+
+        let FRGetNonTerminalType x = 
+            match x with
+            | NonTerminal(a, b, c) -> a
+            | _ -> raise(TypeError("x is not a NonTerminal")) 
+
+        let FRGetNonTerminalSubType x = 
+            match x with
+            | NonTerminal(a, b, c) -> b
+            | _ -> raise(TypeError("x is not a NonTerminal"))
 
         let internal Key k = 
             Terminal(FRKeyWord(k))
@@ -178,7 +191,27 @@
             let child = Terminal(FRKeyWord("def"))::a::b::[c;]
             FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.Def, child)
 
-        exception TypeError of string
+        let FRFormCallArgs x = 
+            let child = x
+            FRAstNode.NonTerminal(FRType.FRCallArgs, null, child)
+
+        let FRFormBlock (a,b) = // a: BlockVar, b: CompStat 
+            let child = a::[b;]
+            FRAstNode.NonTerminal(FRType.FRBlock, null, child)
+
+        let FRFormMethodCell (a,b,c) =
+            let child = 
+                match c with
+                | Some(t) -> a::b::[t;]
+                | _ -> a::[b;]
+            FRAstNode.NonTerminal(FRType.FRPrimary, FRPrimarySubType.MethodInvocationCell, child)
+
+        let FRFormMethodInvocation x = 
+            match x with
+            |(a, b, c) -> 
+                let child = 
+                    Terminal(FRKeyWord(a))::b::[c;]
+                NonTerminal(FRType.FRPrimary, FRPrimarySubType.MethodInvocation, child)
 
         let GetStringValue x =
             match x with

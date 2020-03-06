@@ -93,6 +93,8 @@
             (resultSatisfies (fun t -> not(FRKeyWordSet.Contains((GetFRVarNameValue t)))) 
                             "Is a key word!" 
                             pFRVarName) |>> Terminal
+    // Parse Constant
+        let pFRConstant = pFRIdentifierStartWith (asciiUpper) |>> FRConstant |>> Terminal
 
     // Parse Interger
         let pFRInterger:Parser<FRTerminal, unit> = 
@@ -156,6 +158,8 @@
                 else
                     Reply(Error, messageError "SyntaxError: Not Complete Block")
             
+        /// 使用此元素的约定：在外部显式消除第一个Stmt前的空字符，
+        /// endWith是结束符，仍然需要在外部显式消除
         let pFRCompStmt endWith = 
             opt (pFRStmt .>>. (manyTill (pFRTerms >>. pFRWhite >>. pFRStmt) 
                 (opt (pFRWhite) >>? (backTraceToBegin endWith)))) |>> 
@@ -163,7 +167,7 @@
                         | Some(a, b) -> a::b
                         | _ -> []) |>> FRFormCompStmt <!> "CompStmt"
 
-    // Parse lhs
+    // Parse lhs  
         let pFRLhs = pFRVarNameNode
 
     // Parse if Primary
@@ -193,7 +197,7 @@
         let pFRClassBegin = (pstring "class") >>. pFRWhite1
         let pFRClassInherit = pFRSpace >>. opt ((pstring "<") >>. pFRWhite >>. pFRIdentifierNode)
         let pFRClassPrimary = 
-            attempt ((pipe6 pFRClassBegin pFRIdentifierNode 
+            attempt ((pipe6 pFRClassBegin pFRConstant
                 pFRClassInherit pFRWhite1 (pFRCompStmt (pstring "end")) 
                     (pstring "end") (fun a b c d e f -> (b, c, e)))|>> FRFormClassPrimary) <!> "class"
 
@@ -233,11 +237,11 @@
 
     // Parse Module Def Primary
         let pFRModulePrimary = 
-            attempt ((pipe6 (pstring "module") pFRSpace1 pFRIdentifierNode 
+            attempt ((pipe6 (pstring "module") pFRSpace1 pFRConstant 
                 pFRWhite (pFRCompStmt (pstring "end")) (pstring "end") 
                 (fun a b c d e f -> c , e))|>> FRFormModulePrimary) <!> "module"
     
-    // Parse method invocation
+    
 
     // For FParsec don't support left recursion, 
     // we have to us Terminal to exclude Binary Operation from FPExpr 
@@ -278,13 +282,49 @@
         do pFRStmtRef := pFRExpr <!> "Stmt"
         do pFRExprRef := pFRArg <!> "expr"
 
+    // Parse Method Invocation Cell Primary
+    // Method Invocation Cell 意为 没有指定接收者的函数调用
+        let pFRArgValue = pFRArg
+        let pFRArgListRaw = sepBy pFRArg (attempt(pFRWhite >>. pstring "," .>> pFRWhite))
+        let pFRArgList = pstring "(" >>. pFRArgListRaw .>> pstring ")" |>> FRFormArgList <!> "ArgList"
+        let pFRBlockVarItem = pFRArguItem
+        let pFRBlockVarRaw = sepBy pFRBlockVarItem (attempt(pFRSpace >>. pstring "," .>> pFRSpace)) |>> FRFormArgList
+        let pFRBlockVar = pstring "|" >>. pFRBlockVarRaw .>> pstring "|"
+        let pFRBlockRaw endWith = 
+            pipe5 pFRWhite pFRBlockVar pFRWhite (pFRCompStmt endWith) pFRWhite 
+                (fun a b c d e -> (b, d)) |>> FRFormBlock
+        let pFRParenBlock = pstring "{" >>. pFRBlockRaw (pstring "}") .>> pstring "}"
+        let pFRDoBlock = pstring "do" >>. pFRBlockRaw (pstring "end") .>> pstring "end"
+        let pFRBlock = pFRParenBlock <|> pFRDoBlock
+        let pFRMethodCell = 
+            pFRMethodNameNode .>>.? pFRArgList .>>. pFRSpace .>>. (opt pFRBlock) 
+                |>> (fun(((a,b),c),d)-> (a, b, d)) |>> FRFormMethodCell<!> "method invocation cell"
+
     // Parse Primary
         let pFRParenPrimary = pstring "(" >>. (pFRCompStmt (pstring ")"))  .>> pstring ")"
-        do pFRPrimaryRef := 
-            pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRAssignPrimary <|> 
-            pFRIfPrimary <|> pFRVarNameNode <|> pFRWhilePrimary <|> pFRClassPrimary <|> 
-            pFRModulePrimary <|> pFRMethodDefPrimary
 
+        /// NormalPrimary means primary which is not a dot-style method invocation
+        /// NormalPrimary 意为不含 点式method Invocation 的 Primary
+        let pFRNormalPrimary = 
+            pFRParenPrimary <|> pFRIntNode <|> pFRFloatNode <|> pFRStringNode <|> pFRAssignPrimary <|> 
+            pFRConstant <|> pFRIfPrimary <|> pFRMethodCell <|> pFRVarNameNode <|>
+            pFRWhilePrimary <|> pFRClassPrimary <|> pFRModulePrimary <|> pFRMethodDefPrimary
+
+    // Parse method invocation Primary
+        let pFRMethodInvocationRaw = OperatorPrecedenceParser<FRAstNode, unit, unit>()
+        let dot = 
+            InfixOperator(".", pFRWhite, 1, Associativity.Left, 
+                (), (fun a b c -> FRFormMethodInvocation( ".", b, c)))
+        let Colon2 = 
+            InfixOperator("::", pFRWhite, 1, Associativity.Left, 
+                (), (fun a b c -> FRFormMethodInvocation("::", b, c)))
+        pFRMethodInvocationRaw.TermParser <- pFRNormalPrimary
+        pFRMethodInvocationRaw.AddOperator dot
+        pFRMethodInvocationRaw.AddOperator Colon2
+        let pFRMethodInvocation = pFRMethodInvocationRaw.ExpressionParser <!> "method invocation"
+        
+        do pFRPrimaryRef := pFRMethodInvocation
+            
     // Parse all
         let pFR:Parser<FRAstNode, unit> = (pFRCompStmt eof) .>> eof
 
