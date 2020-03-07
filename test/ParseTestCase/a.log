@@ -975,54 +975,36 @@ FRCompstmt:<null>
 (Ln: 8, Col: 4): Leaving method invocation (Ok)
 (Ln: 8, Col: 4): Leaving expr (Ok)
 (Ln: 8, Col: 4): Leaving Stmt (Ok)
-(Ln: 8, Col: 4): Entering Terms
-(Ln: 8, Col: 4): Entering Term
-(Ln: 9, Col: 1): Leaving Term (Ok)
-(Ln: 9, Col: 1): Entering Term
-(Ln: 10, Col: 1): Leaving Term (Ok)
-(Ln: 10, Col: 1): Entering Term
-(Ln: 10, Col: 1): Leaving Term (Error)
-(Ln: 10, Col: 1): Leaving Terms (Ok)
-(Ln: 10, Col: 1): Entering Stmt
-(Ln: 10, Col: 1): Entering expr
-(Ln: 10, Col: 1): Entering method invocation
-(Ln: 10, Col: 1): Entering Assign
-(Ln: 10, Col: 1): Leaving Assign (Error)
-(Ln: 10, Col: 1): Entering if
-(Ln: 10, Col: 1): Leaving if (Error)
-(Ln: 10, Col: 1): Entering method invocation cell
-(Ln: 10, Col: 6): Entering ArgList
-(Ln: 10, Col: 6): Leaving ArgList (Error)
-(Ln: 10, Col: 1): Leaving method invocation cell (Error)
-(Ln: 10, Col: 1): Entering while
-(Ln: 10, Col: 1): Leaving while (Error)
-(Ln: 10, Col: 1): Entering class
-(Ln: 10, Col: 1): Leaving class (Error)
-(Ln: 10, Col: 1): Entering module
-(Ln: 10, Col: 1): Leaving module (Error)
-(Ln: 10, Col: 1): Leaving method invocation (Error)
-(Ln: 10, Col: 1): Leaving expr (Error)
-(Ln: 10, Col: 1): Leaving Stmt (Error)
-(Ln: 10, Col: 1): Leaving CompStmt (Error)
-Failure: Error in Ln: 10 Col: 1
-class a 
-^
-Expecting: Ascii uppercase letter, floating-point number, integer number
-(64-bit, signed), newline, ' ', '"', '(', ';', 'def', 'if', 'module' or 'while'
-Other error messages:
-  Is a key word!
-
-The parser backtracked after:
-  Error in Ln: 10 Col: 6
-  class a 
-       ^
-  Expecting: Ascii letter, decimal digit, '!', '(', '=', '?' or '_'
-
-The parser backtracked after:
-  Error in Ln: 10 Col: 7
-  class a 
-        ^
-  Expecting: Ascii uppercase letter
+(Ln: 8, Col: 4): Leaving CompStmt (Ok)
+FRCompstmt:<null>
+  FRPrimary:Class
+    FRKeyWord: class
+    FRConstant: A
+    FRKeyWord: superclass
+    FRIdentifier: Class
+    FRCompstmt:<null>
+      FRPrimary:While
+        FRKeyWord: while
+        FRArg:Infix
+          FRKeyWord: !=
+          FRVarName->Normal: i
+          FRInt: 0
+        FRCompstmt:<null>
+          FRArg:Infix
+            FRKeyWord: -
+            FRVarName->Normal: i
+            FRInt: 1
+      FRPrimary:If
+        FRKeyWord: if
+        FRArg:Infix
+          FRKeyWord: ==
+          FRVarName->Normal: i
+          FRInt: 0
+        FRCompstmt:<null>
+          FRArg:Infix
+            FRKeyWord: +
+            FRVarName->Normal: i
+            FRInt: 1
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr

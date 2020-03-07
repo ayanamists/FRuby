@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="eval.fs" />
     <Compile Include="ParseExpection.fs" />
     <Compile Include="Ast.fs" />
     <Compile Include="AstPrint.fs" />
     <Compile Include="Parser.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="test\TestParse.fs" />
+    <Compile Include="FRuby.fs" />
   </ItemGroup>
 
   <ItemGroup>
