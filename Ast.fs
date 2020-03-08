@@ -213,6 +213,9 @@
                     Terminal(FRKeyWord(a))::b::[c;]
                 NonTerminal(FRType.FRPrimary, FRPrimarySubType.MethodInvocation, child)
 
+        let FRFormStmt(a,b) = 
+            NonTerminal(FRType.FRStmt, a, [b;])
+
         let GetStringValue x =
             match x with
             | FRVarName.Global(g) -> g

@@ -447,67 +447,60 @@
 (Ln: 17, Col: 8): Leaving Stmt (Ok)
 (Ln: 17, Col: 8): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:If
-    FRKeyWord: if
-    FRArg:Infix
-      FRKeyWord: ==
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:If
+      FRKeyWord: if
       FRArg:Infix
-        FRKeyWord: *
-        FRVarName->Normal: i
-        FRInt: 20
-      FRInt: 0
-    FRCompstmt:<null>
-      FRInt: 1
-    FRKeyWord: elsif
-    FRArg:Infix
-      FRKeyWord: !=
-      FRVarName->Normal: i
-      FRInt: 0
-    FRCompstmt:<null>
-      FRArg:Infix
-        FRKeyWord: +
-        FRVarName->Normal: i
+        FRKeyWord: ==
         FRArg:Infix
           FRKeyWord: *
-          FRInt: 10
+          FRVarName->Normal: i
           FRInt: 20
-      FRArg:Infix
-        FRKeyWord: +
-        FRVarName->Normal: i
-        FRInt: 1
-      FRPrimary:If
-        FRKeyWord: if
-        FRArg:Infix
-          FRKeyWord: ==
-          FRVarName->Normal: i
+        FRInt: 0
+      FRCompstmt:<null>
+        FRStmt:(Ln: 2, Col: 1)
           FRInt: 1
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-    FRKeyWord: else
-    FRCompstmt:<null>
+      FRKeyWord: elsif
       FRArg:Infix
-        FRKeyWord: +
+        FRKeyWord: !=
         FRVarName->Normal: i
-        FRInt: 1
-  FRArg:Infix
-    FRKeyWord: *
-    FRCompstmt:<null>
-      FRPrimary:If
-        FRKeyWord: if
-        FRArg:Infix
-          FRKeyWord: ==
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-    FRInt: 10
-  FRPrimary:If
-    FRKeyWord: if
+        FRInt: 0
+      FRCompstmt:<null>
+        FRStmt:(Ln: 4, Col: 1)
+          FRArg:Infix
+            FRKeyWord: +
+            FRVarName->Normal: i
+            FRArg:Infix
+              FRKeyWord: *
+              FRInt: 10
+              FRInt: 20
+        FRStmt:(Ln: 5, Col: 3)
+          FRArg:Infix
+            FRKeyWord: +
+            FRVarName->Normal: i
+            FRInt: 1
+        FRStmt:(Ln: 6, Col: 3)
+          FRPrimary:If
+            FRKeyWord: if
+            FRArg:Infix
+              FRKeyWord: ==
+              FRVarName->Normal: i
+              FRInt: 1
+            FRCompstmt:<null>
+              FRStmt:(Ln: 6, Col: 13)
+                FRVarName->Normal: i
+      FRKeyWord: else
+      FRCompstmt:<null>
+        FRStmt:(Ln: 8, Col: 3)
+          FRArg:Infix
+            FRKeyWord: +
+            FRVarName->Normal: i
+            FRInt: 1
+  FRStmt:(Ln: 10, Col: 1)
     FRArg:Infix
-      FRKeyWord: +
-      FRArg:Infix
-        FRKeyWord: *
-        FRCompstmt:<null>
+      FRKeyWord: *
+      FRCompstmt:<null>
+        FRStmt:(Ln: 10, Col: 2)
           FRPrimary:If
             FRKeyWord: if
             FRArg:Infix
@@ -515,22 +508,45 @@ FRCompstmt:<null>
               FRVarName->Normal: i
               FRInt: 0
             FRCompstmt:<null>
-              FRVarName->Normal: i
-        FRInt: 10
-      FRInt: 20
-    FRCompstmt:<null>
+              FRStmt:(Ln: 10, Col: 12)
+                FRVarName->Normal: i
       FRInt: 10
-  FRArg:Infix
-    FRKeyWord: *
+  FRStmt:(Ln: 12, Col: 1)
     FRPrimary:If
       FRKeyWord: if
       FRArg:Infix
-        FRKeyWord: ==
-        FRVarName->Normal: i
-        FRInt: 0
+        FRKeyWord: +
+        FRArg:Infix
+          FRKeyWord: *
+          FRCompstmt:<null>
+            FRStmt:(Ln: 12, Col: 5)
+              FRPrimary:If
+                FRKeyWord: if
+                FRArg:Infix
+                  FRKeyWord: ==
+                  FRVarName->Normal: i
+                  FRInt: 0
+                FRCompstmt:<null>
+                  FRStmt:(Ln: 12, Col: 19)
+                    FRVarName->Normal: i
+          FRInt: 10
+        FRInt: 20
       FRCompstmt:<null>
-        FRVarName->Normal: i
-    FRVarName->Normal: i
+        FRStmt:(Ln: 12, Col: 37)
+          FRInt: 10
+  FRStmt:(Ln: 15, Col: 1)
+    FRArg:Infix
+      FRKeyWord: *
+      FRPrimary:If
+        FRKeyWord: if
+        FRArg:Infix
+          FRKeyWord: ==
+          FRVarName->Normal: i
+          FRInt: 0
+        FRCompstmt:<null>
+          FRStmt:(Ln: 16, Col: 1)
+            FRVarName->Normal: i
+      FRVarName->Normal: i
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -794,21 +810,47 @@ FRCompstmt:<null>
 (Ln: 11, Col: 29): Leaving Stmt (Ok)
 (Ln: 11, Col: 29): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:While
-    FRKeyWord: while
-    FRArg:Infix
-      FRKeyWord: !=
-      FRVarName->Normal: i
-      FRInt: 0
-    FRCompstmt:<null>
-      FRVarName->Normal: i
-      FRPrimary:If
-        FRKeyWord: if
-        FRArg:Infix
-          FRKeyWord: ==
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:While
+      FRKeyWord: while
+      FRArg:Infix
+        FRKeyWord: !=
+        FRVarName->Normal: i
+        FRInt: 0
+      FRCompstmt:<null>
+        FRStmt:(Ln: 2, Col: 3)
           FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
+        FRStmt:(Ln: 3, Col: 3)
+          FRPrimary:If
+            FRKeyWord: if
+            FRArg:Infix
+              FRKeyWord: ==
+              FRVarName->Normal: i
+              FRInt: 0
+            FRCompstmt:<null>
+              FRStmt:(Ln: 4, Col: 1)
+                FRPrimary:While
+                  FRKeyWord: while
+                  FRArg:Infix
+                    FRKeyWord: ==
+                    FRVarName->Normal: i
+                    FRInt: 0
+                  FRCompstmt:<null>
+                    FRStmt:(Ln: 5, Col: 7)
+                      FRArg:Infix
+                        FRKeyWord: +
+                        FRVarName->Normal: i
+                        FRInt: 2
+                    FRStmt:(Ln: 6, Col: 7)
+                      FRArg:Infix
+                        FRKeyWord: -
+                        FRVarName->Normal: i
+                        FRInt: 2
+  FRStmt:(Ln: 11, Col: 1)
+    FRArg:Infix
+      FRKeyWord: *
+      FRCompstmt:<null>
+        FRStmt:(Ln: 11, Col: 2)
           FRPrimary:While
             FRKeyWord: while
             FRArg:Infix
@@ -816,26 +858,9 @@ FRCompstmt:<null>
               FRVarName->Normal: i
               FRInt: 0
             FRCompstmt:<null>
-              FRArg:Infix
-                FRKeyWord: +
+              FRStmt:(Ln: 11, Col: 18)
                 FRVarName->Normal: i
-                FRInt: 2
-              FRArg:Infix
-                FRKeyWord: -
-                FRVarName->Normal: i
-                FRInt: 2
-  FRArg:Infix
-    FRKeyWord: *
-    FRCompstmt:<null>
-      FRPrimary:While
-        FRKeyWord: while
-        FRArg:Infix
-          FRKeyWord: ==
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-    FRInt: 10
+      FRInt: 10
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -977,34 +1002,39 @@ FRCompstmt:<null>
 (Ln: 8, Col: 4): Leaving Stmt (Ok)
 (Ln: 8, Col: 4): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:Class
-    FRKeyWord: class
-    FRConstant: A
-    FRKeyWord: superclass
-    FRIdentifier: Class
-    FRCompstmt:<null>
-      FRPrimary:While
-        FRKeyWord: while
-        FRArg:Infix
-          FRKeyWord: !=
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: -
-            FRVarName->Normal: i
-            FRInt: 1
-      FRPrimary:If
-        FRKeyWord: if
-        FRArg:Infix
-          FRKeyWord: ==
-          FRVarName->Normal: i
-          FRInt: 0
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: +
-            FRVarName->Normal: i
-            FRInt: 1
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:Class
+      FRKeyWord: class
+      FRConstant: A
+      FRKeyWord: superclass
+      FRIdentifier: Class
+      FRCompstmt:<null>
+        FRStmt:(Ln: 2, Col: 3)
+          FRPrimary:While
+            FRKeyWord: while
+            FRArg:Infix
+              FRKeyWord: !=
+              FRVarName->Normal: i
+              FRInt: 0
+            FRCompstmt:<null>
+              FRStmt:(Ln: 3, Col: 5)
+                FRArg:Infix
+                  FRKeyWord: -
+                  FRVarName->Normal: i
+                  FRInt: 1
+        FRStmt:(Ln: 5, Col: 3)
+          FRPrimary:If
+            FRKeyWord: if
+            FRArg:Infix
+              FRKeyWord: ==
+              FRVarName->Normal: i
+              FRInt: 0
+            FRCompstmt:<null>
+              FRStmt:(Ln: 6, Col: 1)
+                FRArg:Infix
+                  FRKeyWord: +
+                  FRVarName->Normal: i
+                  FRInt: 1
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -1094,23 +1124,27 @@ FRCompstmt:<null>
 (Ln: 7, Col: 13): Leaving Stmt (Ok)
 (Ln: 7, Col: 13): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:Module
-    FRKeyWord: module
-    FRConstant: A
-    FRCompstmt:<null>
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: k
-        FRArglist:<null>
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: +
-            FRVarName->Normal: i
-            FRInt: 1
-  FRPrimary:Assign
-    FRKeyWord: =
-    FRVarName->Normal: module_2
-    FRInt: 0
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:Module
+      FRKeyWord: module
+      FRConstant: A
+      FRCompstmt:<null>
+        FRStmt:(Ln: 2, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: k
+            FRArglist:<null>
+            FRCompstmt:<null>
+              FRStmt:(Ln: 3, Col: 5)
+                FRArg:Infix
+                  FRKeyWord: +
+                  FRVarName->Normal: i
+                  FRInt: 1
+  FRStmt:(Ln: 7, Col: 1)
+    FRPrimary:Assign
+      FRKeyWord: =
+      FRVarName->Normal: module_2
+      FRInt: 0
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -1656,138 +1690,154 @@ FRCompstmt:<null>
 (Ln: 26, Col: 29): Leaving Stmt (Ok)
 (Ln: 26, Col: 29): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:MethodInvocationCell
-    FRIdentifier: puts
-    FRArglist:<null>
-      FRString: hello
-  FRPrimary:Assign
-    FRKeyWord: =
-    FRVarName->Normal: i
-    FRInt: 1
-  FRPrimary:MethodInvocation
-    FRKeyWord: .
-    FRVarName->Normal: i
+  FRStmt:(Ln: 1, Col: 1)
     FRPrimary:MethodInvocationCell
-      FRIdentifier: times
+      FRIdentifier: puts
       FRArglist:<null>
-      FRBlock:<null>
-        FRArglist:<null>
-          FRIdentifier: k
-        FRCompstmt:<null>
-          FRPrimary:MethodInvocationCell
-            FRIdentifier: puts
-            FRArglist:<null>
-              FRVarName->Normal: k
-          FRArg:Infix
-            FRKeyWord: +
-            FRVarName->Normal: k
-            FRInt: 1
-  FRPrimary:MethodInvocation
-    FRKeyWord: .
-    FRVarName->Normal: i
-    FRPrimary:MethodInvocationCell
-      FRIdentifier: times
-      FRArglist:<null>
-        FRVarName->Normal: a
-        FRPrimary:If
-          FRKeyWord: if
-          FRArg:Infix
-            FRKeyWord: ==
-            FRVarName->Normal: i
-            FRInt: 0
-          FRCompstmt:<null>
-            FRVarName->Normal: i
-        FRArg:Infix
-          FRKeyWord: *
-          FRVarName->Normal: i
-          FRInt: 10
-      FRBlock:<null>
-        FRArglist:<null>
-          FRIdentifier: j
-          FRIdentifier: k
-          FRIdentifier: l
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: *
-            FRArg:Infix
-              FRKeyWord: *
-              FRVarName->Normal: j
-              FRVarName->Normal: k
-            FRVarName->Normal: l
-  FRPrimary:MethodInvocation
-    FRKeyWord: .
-    FRPrimary:While
-      FRKeyWord: while
-      FRArg:Infix
-        FRKeyWord: !=
-        FRVarName->Normal: i
-        FRInt: 0
-      FRCompstmt:<null>
-        FRPrimary:Assign
-          FRKeyWord: =
-          FRVarName->Normal: i
-          FRArg:Infix
-            FRKeyWord: -
-            FRVarName->Normal: i
-            FRInt: 1
-    FRPrimary:MethodInvocationCell
-      FRIdentifier: times
-      FRArglist:<null>
-      FRBlock:<null>
-        FRArglist:<null>
-          FRIdentifier: j
-        FRCompstmt:<null>
-          FRPrimary:MethodInvocationCell
-            FRIdentifier: puts
-            FRArglist:<null>
-              FRVarName->Normal: j
-  FRPrimary:MethodInvocation
-    FRKeyWord: ::
-    FRConstant: File
-    FRPrimary:MethodInvocationCell
-      FRIdentifier: new
-      FRArglist:<null>
-        FRString: ./a.log
-      FRBlock:<null>
-        FRArglist:<null>
-          FRIdentifier: i
-        FRCompstmt:<null>
-          FRPrimary:MethodInvocation
-            FRKeyWord: .
-            FRVarName->Normal: i
-            FRPrimary:MethodInvocationCell
-              FRIdentifier: write
-              FRArglist:<null>
-                FRString: hehe
-  FRPrimary:Assign
-    FRKeyWord: =
-    FRVarName->Normal: i
+        FRString: hello
+  FRStmt:(Ln: 3, Col: 1)
+    FRPrimary:Assign
+      FRKeyWord: =
+      FRVarName->Normal: i
+      FRInt: 1
+  FRStmt:(Ln: 4, Col: 1)
     FRPrimary:MethodInvocation
       FRKeyWord: .
-      FRPrimary:MethodInvocation
-        FRKeyWord: ::
-        FRConstant: Openssl
-        FRPrimary:MethodInvocationCell
-          FRIdentifier: digest
-          FRArglist:<null>
+      FRVarName->Normal: i
       FRPrimary:MethodInvocationCell
-        FRIdentifier: md5
+        FRIdentifier: times
         FRArglist:<null>
-          FRString: a
-  FRPrimary:MethodInvocation
-    FRKeyWord: .
-    FRFloat: 1.1
-    FRPrimary:MethodInvocationCell
-      FRIdentifier: times
-      FRArglist:<null>
-      FRBlock:<null>
+        FRBlock:<null>
+          FRArglist:<null>
+            FRIdentifier: k
+          FRCompstmt:<null>
+            FRStmt:(Ln: 5, Col: 3)
+              FRPrimary:MethodInvocationCell
+                FRIdentifier: puts
+                FRArglist:<null>
+                  FRVarName->Normal: k
+            FRStmt:(Ln: 6, Col: 3)
+              FRArg:Infix
+                FRKeyWord: +
+                FRVarName->Normal: k
+                FRInt: 1
+  FRStmt:(Ln: 9, Col: 1)
+    FRPrimary:MethodInvocation
+      FRKeyWord: .
+      FRVarName->Normal: i
+      FRPrimary:MethodInvocationCell
+        FRIdentifier: times
         FRArglist:<null>
-          FRIdentifier: i
-        FRCompstmt:<null>
-          FRPrimary:Assign
-            FRKeyWord: =
+          FRVarName->Normal: a
+          FRPrimary:If
+            FRKeyWord: if
+            FRArg:Infix
+              FRKeyWord: ==
+              FRVarName->Normal: i
+              FRInt: 0
+            FRCompstmt:<null>
+              FRStmt:(Ln: 9, Col: 26)
+                FRVarName->Normal: i
+          FRArg:Infix
+            FRKeyWord: *
             FRVarName->Normal: i
-            FRInt: 0
+            FRInt: 10
+        FRBlock:<null>
+          FRArglist:<null>
+            FRIdentifier: j
+            FRIdentifier: k
+            FRIdentifier: l
+          FRCompstmt:<null>
+            FRStmt:(Ln: 11, Col: 3)
+              FRArg:Infix
+                FRKeyWord: *
+                FRArg:Infix
+                  FRKeyWord: *
+                  FRVarName->Normal: j
+                  FRVarName->Normal: k
+                FRVarName->Normal: l
+  FRStmt:(Ln: 14, Col: 1)
+    FRPrimary:MethodInvocation
+      FRKeyWord: .
+      FRPrimary:While
+        FRKeyWord: while
+        FRArg:Infix
+          FRKeyWord: !=
+          FRVarName->Normal: i
+          FRInt: 0
+        FRCompstmt:<null>
+          FRStmt:(Ln: 15, Col: 3)
+            FRPrimary:Assign
+              FRKeyWord: =
+              FRVarName->Normal: i
+              FRArg:Infix
+                FRKeyWord: -
+                FRVarName->Normal: i
+                FRInt: 1
+      FRPrimary:MethodInvocationCell
+        FRIdentifier: times
+        FRArglist:<null>
+        FRBlock:<null>
+          FRArglist:<null>
+            FRIdentifier: j
+          FRCompstmt:<null>
+            FRStmt:(Ln: 17, Col: 3)
+              FRPrimary:MethodInvocationCell
+                FRIdentifier: puts
+                FRArglist:<null>
+                  FRVarName->Normal: j
+  FRStmt:(Ln: 20, Col: 1)
+    FRPrimary:MethodInvocation
+      FRKeyWord: ::
+      FRConstant: File
+      FRPrimary:MethodInvocationCell
+        FRIdentifier: new
+        FRArglist:<null>
+          FRString: ./a.log
+        FRBlock:<null>
+          FRArglist:<null>
+            FRIdentifier: i
+          FRCompstmt:<null>
+            FRStmt:(Ln: 21, Col: 3)
+              FRPrimary:MethodInvocation
+                FRKeyWord: .
+                FRVarName->Normal: i
+                FRPrimary:MethodInvocationCell
+                  FRIdentifier: write
+                  FRArglist:<null>
+                    FRString: hehe
+  FRStmt:(Ln: 24, Col: 1)
+    FRPrimary:Assign
+      FRKeyWord: =
+      FRVarName->Normal: i
+      FRPrimary:MethodInvocation
+        FRKeyWord: .
+        FRPrimary:MethodInvocation
+          FRKeyWord: ::
+          FRConstant: Openssl
+          FRPrimary:MethodInvocationCell
+            FRIdentifier: digest
+            FRArglist:<null>
+        FRPrimary:MethodInvocationCell
+          FRIdentifier: md5
+          FRArglist:<null>
+            FRString: a
+  FRStmt:(Ln: 26, Col: 1)
+    FRPrimary:MethodInvocation
+      FRKeyWord: .
+      FRFloat: 1.1
+      FRPrimary:MethodInvocationCell
+        FRIdentifier: times
+        FRArglist:<null>
+        FRBlock:<null>
+          FRArglist:<null>
+            FRIdentifier: i
+          FRCompstmt:<null>
+            FRStmt:(Ln: 26, Col: 20)
+              FRPrimary:Assign
+                FRKeyWord: =
+                FRVarName->Normal: i
+                FRInt: 0
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -1877,46 +1927,50 @@ FRCompstmt:<null>
 (Ln: 5, Col: 26): Leaving Stmt (Ok)
 (Ln: 6, Col: 1): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:Assign
-    FRKeyWord: =
-    FRVarName->Normal: a
-    FRInt: 10
-  FRArg:Infix
-    FRKeyWord: *
-    FRInt: 10
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:Assign
+      FRKeyWord: =
+      FRVarName->Normal: a
+      FRInt: 10
+  FRStmt:(Ln: 2, Col: 1)
+    FRArg:Infix
+      FRKeyWord: *
+      FRInt: 10
+      FRPrimary:Assign
+        FRKeyWord: =
+        FRVarName->Normal: a
+        FRArg:Infix
+          FRKeyWord: +
+          FRInt: 10
+          FRInt: 1
+  FRStmt:(Ln: 3, Col: 1)
+    FRArg:Infix
+      FRKeyWord: *
+      FRArg:Infix
+        FRKeyWord: *
+        FRInt: 100
+        FRInt: 100
+      FRPrimary:Assign
+        FRKeyWord: =
+        FRVarName->Normal: a
+        FRPrimary:Assign
+          FRKeyWord: =
+          FRVarName->Normal: b
+          FRInt: 2
+  FRStmt:(Ln: 5, Col: 5)
     FRPrimary:Assign
       FRKeyWord: =
       FRVarName->Normal: a
       FRArg:Infix
         FRKeyWord: +
-        FRInt: 10
-        FRInt: 1
-  FRArg:Infix
-    FRKeyWord: *
-    FRArg:Infix
-      FRKeyWord: *
-      FRInt: 100
-      FRInt: 100
-    FRPrimary:Assign
-      FRKeyWord: =
-      FRVarName->Normal: a
-      FRPrimary:Assign
-        FRKeyWord: =
-        FRVarName->Normal: b
-        FRInt: 2
-  FRPrimary:Assign
-    FRKeyWord: =
-    FRVarName->Normal: a
-    FRArg:Infix
-      FRKeyWord: +
-      FRArg:Infix
-        FRKeyWord: *
-        FRInt: 100
-        FRVarName->Normal: a
-      FRArg:Infix
-        FRKeyWord: /
-        FRInt: 100
-        FRInt: 2
+        FRArg:Infix
+          FRKeyWord: *
+          FRInt: 100
+          FRVarName->Normal: a
+        FRArg:Infix
+          FRKeyWord: /
+          FRInt: 100
+          FRInt: 2
 (Ln: 1, Col: 1): Entering CompStmt
 (Ln: 1, Col: 1): Entering Stmt
 (Ln: 1, Col: 1): Entering expr
@@ -2470,111 +2524,130 @@ FRCompstmt:<null>
 (Ln: 32, Col: 4): Leaving Stmt (Ok)
 (Ln: 32, Col: 4): Leaving CompStmt (Ok)
 FRCompstmt:<null>
-  FRPrimary:Class
-    FRKeyWord: class
-    FRConstant: A
-    FRKeyWord: superclass
-    
-    FRCompstmt:<null>
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: a
-        FRArglist:<null>
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: *
-            FRVarName->Instace: @a
-            FRInt: 10
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: b
-        FRArglist:<null>
-          FRIdentifier: a
-          FRIdentifier: b
-          FRIdentifier: c
-          FRIdentifier: *t
-          FRIdentifier: &d
-        FRCompstmt:<null>
-          FRArg:Infix
-            FRKeyWord: +
-            FRArg:Infix
-              FRKeyWord: +
-              FRVarName->Normal: a
-              FRVarName->Normal: b
-            FRVarName->Normal: c
-          FRVarName->Normal: d
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: c
-        FRArglist:<null>
-          FRIdentifier: fun
-          FRIdentifier: fuck
-          FRIdentifier: *ay
-        FRCompstmt:<null>
-          FRVarName->Normal: ay
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: d
-        FRArglist:<null>
-          FRArg:Infix
-            FRKeyWord: =
+  FRStmt:(Ln: 1, Col: 1)
+    FRPrimary:Class
+      FRKeyWord: class
+      FRConstant: A
+      FRKeyWord: superclass
+      
+      FRCompstmt:<null>
+        FRStmt:(Ln: 2, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
             FRIdentifier: a
-            FRInt: 1
-          FRArg:Infix
-            FRKeyWord: =
+            FRArglist:<null>
+            FRCompstmt:<null>
+              FRStmt:(Ln: 3, Col: 5)
+                FRArg:Infix
+                  FRKeyWord: *
+                  FRVarName->Instace: @a
+                  FRInt: 10
+        FRStmt:(Ln: 6, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
             FRIdentifier: b
-            FRInt: 2
-          FRArg:Infix
-            FRKeyWord: =
+            FRArglist:<null>
+              FRIdentifier: a
+              FRIdentifier: b
+              FRIdentifier: c
+              FRIdentifier: *t
+              FRIdentifier: &d
+            FRCompstmt:<null>
+              FRStmt:(Ln: 7, Col: 5)
+                FRArg:Infix
+                  FRKeyWord: +
+                  FRArg:Infix
+                    FRKeyWord: +
+                    FRVarName->Normal: a
+                    FRVarName->Normal: b
+                  FRVarName->Normal: c
+              FRStmt:(Ln: 8, Col: 5)
+                FRVarName->Normal: d
+        FRStmt:(Ln: 11, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
             FRIdentifier: c
-            FRInt: 3
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: e
-        FRArglist:<null>
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: a
-            FRInt: 2
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: c
-            FRInt: 1
-          FRIdentifier: d
-          FRIdentifier: *p
-          FRIdentifier: &b
-        FRCompstmt:<null>
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: e
-        FRArglist:<null>
-          FRArg:Infix
-            FRKeyWord: =
-            FRIdentifier: a
-            FRInt: 1
-        FRCompstmt:<null>
-          FRVarName->Global: $1
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: a?
-        FRArglist:<null>
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: a!
-        FRArglist:<null>
-        FRCompstmt:<null>
-          FRVarName->Normal: i
-      FRPrimary:Def
-        FRKeyWord: def
-        FRIdentifier: a=
-        FRArglist:<null>
-          FRIdentifier: t
-        FRCompstmt:<null>
-          FRPrimary:Assign
-            FRKeyWord: =
-            FRVarName->Instace: @a
-            FRVarName->Normal: t
+            FRArglist:<null>
+              FRIdentifier: fun
+              FRIdentifier: fuck
+              FRIdentifier: *ay
+            FRCompstmt:<null>
+              FRStmt:(Ln: 12, Col: 5)
+                FRVarName->Normal: ay
+        FRStmt:(Ln: 15, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: d
+            FRArglist:<null>
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: a
+                FRInt: 1
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: b
+                FRInt: 2
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: c
+                FRInt: 3
+            FRCompstmt:<null>
+              FRStmt:(Ln: 17, Col: 5)
+                FRVarName->Normal: i
+        FRStmt:(Ln: 20, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: e
+            FRArglist:<null>
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: a
+                FRInt: 2
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: c
+                FRInt: 1
+              FRIdentifier: d
+              FRIdentifier: *p
+              FRIdentifier: &b
+            FRCompstmt:<null>
+        FRStmt:(Ln: 23, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: e
+            FRArglist:<null>
+              FRArg:Infix
+                FRKeyWord: =
+                FRIdentifier: a
+                FRInt: 1
+            FRCompstmt:<null>
+              FRStmt:(Ln: 23, Col: 16)
+                FRVarName->Global: $1
+        FRStmt:(Ln: 25, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: a?
+            FRArglist:<null>
+            FRCompstmt:<null>
+              FRStmt:(Ln: 25, Col: 11)
+                FRVarName->Normal: i
+        FRStmt:(Ln: 26, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: a!
+            FRArglist:<null>
+            FRCompstmt:<null>
+              FRStmt:(Ln: 27, Col: 5)
+                FRVarName->Normal: i
+        FRStmt:(Ln: 29, Col: 3)
+          FRPrimary:Def
+            FRKeyWord: def
+            FRIdentifier: a=
+            FRArglist:<null>
+              FRIdentifier: t
+            FRCompstmt:<null>
+              FRStmt:(Ln: 30, Col: 5)
+                FRPrimary:Assign
+                  FRKeyWord: =
+                  FRVarName->Instace: @a
+                  FRVarName->Normal: t

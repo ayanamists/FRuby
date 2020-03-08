@@ -279,7 +279,8 @@
         do pFRArgRef := pFRArgRaw.ExpressionParser
 
     // Parse Stmt
-        do pFRStmtRef := pFRExpr <!> "Stmt"
+        let pFRStmtRaw = pFRExpr
+        do pFRStmtRef := getPosition .>>. pFRStmtRaw  |>> FRFormStmt <!> "Stmt"
         do pFRExprRef := pFRArg <!> "expr"
 
     // Parse Method Invocation Cell Primary

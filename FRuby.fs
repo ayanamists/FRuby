@@ -1,5 +1,7 @@
 ﻿namespace FRuby
+
 module Main = 
+    [<EntryPoint>]
     let main argv = 
-        TestParse.runAllTest
+        TestParse.runAllTest argv
     
